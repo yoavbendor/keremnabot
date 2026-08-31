@@ -1,0 +1,39 @@
+{
+  "run": "heb_full_out",
+  "provider": "anthropic",
+  "model": "claude-haiku-4-5",
+  "mode": "chunked",
+  "docs": 26,
+  "chunks": 1451,
+  "chunk_parse_failures": 0,
+  "chunk_failure_reasons": {},
+  "partial": false,
+  "chunks_with_extraction": 1451,
+  "chunks_missing_extraction": 0,
+  "orphan_raw_records": 0,
+  "verify_only": false,
+  "entity_mentions_accepted": 21260,
+  "entity_mentions_rejected": 719,
+  "entity_rejection_rate": 0.0327,
+  "relations_accepted": 9610,
+  "relations_rejected": 970,
+  "relation_rejection_rate": 0.0917,
+  "cross_boundary_relations": 59,
+  "cross_boundary_rate": 0.0061,
+  "merged_nodes": 8855,
+  "synthesized_nodes": 1267,
+  "merged_edges": 9168,
+  "usage": {
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5",
+    "calls": 1480,
+    "input_tokens": 2566107,
+    "output_tokens": 599026,
+    "estimated_cost_usd": 5.5612
+  },
+  "params": {
+    "target_chunk_chars": 1200,
+    "margin_chars": 200,
+    "max_section_chars": 1800
+  }
+}
