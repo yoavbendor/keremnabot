@@ -1,0 +1,6 @@
+name = "keremnabot-relay"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# No environment variables/secrets needed -- the caller's API key is
+# supplied per-request and never stored by this Worker.

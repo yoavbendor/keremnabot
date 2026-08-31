@@ -1,0 +1,91 @@
+# Builds the KB + excerpt-index static assets by running the nanonto
+# pipeline (https://github.com/yoavbendor/nanonto) against the committed
+# KeremNavotEng/ documents, then deploys the KeremNaBot static site to
+# Cloudflare Pages and the relay to Cloudflare Workers.
+#
+# Requires repo secrets:
+#   ANTHROPIC_API_KEY                      -- for the graph/ontology build step
+#   CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID -- see README.md for setup
+#
+# The graph/ontology build step is skipped (site deploys with whatever
+# kb-data/ already holds) when ANTHROPIC_API_KEY isn't configured, so forked
+# PRs can't spend the repo owner's API budget.
+
+name: Deploy KeremNaBot
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "worker/**"
+      - "KeremNavotEng/**"
+  workflow_dispatch:
+
+env:
+  NANONTO_REF: main # pin to a specific commit/tag once nanonto cuts a release
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Clone nanonto (core KB/ontology-building engine)
+        run: git clone --depth 1 --branch "$NANONTO_REF" https://github.com/yoavbendor/nanonto.git nanonto-engine
+
+      - name: Install nanonto's build dependencies
+        run: pip install -r nanonto-engine/requirements.txt
+
+      - name: Skip graph rebuild if no API key configured
+        id: check_key
+        run: |
+          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build evidence graph + ontology from KeremNavotEng
+        if: steps.check_key.outputs.skip == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          mkdir -p kb-data
+          python3 nanonto-engine/kg_pipeline/build_evidence_graph.py \
+            --corpus KeremNavotEng --glob '*.docx' --arm keremnabot \
+            --model claude-haiku-4-5 --out kb-data
+          python3 nanonto-engine/kg_pipeline/build_ontology.py \
+            --graph kb-data/graph.json --out kb-data/ontology.json \
+            --model claude-haiku-4-5
+
+      - name: Regenerate KB context + excerpt index
+        if: steps.check_key.outputs.skip == 'false'
+        run: |
+          python3 nanonto-engine/kg_pipeline/build_kb_context.py \
+            --graph kb-data/graph.json \
+            --ontology kb-data/ontology.json \
+            --docs-dir "KeremNavotEng" \
+            --embedding-model-path nanonto-engine \
+            --out-dir site/public
+
+      - name: Deploy static site to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: keremnabot
+          directory: site
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy relay Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker
+          command: deploy

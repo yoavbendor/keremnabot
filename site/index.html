@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KeremNaBot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>KeremNaBot <span class="pun" title="pan intended">🌱</span></h1>
+    <p class="subtitle">
+      A demo chatbot answering from a knowledge graph + ontology built over 26 translated
+      human-rights / policy reports on the West Bank. Every quote it shows you is a verbatim
+      excerpt found by exact text search in the source documents &mdash; never LLM-invented.
+    </p>
+  </header>
+
+  <section id="setup-panel">
+    <label for="api-key">Your Anthropic API key</label>
+    <input id="api-key" type="password" placeholder="sk-ant-..." autocomplete="off" />
+    <label for="model-select">Model</label>
+    <select id="model-select">
+      <option value="claude-haiku-4-5" selected>claude-haiku-4-5 (cheapest, recommended)</option>
+      <option value="claude-sonnet-5">claude-sonnet-5</option>
+    </select>
+    <p class="disclaimer">
+      Your key is stored only in this browser (<code>localStorage</code>) and sent directly,
+      per-request, to a relay that forwards it to Anthropic&mdash;never logged, never stored
+      server-side. You pay for your own usage (typically a few cents for a full session). See
+      <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>
+      to get a key.
+    </p>
+    <div id="kb-status">Loading knowledge base&hellip;</div>
+  </section>
+
+  <main>
+    <div id="chat-log" aria-live="polite"></div>
+    <form id="chat-form">
+      <input id="chat-input" type="text" placeholder="Ask about the graph…" autocomplete="off" disabled />
+      <button id="chat-send" type="submit" disabled>Send</button>
+    </form>
+  </main>
+
+  <aside id="about-panel">
+    <h2>About / Sources</h2>
+    <p>
+      KeremNaBot answers from a knowledge graph (entities + relationships) and ontology
+      (classes + properties) extracted by the <a href="https://github.com/yoavbendor/nanonto" target="_blank" rel="noopener">nanonto</a>
+      evidence-linked pipeline, grounded in verbatim excerpts from the 26 source documents
+      below. If something isn't supported by that material, the bot is instructed to say so
+      rather than guess.
+    </p>
+    <ul id="docs-list"></ul>
+  </aside>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

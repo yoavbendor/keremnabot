@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+nanonto-engine/
+kb-data/
+site/public/
+node_modules/
+.wrangler/
