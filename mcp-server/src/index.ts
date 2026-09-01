@@ -166,16 +166,26 @@ function createServer() {
     {
       description:
         "Get one entity's full detail from the KeremNaBot knowledge graph by its " +
-        "exact canonical key (from search_entities): its type, and every " +
-        "relationship it appears in with the relation type, the other endpoint's " +
-        "name, and the source-document evidence chunk ids backing it. These " +
-        "evidence ids are labels, not proof by themselves -- call " +
-        "get_evidence_text on one before stating the relationship as fact.",
+        "exact canonical key (from search_entities): its type, and its " +
+        "relationships (most-evidenced first) with the relation type, the other " +
+        "endpoint's name, and the source-document evidence chunk ids backing it. " +
+        "These evidence ids are labels, not proof by themselves -- call " +
+        "get_evidence_text on one before stating the relationship as fact. " +
+        "Well-connected entities can have hundreds of relationships; results are " +
+        "capped by `limit` (see `truncated`/`total_relations` in the response) -- " +
+        "raise it or narrow the question rather than assuming these are all of them.",
       inputSchema: z.object({
-        key: z.string().describe("The entity's canonical key, as returned by search_entities.")
+        key: z.string().describe("The entity's canonical key, as returned by search_entities."),
+        limit: z
+          .number()
+          .int()
+          .min(1)
+          .max(200)
+          .optional()
+          .describe("Max relationships to return, most-evidenced first (default 30).")
       })
     },
-    async ({ key }) => {
+    async ({ key, limit }) => {
       const graph = await loadGraph();
       const entity = graph.entities.find((e) => e.key === key);
       if (!entity) {
@@ -184,21 +194,30 @@ function createServer() {
           isError: true
         };
       }
-      const relations = graph.relationships
+      const allRelations = graph.relationships
         .filter((r) => r.source === key || r.target === key)
-        .map((r) => ({
-          direction: r.source === key ? "outgoing" : "incoming",
-          type: r.type,
-          other_entity: r.source === key ? r.target_name : r.source_name,
-          evidence_count: r.evidence.length,
-          evidence: r.evidence
-        }));
+        .sort((a, b) => b.evidence.length - a.evidence.length);
+      const cap = limit ?? 30;
+      const relations = allRelations.slice(0, cap).map((r) => ({
+        direction: r.source === key ? "outgoing" : "incoming",
+        type: r.type,
+        other_entity: r.source === key ? r.target_name : r.source_name,
+        evidence_count: r.evidence.length,
+        evidence: r.evidence
+      }));
       return {
         content: [
           {
             type: "text",
             text: JSON.stringify(
-              { key: entity.key, name: entity.name, type: entity.type, relations },
+              {
+                key: entity.key,
+                name: entity.name,
+                type: entity.type,
+                total_relations: allRelations.length,
+                truncated: allRelations.length > cap,
+                relations
+              },
               null,
               2
             )
