@@ -16,7 +16,30 @@ reasoning against these tools with credentials it already has).
   `key` (needed by `get_entity`), type, and relationship count.
 - `get_entity(key)` — full detail for one entity: type, and every
   relationship it appears in with the other endpoint's name and the
-  source-document evidence chunk ids backing it.
+  source-document evidence ids backing it.
+- `get_evidence_text(evidence_id)` — the real, verbatim source passage
+  behind an evidence id from `get_entity` (or a plain-language fallback
+  for a `doc:`-scoped, document-level id, which has no single passage).
+  This is the actual grounding mechanism: `get_entity` alone only returns
+  relation labels, so nothing stops a model from asserting a relationship
+  exists without ever having read text that backs it. Calling this and
+  quoting the result is what makes an answer checkable.
+
+## Grounding: how this competes with hallucination and web search
+
+We don't control the calling client's system prompt — only persuade it,
+via two levers actually wired up:
+
+- The server's `instructions` (see `SERVER_INSTRUCTIONS` in `src/index.ts`),
+  surfaced to the model in the `initialize` response per the MCP spec —
+  tells the model to prefer these tools over general knowledge/web search
+  for this corpus, and to call `get_evidence_text` before stating a fact.
+- Each tool's `description` reinforces the same thing locally at the point
+  of use ("PREFER THIS over general knowledge...").
+
+Neither is enforceable — a client can ignore both and hallucinate anyway.
+This is a real trade against the original BYOK in-page chat design, where
+we wrote the whole system prompt ourselves and could hard-require it.
 
 ## Architecture
 
@@ -56,10 +79,6 @@ in the full tool surface:
   beyond "most-connected first," no semantic/embedding search. A query
   like "water deprivation" won't find `Parched` unless that exact phrase
   appears in an entity name.
-- **No excerpt/quote lookup tool yet.** `get_entity`'s evidence field is
-  just chunk ids (`doc-slug#0004`), not the actual quoted text — a real
-  `get_evidence_text(chunk_id)` tool (or embedding chunk text directly)
-  is the natural next addition.
 - **Hebrew only.** `KeremNavotEng/` has no graph built yet; once it does,
   this server should either serve both or a second instance should.
 - **No ontology tools.** `heb-graph/ontology.json` (22 classes, 80
