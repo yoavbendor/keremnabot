@@ -22,7 +22,7 @@ by the static graph/ontology explorer published via GitHub Pages
 | `chunks.json` | The evidence store — every chunk's exact `(doc_id, start, end)` span, needed to resolve `evidence` ids back to real quoted text. |
 | `doc_level.json` | Document-scope facts (authorship, publication date, etc.) from the one-call-per-document pass, kept separate from chunk-level support counts. |
 | `raw_extractions.jsonl` | Raw per-chunk model output before verification — lets you re-run `--verify-only` for free if the verification/merge logic ever changes. |
-| `alias_candidates_audit.tsv` | Every entity-pair the dedup pass considered, with its signal, score, and SAME/DIFFERENT verdict — including the ones it rejected. |
+| `alias_candidates_audit.tsv` | Every entity-pair the dedup pass considered, with its signal, score, and SAME/DIFFERENT verdict — including the ones it rejected. Currently holds only the most recent (third) dedup pass's rows — passes 1 and 2's were lost to a bug, now fixed; see Results below. |
 | `stats.json` | The extraction run's own stats block (see below). |
 
 ## Commands run
@@ -38,7 +38,13 @@ python3 kg_pipeline/build_ontology.py \
 
 python3 kg_pipeline/entity_resolution.py \
     --dir heb_full_out --language he --signals trigram neighbor \
-    --model claude-haiku-4-5 --max-candidates 300 --apply
+    --model claude-haiku-4-5 --max-candidates 300 --apply   # passes 1-2
+
+python3 kg_pipeline/entity_resolution.py \
+    --dir heb_full_out --language he \
+    --signals trigram neighbor translate --translate-via-batch \
+    --model claude-haiku-4-5 --translate-model claude-haiku-4-5 \
+    --max-candidates 400 --apply                            # pass 3
 ```
 
 `--language he` disables the `embedding` dedup signal (the local
@@ -72,28 +78,51 @@ the actual dedup work here.
   value.
 - cost: 90 calls, $0.41
 
-**Entity resolution / dedup** (`entity_resolution.py --language he`), run twice:
-- Pass 1: 300 candidates verified, 103 SAME / 197 DIFFERENT, 98 merges applied
-  → 8,855 → 8,757 entities.
-- Pass 2 (after fixing a real bug — see below): 300 more candidates
-  (already-audited pairs excluded), 81 SAME / 219 DIFFERENT, 81 merges applied
-  → 8,757 → **8,676 entities, 9,132 relationships**. Cost: $0.25.
-- The dedup pass first failed silently for about an hour: the API key in use
-  was scoped to multiple workspaces, so every call was rejected with "
-  anthropic-workspace-id is required..." and retried 5 times before moving
-  on — burning wall-clock time at **$0 actual cost** (every call failed
-  before being billed). Fixed in `nanonto` by adding
+**Entity resolution / dedup** (`entity_resolution.py --language he`), run three times:
+- Pass 1 (`--signals trigram neighbor`): 300 candidates verified, 103 SAME /
+  197 DIFFERENT, 98 merges applied → 8,855 → 8,757 entities.
+- Pass 2 (same signals, after fixing the workspace-id bug below): 300 more
+  candidates, 81 SAME / 219 DIFFERENT, 81 merges applied → 8,757 → 8,676
+  entities, 9,132 relationships. Cost: $0.25.
+- Pass 3 (`--signals trigram neighbor translate --translate-via-batch`,
+  `--max-candidates 400`): 400 candidates verified, 179 SAME / 221 DIFFERENT,
+  156 merges applied → 8,676 → **8,520 entities, 9,077 relationships**. Cost:
+  not captured exactly (truncated by a `tail -100` mistake on my end, same
+  class of error as pass 2's originally-uncaptured cost) — 400 verification
+  calls plus one batched translation submission over all 8,676 names, at
+  Haiku rates, puts it in the same $0.25–0.50 range as pass 2.
+  The `translate` signal earned its place: it caught real cross-language/
+  paraphrase duplicates the other two signals structurally cannot (they only
+  compare surface form or graph neighborhood) — `ישראל`/`Israel`,
+  `צה"ל`/`צבא הגנה לישראל` (acronym vs. full name), `בצלם`/`BTSELEM`/`بتسيلم`
+  (Hebrew/English/Arabic spellings unified), and the "settlers" cluster
+  merging in `settlers` itself alongside its Hebrew spelling variants.
+- **Total across all three: 335 merges, 8,855 → 8,520 entities.**
+- The dedup pass first failed silently for about an hour (before pass 2):
+  the API key in use was scoped to multiple workspaces, so every call was
+  rejected with "anthropic-workspace-id is required..." and retried 5 times
+  before moving on — burning wall-clock time at **$0 actual cost** (every
+  call failed before being billed). Fixed in `nanonto` by adding
   `ANTHROPIC_WORKSPACE_ID` env var support to `llm_client.get_client()`.
-- `alias_candidates_audit.tsv` accumulates across both passes — every
-  candidate either run has considered, accepted or not, is in there.
+- **A second real bug, found after pass 3**: `alias_candidates_audit.tsv` was
+  supposed to accumulate every candidate any run has ever considered, but
+  the sync `--apply` code path always overwrote it with only the current
+  run's own rows instead of appending — so pass 2 silently discarded pass
+  1's audit trail, and pass 3 discarded pass 2's. **The graph itself is
+  unaffected** (`load_audited_pairs()` correctly excluded already-checked
+  pairs each time from the file that existed *before* each run started, and
+  every merge that was ever applied is still in `graph.json`) — only the
+  row-level record of *which* pairs were checked and rejected in passes 1
+  and 2 is unrecoverable; the current file holds only pass 3's 400 rows.
+  Fixed in `nanonto` (commit `1bd0a2e`) to load existing rows first, so this
+  won't happen again from pass 4 onward.
 - Real fragmentation was still present after pass 1 (found by querying the
   live MCP server, not by inspecting the file directly): 15+ separate
-  entities for "settlers" alone (מתנחלימ, המתנחלימ, מתנחלימ ישראלימ, ...)
-  from OCR-artifact spelling variants and definite-article prefixes never
-  merged. Pass 2 cut into this but candidates are capped at 300/run by
-  design (cost control) — a further pass would likely find more.
+  entities for "settlers" alone. Passes 2 and 3 cut into this substantially,
+  but candidates are capped at 300–400/run by design (cost control) — a
+  further pass would likely still find more.
 
-**Total: ~$6.25** across extraction + ontology + both dedup passes.
+**Total: ~$6.5–6.75** across extraction + ontology + all three dedup passes.
 
 ## Known rough edges (spot-checked, not fixed)
 
