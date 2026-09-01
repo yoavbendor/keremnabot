@@ -1557,7 +1557,9 @@
    "name": "המינהל האזרחי",
    "type": "ORG",
    "aliases": [
-    "המינהל האזרחי"
+    "המינהל האזרחי",
+    "המנהל האזרחי",
+    "מינהל האזרחי"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0079",
@@ -1702,9 +1704,99 @@
     "shepherding-outposts-HEB-pdf#0052",
     "משכוכית-דוח-pdf#0042",
     "doc:Hafiha-HEB-pdf",
-    "doc:a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf"
+    "doc:a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf",
+    "Hafiha-HEB-pdf#0030",
+    "Hafiha-HEB-pdf#0038",
+    "Menachsim-Heb-Web-pdf#0024",
+    "Menachsim-Heb-Web-pdf#0075",
+    "Menachsim-Heb-Web-pdf#0076",
+    "Menachsim-Heb-Web-pdf#0078",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0053",
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0024",
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0028",
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0045",
+    "occupation-report-2025-pdf#0035",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0109",
+    "202103-this-is-ours-and-this-too-heb-pdf#0031",
+    "202103-this-is-ours-and-this-too-heb-pdf#0036",
+    "202103-this-is-ours-and-this-too-heb-pdf#0037",
+    "202103-this-is-ours-and-this-too-heb-pdf#0041",
+    "202103-this-is-ours-and-this-too-heb-pdf#0050",
+    "202103-this-is-ours-and-this-too-heb-pdf#0062",
+    "202103-this-is-ours-and-this-too-heb-pdf#0061",
+    "202103-this-is-ours-and-this-too-heb-pdf#0060",
+    "202103-this-is-ours-and-this-too-heb-pdf#0069",
+    "202103-this-is-ours-and-this-too-heb-pdf#0076",
+    "202103-this-is-ours-and-this-too-heb-pdf#0075",
+    "202103-this-is-ours-and-this-too-heb-pdf#0078",
+    "202103-this-is-ours-and-this-too-heb-pdf#0085",
+    "202111-state-business-heb-pdf#0015",
+    "202111-state-business-heb-pdf#0010",
+    "202111-state-business-heb-pdf#0016",
+    "202111-state-business-heb-pdf#0020",
+    "202111-state-business-heb-pdf#0022",
+    "202111-state-business-heb-pdf#0028",
+    "202111-state-business-heb-pdf#0034",
+    "202111-state-business-heb-pdf#0036",
+    "202111-state-business-heb-pdf#0035",
+    "202111-state-business-heb-pdf#0038",
+    "202111-state-business-heb-pdf#0037",
+    "202111-state-business-heb-pdf#0045",
+    "202111-state-business-heb-pdf#0052",
+    "202111-state-business-heb-pdf#0051",
+    "202305-parched-heb-pdf#0017",
+    "202305-parched-heb-pdf#0027",
+    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0006",
+    "202305-parched-heb-pdf#0031",
+    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0002",
+    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0005",
+    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0003",
+    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0007",
+    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0004",
+    "202507-our-genocide-heb-pdf#0043",
+    "202507-our-genocide-heb-pdf#0064",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0001",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0017",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0018",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0020",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0024",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0026",
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0014",
+    "cdb1a7-042fec58eafb449888ad93fef0b1bd01-pdf#0004",
+    "occupation-report-2025-pdf#0032",
+    "occupation-report-2025-pdf#0034",
+    "דוח-צווי-הפקעה-6-6-pdf#0003",
+    "דוח-צווי-הפקעה-6-6-pdf#0011",
+    "דוח-צווי-הפקעה-6-6-pdf#0012",
+    "דוח-צווי-הפקעה-6-6-pdf#0013",
+    "דוח-צווי-הפקעה-6-6-pdf#0021",
+    "דוח-צווי-הפקעה-6-6-pdf#0027",
+    "דוח-צווי-הפקעה-6-6-pdf#0028",
+    "דוח-צווי-הפקעה-6-6-pdf#0040",
+    "דוח-צווי-הפקעה-6-6-pdf#0044",
+    "כרם-נבות-חקלאות-pdf#0014",
+    "כרם-נבות-חקלאות-pdf#0035",
+    "כרם-נבות-חקלאות-pdf#0041",
+    "כרם-נבות-חקלאות-pdf#0038",
+    "כרם-נבות-חקלאות-pdf#0042",
+    "כרם-נבות-חקלאות-pdf#0060",
+    "כרם-נבות-חקלאות-pdf#0065",
+    "כרם-נבות-חקלאות-pdf#0086",
+    "כרם-נבות-חקלאות-pdf#0100",
+    "כרם-נבות-חקלאות-pdf#0121",
+    "משכוכית-דוח-pdf#0004",
+    "משכוכית-דוח-pdf#0030",
+    "משכוכית-דוח-pdf#0028",
+    "משכוכית-דוח-pdf#0032",
+    "משכוכית-דוח-pdf#0039",
+    "משכוכית-דוח-pdf#0041",
+    "משכוכית-דוח-pdf#0040",
+    "משכוכית-דוח-pdf#0045",
+    "משכוכית-דוח-pdf#0044",
+    "צהל-pdf#0018",
+    "doc:משכוכית-דוח-pdf"
    ],
-   "support": 143
+   "support": 233
   },
   {
    "key": "מדינת ישראל",
@@ -2438,7 +2530,9 @@
    "name": "יהודה ושומרון",
    "type": "GPE",
    "aliases": [
-    "יהודה ושומרון"
+    "יהודה והשומרון",
+    "יהודה ושומרון",
+    "יהודה שומרון"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0007",
@@ -2543,9 +2637,20 @@
     "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0018",
     "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0019",
     "doc:נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf",
-    "doc:צהל-pdf"
+    "doc:צהל-pdf",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0037",
+    "Hafiha-HEB-pdf#0017",
+    "Menachsim-Heb-Web-pdf#0027",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0032",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0033",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0037",
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0033",
+    "occupation-report-2025-pdf#0038",
+    "כרם-נבות-חקלאות-pdf#0057",
+    "כרם-נבות-חקלאות-pdf#0115",
+    "כרם-נבות-חקלאות-pdf#0126"
    ],
-   "support": 103
+   "support": 114
   },
   {
    "key": "בג\"צ",
@@ -2854,96 +2959,6 @@
     "doc:Hafiha-HEB-pdf"
    ],
    "support": 81
-  },
-  {
-   "key": "המנהל האזרחי",
-   "name": "המנהל האזרחי",
-   "type": "ORG",
-   "aliases": [
-    "המנהל האזרחי"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0031",
-    "202103-this-is-ours-and-this-too-heb-pdf#0036",
-    "202103-this-is-ours-and-this-too-heb-pdf#0037",
-    "202103-this-is-ours-and-this-too-heb-pdf#0041",
-    "202103-this-is-ours-and-this-too-heb-pdf#0050",
-    "202103-this-is-ours-and-this-too-heb-pdf#0062",
-    "202103-this-is-ours-and-this-too-heb-pdf#0061",
-    "202103-this-is-ours-and-this-too-heb-pdf#0060",
-    "202103-this-is-ours-and-this-too-heb-pdf#0069",
-    "202103-this-is-ours-and-this-too-heb-pdf#0076",
-    "202103-this-is-ours-and-this-too-heb-pdf#0075",
-    "202103-this-is-ours-and-this-too-heb-pdf#0078",
-    "202103-this-is-ours-and-this-too-heb-pdf#0085",
-    "202111-state-business-heb-pdf#0015",
-    "202111-state-business-heb-pdf#0010",
-    "202111-state-business-heb-pdf#0016",
-    "202111-state-business-heb-pdf#0020",
-    "202111-state-business-heb-pdf#0022",
-    "202111-state-business-heb-pdf#0028",
-    "202111-state-business-heb-pdf#0034",
-    "202111-state-business-heb-pdf#0036",
-    "202111-state-business-heb-pdf#0035",
-    "202111-state-business-heb-pdf#0038",
-    "202111-state-business-heb-pdf#0037",
-    "202111-state-business-heb-pdf#0045",
-    "202111-state-business-heb-pdf#0052",
-    "202111-state-business-heb-pdf#0051",
-    "202305-parched-heb-pdf#0017",
-    "202305-parched-heb-pdf#0027",
-    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0006",
-    "202305-parched-heb-pdf#0031",
-    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0002",
-    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0005",
-    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0003",
-    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0007",
-    "202309-pogroms-are-working-transfer-already-happening-heb-pd#0004",
-    "202507-our-genocide-heb-pdf#0043",
-    "202507-our-genocide-heb-pdf#0064",
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0001",
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0017",
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0018",
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0020",
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0024",
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0026",
-    "Hafiha-HEB-pdf#0007",
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0014",
-    "cdb1a7-042fec58eafb449888ad93fef0b1bd01-pdf#0004",
-    "occupation-report-2025-pdf#0032",
-    "occupation-report-2025-pdf#0034",
-    "דוח-צווי-הפקעה-6-6-pdf#0003",
-    "דוח-צווי-הפקעה-6-6-pdf#0011",
-    "דוח-צווי-הפקעה-6-6-pdf#0012",
-    "דוח-צווי-הפקעה-6-6-pdf#0013",
-    "דוח-צווי-הפקעה-6-6-pdf#0021",
-    "דוח-צווי-הפקעה-6-6-pdf#0027",
-    "דוח-צווי-הפקעה-6-6-pdf#0028",
-    "דוח-צווי-הפקעה-6-6-pdf#0040",
-    "דוח-צווי-הפקעה-6-6-pdf#0044",
-    "כרם-נבות-חקלאות-pdf#0014",
-    "כרם-נבות-חקלאות-pdf#0035",
-    "כרם-נבות-חקלאות-pdf#0041",
-    "כרם-נבות-חקלאות-pdf#0038",
-    "כרם-נבות-חקלאות-pdf#0042",
-    "כרם-נבות-חקלאות-pdf#0060",
-    "כרם-נבות-חקלאות-pdf#0065",
-    "כרם-נבות-חקלאות-pdf#0086",
-    "כרם-נבות-חקלאות-pdf#0100",
-    "כרם-נבות-חקלאות-pdf#0121",
-    "משכוכית-דוח-pdf#0004",
-    "משכוכית-דוח-pdf#0030",
-    "משכוכית-דוח-pdf#0028",
-    "משכוכית-דוח-pdf#0032",
-    "משכוכית-דוח-pdf#0039",
-    "משכוכית-דוח-pdf#0041",
-    "משכוכית-דוח-pdf#0040",
-    "משכוכית-דוח-pdf#0045",
-    "משכוכית-דוח-pdf#0044",
-    "צהל-pdf#0018",
-    "doc:משכוכית-דוח-pdf"
-   ],
-   "support": 79
   },
   {
    "key": "צה\"ל",
@@ -3448,7 +3463,8 @@
    "name": "החטיבה להתיישבות",
    "type": "ORG",
    "aliases": [
-    "החטיבה להתיישבות"
+    "החטיבה להתיישבות",
+    "חטיבה להתיישבות"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0026",
@@ -3516,9 +3532,15 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0037",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0126",
     "doc:HE-Report-השומרוני-הרע-27-באפריל-2025-pdf",
-    "doc:משכוכית-דוח-pdf"
+    "doc:משכוכית-דוח-pdf",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0002",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0017",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0028",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0039",
+    "כרם-נבות-חקלאות-pdf#0043",
+    "משכוכית-דוח-pdf#0009"
    ],
-   "support": 66
+   "support": 72
   },
   {
    "key": "הצבא",
@@ -4162,7 +4184,8 @@
    "name": "בית המשפט העליון",
    "type": "ORG",
    "aliases": [
-    "בית המשפט העליון"
+    "בית המשפט העליון",
+    "בית משפט העליון"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0028",
@@ -4220,9 +4243,11 @@
     "כרם-נבות-חקלאות-pdf#0114",
     "כרם-נבות-חקלאות-pdf#0120",
     "כרם-נבות-חקלאות-pdf#0125",
-    "doc:YeshDin-Kramim-2-22-Heb-04-pdf"
+    "doc:YeshDin-Kramim-2-22-Heb-04-pdf",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0041",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0048"
    ],
-   "support": 56
+   "support": 58
   },
   {
    "key": "הקו הירוק",
@@ -4806,7 +4831,8 @@
    "name": "איו\"ש",
    "type": "GPE",
    "aliases": [
-    "איו\"ש"
+    "איו\"ש",
+    "איז\"ש"
    ],
    "evidence": [
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0022",
@@ -4858,9 +4884,14 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0109",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0170",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0168",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0178"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0178",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0073",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0093",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0122",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
-   "support": 50
+   "support": 55
   },
   {
    "key": "שומרונ",
@@ -5164,6 +5195,7 @@
    "name": "רופאים לזכויות אדם ישראל",
    "type": "ORG",
    "aliases": [
+    "רופאים לזכויות אדם",
     "רופאים לזכויות אדם ישראל",
     "רופאים לזכויות אדם – ישראל"
    ],
@@ -5248,9 +5280,25 @@
     "occupation-report-2025-pdf#0082",
     "occupation-report-2025-pdf#0075",
     "occupation-report-2025-pdf#0078",
-    "doc:occupation-report-2025-pdf"
+    "doc:occupation-report-2025-pdf",
+    "202507-our-genocide-heb-pdf#0021",
+    "202507-our-genocide-heb-pdf#0016",
+    "202601-living-hell-heb-pdf#0013",
+    "202601-living-hell-heb-pdf#0012",
+    "Displaced-communities-HEB-pdf#0002",
+    "Displaced-communities-HEB-pdf#0003",
+    "Displaced-communities-HEB-pdf#0054",
+    "occupation-report-2025-pdf#0021",
+    "occupation-report-2025-pdf#0067",
+    "occupation-report-2025-pdf#0069",
+    "occupation-report-2025-pdf#0072",
+    "report-all-2024-pdf#0000",
+    "report-all-2024-pdf#0039",
+    "report-all-2024-pdf#0042",
+    "doc:202601-living-hell-heb-pdf",
+    "doc:report-all-2024-pdf"
    ],
-   "support": 81
+   "support": 97
   },
   {
    "key": "סמוטריצ'",
@@ -5426,7 +5474,8 @@
    "name": "הרשות הפלסטינית",
    "type": "ORG",
    "aliases": [
-    "הרשות הפלסטינית"
+    "הרשות הפלסטינית",
+    "רשות הפלסטינית"
    ],
    "evidence": [
     "202101-this-is-apartheid-heb-pdf#0007",
@@ -5473,9 +5522,22 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0101",
     "צהל-pdf#0021",
     "צהל-pdf#0031",
-    "doc:צהל-pdf"
+    "doc:צהל-pdf",
+    "202101-this-is-apartheid-heb-pdf#0002",
+    "202101-this-is-apartheid-heb-pdf#0009",
+    "202101-this-is-apartheid-heb-pdf#0008",
+    "Menachsim-Heb-Web-pdf#0019",
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0005",
+    "occupation-report-2025-pdf#0027",
+    "occupation-report-2025-pdf#0059",
+    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0009",
+    "כרם-נבות-חקלאות-pdf#0053",
+    "כרם-נבות-חקלאות-pdf#0054",
+    "כרם-נבות-חקלאות-pdf#0117",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0138",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0149"
    ],
-   "support": 45
+   "support": 58
   },
   {
    "key": "שוברימ שתיקה",
@@ -5947,6 +6009,7 @@
    "name": "הוועד הציבורי נגד עינויים בישראל",
    "type": "ORG",
    "aliases": [
+    "הוועד הציבורי נגד עינויים",
     "הוועד הציבורי נגד עינויים בישראל"
    ],
    "evidence": [
@@ -5987,9 +6050,10 @@
     "report-all-2024-pdf#0000",
     "report-all-2024-pdf#0037",
     "doc:occupation-report-2025-pdf",
-    "doc:report-all-2024-pdf"
+    "doc:report-all-2024-pdf",
+    "occupation-report-2025-pdf#0067"
    ],
-   "support": 38
+   "support": 39
   },
   {
    "key": "ירושלימ המזרחית",
@@ -7697,6 +7761,7 @@
    "name": "בצלאל סמוטריץ'",
    "type": "PERSON",
    "aliases": [
+    "בצלאל סמוטריץ",
     "בצלאל סמוטריץ'"
    ],
    "evidence": [
@@ -7723,9 +7788,10 @@
     "shepherding-outposts-HEB-pdf#0013",
     "צהל-pdf#0019",
     "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0000",
-    "doc:תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf"
+    "doc:תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf",
+    "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0002"
    ],
-   "support": 24
+   "support": 25
   },
   {
    "key": "ג'נינ",
@@ -8634,38 +8700,6 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0164",
     "צהל-pdf#0022",
     "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0012"
-   ],
-   "support": 21
-  },
-  {
-   "key": "רופאימ לזכויות אדמ",
-   "name": "רופאים לזכויות אדם",
-   "type": "ORG",
-   "aliases": [
-    "רופאים לזכויות אדם"
-   ],
-   "evidence": [
-    "202507-our-genocide-heb-pdf#0021",
-    "202507-our-genocide-heb-pdf#0016",
-    "202601-living-hell-heb-pdf#0013",
-    "202601-living-hell-heb-pdf#0012",
-    "Displaced-communities-HEB-pdf#0002",
-    "Displaced-communities-HEB-pdf#0003",
-    "Displaced-communities-HEB-pdf#0054",
-    "Displaced-communities-HEB-pdf#0064",
-    "occupation-report-2025-pdf#0021",
-    "occupation-report-2025-pdf#0022",
-    "occupation-report-2025-pdf#0026",
-    "occupation-report-2025-pdf#0067",
-    "occupation-report-2025-pdf#0069",
-    "occupation-report-2025-pdf#0072",
-    "occupation-report-2025-pdf#0071",
-    "occupation-report-2025-pdf#0075",
-    "report-all-2024-pdf#0000",
-    "report-all-2024-pdf#0039",
-    "report-all-2024-pdf#0042",
-    "doc:202601-living-hell-heb-pdf",
-    "doc:report-all-2024-pdf"
    ],
    "support": 21
   },
@@ -10306,7 +10340,9 @@
    "name": "המועצות האזוריות",
    "type": "ORG",
    "aliases": [
-    "המועצות האזוריות"
+    "המועצות האזוריות",
+    "המועצות האזוריות היהודיות",
+    "המועצות האזוריות הישראליות"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0039",
@@ -10324,9 +10360,12 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0120",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0121",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0144"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0144",
+    "202103-this-is-ours-and-this-too-heb-pdf#0030",
+    "כרם-נבות-חקלאות-pdf#0058",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0055"
    ],
-   "support": 16
+   "support": 19
   },
   {
    "key": "יהודה",
@@ -11060,7 +11099,8 @@
    "name": "המשפט הבינלאומי",
    "type": "LAW",
    "aliases": [
-    "המשפט הבינלאומי"
+    "המשפט הבינלאומי",
+    "משפט הבינלאומי"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0025",
@@ -11076,9 +11116,16 @@
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0051",
     "occupation-report-2025-pdf#0067",
     "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0013",
-    "כרם-נבות-חקלאות-pdf#0037"
+    "כרם-נבות-חקלאות-pdf#0037",
+    "202507-our-genocide-heb-pdf#0018",
+    "Menachsim-Heb-Web-pdf#0003",
+    "Menachsim-Heb-Web-pdf#0018",
+    "Menachsim-Heb-Web-pdf#0024",
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0020",
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0018",
+    "כרם-נבות-חקלאות-pdf#0046"
    ],
-   "support": 14
+   "support": 21
   },
   {
    "key": "הר אדר",
@@ -11677,30 +11724,6 @@
    "support": 13
   },
   {
-   "key": "רשות הפלסטינית",
-   "name": "רשות הפלסטינית",
-   "type": "ORG",
-   "aliases": [
-    "רשות הפלסטינית"
-   ],
-   "evidence": [
-    "202101-this-is-apartheid-heb-pdf#0002",
-    "202101-this-is-apartheid-heb-pdf#0009",
-    "202101-this-is-apartheid-heb-pdf#0008",
-    "Menachsim-Heb-Web-pdf#0019",
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0005",
-    "occupation-report-2025-pdf#0027",
-    "occupation-report-2025-pdf#0059",
-    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0009",
-    "כרם-נבות-חקלאות-pdf#0053",
-    "כרם-נבות-חקלאות-pdf#0054",
-    "כרם-נבות-חקלאות-pdf#0117",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0138",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0149"
-   ],
-   "support": 13
-  },
-  {
    "key": "אי\"ש",
    "name": "אי\"ש",
    "type": "GPE",
@@ -11728,7 +11751,8 @@
    "name": "אלוף פיקוד המרכז",
    "type": "PERSON",
    "aliases": [
-    "אלוף פיקוד המרכז"
+    "אלוף פיקוד המרכז",
+    "אלוף פיקוד מרכז"
    ],
    "evidence": [
     "202111-state-business-heb-pdf#0045",
@@ -11742,9 +11766,17 @@
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0047",
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0048",
     "occupation-report-2025-pdf#0050",
-    "צהל-pdf#0019"
+    "צהל-pdf#0019",
+    "202103-this-is-ours-and-this-too-heb-pdf#0075",
+    "202103-this-is-ours-and-this-too-heb-pdf#0086",
+    "202111-state-business-heb-pdf#0012",
+    "Hafiha-HEB-pdf#0003",
+    "Hafiha-HEB-pdf#0010",
+    "Hafiha-HEB-pdf#0032",
+    "Hafiha-HEB-pdf#0038",
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0002"
    ],
-   "support": 12
+   "support": 20
   },
   {
    "key": "אש\"פ",
@@ -11844,6 +11876,7 @@
    "type": "ORG",
    "aliases": [
     "איחוד האירופי",
+    "האיחוד האירופאי",
     "האיחוד האירופי"
    ],
    "evidence": [
@@ -11859,9 +11892,10 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0161",
     "doc:202111-state-business-heb-pdf",
     "doc:fron-occupation-to-annexation-final-Hebrew-Web-pdf",
-    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0023"
+    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0023",
+    "occupation-report-2025-pdf#0018"
    ],
-   "support": 13
+   "support": 14
   },
   {
    "key": "הימ",
@@ -11937,7 +11971,8 @@
    "name": "חוות גלעד",
    "type": "LOCATION",
    "aliases": [
-    "חוות גלעד"
+    "חוות גלעד",
+    "חות גלעד"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0008",
@@ -11951,9 +11986,10 @@
     "202111-state-business-heb-pdf#0053",
     "Hafiha-HEB-pdf#0063",
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0032",
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0036"
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0036",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0039"
    ],
-   "support": 12
+   "support": 13
   },
   {
    "key": "חומש",
@@ -12044,29 +12080,6 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0082",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0099",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0135"
-   ],
-   "support": 12
-  },
-  {
-   "key": "מינהל האזרחי",
-   "name": "מינהל האזרחי",
-   "type": "ORG",
-   "aliases": [
-    "מינהל האזרחי"
-   ],
-   "evidence": [
-    "Hafiha-HEB-pdf#0030",
-    "Hafiha-HEB-pdf#0038",
-    "Menachsim-Heb-Web-pdf#0024",
-    "Menachsim-Heb-Web-pdf#0075",
-    "Menachsim-Heb-Web-pdf#0076",
-    "Menachsim-Heb-Web-pdf#0078",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0053",
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0024",
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0028",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0045",
-    "occupation-report-2025-pdf#0035",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0109"
    ],
    "support": 12
   },
@@ -12352,8 +12365,10 @@
    "name": "אמנת ז'נבה הרביעית",
    "type": "LAW",
    "aliases": [
+    "אמנת ג'נבה הרביעית",
     "אמנת ז'נבה הרביעית",
-    "אמנת ז'נובה הרביעית"
+    "אמנת ז'נובה הרביעית",
+    "אמנת זינבה הרביעית"
    ],
    "evidence": [
     "Displaced-communities-HEB-pdf#0073",
@@ -12367,9 +12382,14 @@
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0051",
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0053",
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0054",
-    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0021"
+    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0021",
+    "כרם-נבות-חקלאות-pdf#0037",
+    "כרם-נבות-חקלאות-pdf#0038",
+    "כרם-נבות-חקלאות-pdf#0045",
+    "Displaced-communities-HEB-pdf#0076",
+    "כרם-נבות-חקלאות-pdf#0114"
    ],
-   "support": 12
+   "support": 17
   },
   {
    "key": "אספר",
@@ -12508,6 +12528,8 @@
    "name": "הדין הבינלאומי",
    "type": "LAW",
    "aliases": [
+    "דין הבינלאומי",
+    "הדין בינלאומי",
     "הדין הבינלאומי"
    ],
    "evidence": [
@@ -12521,9 +12543,10 @@
     "occupation-report-2025-pdf#0012",
     "occupation-report-2025-pdf#0005",
     "occupation-report-2025-pdf#0030",
-    "משכוכית-דוח-pdf#0007"
+    "משכוכית-דוח-pdf#0007",
+    "occupation-report-2025-pdf#0036"
    ],
-   "support": 11
+   "support": 12
   },
   {
    "key": "ההסתדרות הציונית",
@@ -12602,7 +12625,8 @@
    "name": "המשטר הישראלי",
    "type": "ORG",
    "aliases": [
-    "המשטר הישראלי"
+    "המשטר הישראלי",
+    "משטר הישראלי"
    ],
    "evidence": [
     "202101-this-is-apartheid-heb-pdf#0006",
@@ -12615,9 +12639,11 @@
     "202507-our-genocide-heb-pdf#0087",
     "202507-our-genocide-heb-pdf#0089",
     "202601-living-hell-heb-pdf#0002",
-    "202601-living-hell-heb-pdf#0011"
+    "202601-living-hell-heb-pdf#0011",
+    "202101-this-is-apartheid-heb-pdf#0009",
+    "202412-unleashed-heb-pdf#0002"
    ],
-   "support": 11
+   "support": 13
   },
   {
    "key": "זיו שטהל",
@@ -13186,7 +13212,8 @@
    "name": "הפרקליטות הצבאית",
    "type": "ORG",
    "aliases": [
-    "הפרקליטות הצבאית"
+    "הפרקליטות הצבאית",
+    "פרקליטות הצבאית"
    ],
    "evidence": [
     "202507-our-genocide-heb-pdf#0079",
@@ -13198,9 +13225,10 @@
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0036",
     "occupation-report-2025-pdf#0025",
     "occupation-report-2025-pdf#0042",
-    "דוח-צווי-הפקעה-6-6-pdf#0012"
+    "דוח-צווי-הפקעה-6-6-pdf#0012",
+    "משכוכית-דוח-pdf#0022"
    ],
-   "support": 10
+   "support": 11
   },
   {
    "key": "חוות אברהמ",
@@ -13283,27 +13311,6 @@
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0098",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0099",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0137"
-   ],
-   "support": 10
-  },
-  {
-   "key": "יהודה והשומרונ",
-   "name": "יהודה והשומרון",
-   "type": "GPE",
-   "aliases": [
-    "יהודה והשומרון"
-   ],
-   "evidence": [
-    "Hafiha-HEB-pdf#0017",
-    "Menachsim-Heb-Web-pdf#0027",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0032",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0033",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0037",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0033",
-    "occupation-report-2025-pdf#0038",
-    "כרם-נבות-חקלאות-pdf#0057",
-    "כרם-נבות-חקלאות-pdf#0115",
-    "כרם-נבות-חקלאות-pdf#0126"
    ],
    "support": 10
   },
@@ -13831,8 +13838,14 @@
    "aliases": [
     "בית הדין הבין-לאומי לצדק",
     "בית הדין הבין-לאומי לצדק בהאג",
+    "בית הדין הבינלאומי",
+    "בית הדין הבינלאומי הפלילי",
     "בית הדין הבינלאומי לצדק",
     "בית הדין הבינלאומי לצדק בהאג",
+    "בית הדין הפלילי הבין-לאומי",
+    "בית הדין הפלילי הבין-לאומי בהאג",
+    "בית הדין הפלילי הבינלאומי",
+    "בית הדין הפלילי הבינלאומי בהאג",
     "בית-הדין הבינלאומי לצדק"
    ],
    "evidence": [
@@ -13855,9 +13868,16 @@
     "Displaced-communities-HEB-pdf#0076",
     "report-all-2024-pdf#0009",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0151",
-    "כרם-נבות-חקלאות-pdf#0038"
+    "כרם-נבות-חקלאות-pdf#0038",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0012",
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0054",
+    "202507-our-genocide-heb-pdf#0077",
+    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0024",
+    "Displaced-communities-HEB-pdf#0073",
+    "202507-our-genocide-heb-pdf#0080",
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0007"
    ],
-   "support": 20
+   "support": 27
   },
   {
    "key": "גבעת הראל",
@@ -14337,7 +14357,8 @@
    "name": "עיריית ירושלים",
    "type": "ORG",
    "aliases": [
-    "עיריית ירושלים"
+    "עיריית ירושלים",
+    "עריית ירושלים"
    ],
    "evidence": [
     "202101-this-is-apartheid-heb-pdf#0008",
@@ -14348,9 +14369,10 @@
     "occupation-report-2025-pdf#0059",
     "occupation-report-2025-pdf#0058",
     "occupation-report-2025-pdf#0062",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0165"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0165",
+    "Menachsim-Heb-Web-pdf#0074"
    ],
-   "support": 9
+   "support": 10
   },
   {
    "key": "עמ ישראל",
@@ -14704,25 +14726,6 @@
     "Displaced-communities-HEB-pdf#0067",
     "Displaced-communities-HEB-pdf#0070",
     "Displaced-communities-HEB-pdf#0068"
-   ],
-   "support": 8
-  },
-  {
-   "key": "אלופ פיקוד מרכז",
-   "name": "אלוף פיקוד מרכז",
-   "type": "PERSON",
-   "aliases": [
-    "אלוף פיקוד מרכז"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0075",
-    "202103-this-is-ours-and-this-too-heb-pdf#0086",
-    "202111-state-business-heb-pdf#0012",
-    "Hafiha-HEB-pdf#0003",
-    "Hafiha-HEB-pdf#0010",
-    "Hafiha-HEB-pdf#0032",
-    "Hafiha-HEB-pdf#0038",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0002"
    ],
    "support": 8
   },
@@ -15906,7 +15909,8 @@
    "name": "אביחי מנדלבליט",
    "type": "PERSON",
    "aliases": [
-    "אביחי מנדלבליט"
+    "אביחי מנדלבליט",
+    "ד\"ר אביחי מנדלבליט"
    ],
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0003",
@@ -15915,9 +15919,10 @@
     "YeshDin-Kramim-2-22-Heb-04-pdf#0054",
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0021",
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0023",
-    "דוח-צווי-הפקעה-6-6-pdf#0017"
+    "דוח-צווי-הפקעה-6-6-pdf#0017",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0036"
    ],
-   "support": 7
+   "support": 8
   },
   {
    "key": "אביתר",
@@ -16330,6 +16335,7 @@
    "name": "הרודיון",
    "type": "LOCATION",
    "aliases": [
+    "ההרודיון",
     "הרודיון"
    ],
    "evidence": [
@@ -16339,9 +16345,11 @@
     "Hafiha-HEB-pdf#0061",
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0032",
     "report-all-2024-pdf#0020",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0137"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0137",
+    "Menachsim-Heb-Web-pdf#0060",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0078"
    ],
-   "support": 7
+   "support": 9
   },
   {
    "key": "חבל עזה",
@@ -16726,6 +16734,7 @@
    "name": "משטר האפרטהייד",
    "type": "ORG",
    "aliases": [
+    "משטר אפרטהייד",
     "משטר האפרטהייד"
    ],
    "evidence": [
@@ -16735,9 +16744,13 @@
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0009",
     "202507-our-genocide-heb-pdf#0005",
     "202507-our-genocide-heb-pdf#0003",
-    "shepherding-outposts-HEB-pdf#0004"
+    "shepherding-outposts-HEB-pdf#0004",
+    "202103-this-is-ours-and-this-too-heb-pdf#0090",
+    "202507-our-genocide-heb-pdf#0006",
+    "202507-our-genocide-heb-pdf#0007",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0020"
    ],
-   "support": 7
+   "support": 11
   },
   {
    "key": "משטר האפרטהייד הישראלי",
@@ -16754,24 +16767,6 @@
     "202507-our-genocide-heb-pdf#0072",
     "202507-our-genocide-heb-pdf#0082",
     "202601-living-hell-heb-pdf#0001"
-   ],
-   "support": 7
-  },
-  {
-   "key": "משפט הבינלאומי",
-   "name": "משפט הבינלאומי",
-   "type": "LAW",
-   "aliases": [
-    "משפט הבינלאומי"
-   ],
-   "evidence": [
-    "202507-our-genocide-heb-pdf#0018",
-    "Menachsim-Heb-Web-pdf#0003",
-    "Menachsim-Heb-Web-pdf#0018",
-    "Menachsim-Heb-Web-pdf#0024",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0020",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0018",
-    "כרם-נבות-חקלאות-pdf#0046"
    ],
    "support": 7
   },
@@ -17680,33 +17675,6 @@
    "support": 6
   },
   {
-   "key": "בית הדינ הבינלאומי הפלילי",
-   "name": "בית הדין הבינלאומי הפלילי",
-   "type": "ORG",
-   "aliases": [
-    "בית הדין הבינלאומי הפלילי",
-    "בית הדין הפלילי הבין-לאומי",
-    "בית הדין הפלילי הבין-לאומי בהאג",
-    "בית הדין הפלילי הבינלאומי",
-    "בית הדין הפלילי הבינלאומי בהאג"
-   ],
-   "evidence": [
-    "202507-our-genocide-heb-pdf#0088",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0010",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0012",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0053",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0054",
-    "doc:202507-our-genocide-heb-pdf",
-    "202507-our-genocide-heb-pdf#0077",
-    "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0024",
-    "Displaced-communities-HEB-pdf#0073",
-    "report-all-2024-pdf#0012",
-    "report-all-2024-pdf#0009",
-    "202507-our-genocide-heb-pdf#0080"
-   ],
-   "support": 12
-  },
-  {
    "key": "בית לאהיא",
    "name": "בית לאהיא",
    "type": "LOCATION",
@@ -17900,7 +17868,8 @@
    "name": "הציונות הדתית",
    "type": "ORG",
    "aliases": [
-    "הציונות הדתית"
+    "הציונות הדתית",
+    "ציונות הדתית"
    ],
    "evidence": [
     "Hafiha-HEB-pdf#0012",
@@ -17908,9 +17877,11 @@
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0009",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0028",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0032",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0033"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0033",
+    "Hafiha-HEB-pdf#0015",
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0010"
    ],
-   "support": 6
+   "support": 8
   },
   {
    "key": "הר ברכה",
@@ -18037,23 +18008,6 @@
    "support": 6
   },
   {
-   "key": "חטיבה להתיישבות",
-   "name": "חטיבה להתיישבות",
-   "type": "ORG",
-   "aliases": [
-    "חטיבה להתיישבות"
-   ],
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0002",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0017",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0028",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0039",
-    "כרם-נבות-חקלאות-pdf#0043",
-    "משכוכית-דוח-pdf#0009"
-   ],
-   "support": 6
-  },
-  {
    "key": "חיננית",
    "name": "חיננית",
    "type": "GPE",
@@ -18143,6 +18097,7 @@
    "name": "יונתן קנוניץ'",
    "type": "PERSON",
    "aliases": [
+    "יונתן קנוניץ",
     "יונתן קנוניץ'"
    ],
    "evidence": [
@@ -18151,9 +18106,11 @@
     "shepherding-outposts-HEB-pdf#0001",
     "doc:Displaced-communities-HEB-pdf",
     "doc:YeshDin-Kramim-2-22-Heb-04-pdf",
-    "doc:shepherding-outposts-HEB-pdf"
+    "doc:shepherding-outposts-HEB-pdf",
+    "Menachsim-Heb-Web-pdf#0000",
+    "Menachsim-Heb-Web-pdf#0079"
    ],
-   "support": 6
+   "support": 8
   },
   {
    "key": "כביש 5",
@@ -18721,7 +18678,8 @@
    "name": "קמר מישרקי-אסעד",
    "type": "PERSON",
    "aliases": [
-    "קמר מישרקי-אסעד"
+    "קמר מישרקי-אסעד",
+    "קמר משרקי-אסעד"
    ],
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0000",
@@ -18729,9 +18687,11 @@
     "כרם-נבות-חקלאות-pdf#0026",
     "כרם-נבות-חקלאות-pdf#0113",
     "doc:דוח-צווי-הפקעה-6-6-pdf",
-    "doc:כרם-נבות-חקלאות-pdf"
+    "doc:כרם-נבות-חקלאות-pdf",
+    "202103-this-is-ours-and-this-too-heb-pdf#0000",
+    "doc:202103-this-is-ours-and-this-too-heb-pdf"
    ],
-   "support": 6
+   "support": 8
   },
   {
    "key": "שבעה באוקטובר 2023",
@@ -18789,6 +18749,7 @@
    "name": "שטחים הכבושים",
    "type": "LOCATION",
    "aliases": [
+    "השטחים הכבושים",
     "שטחים הכבושים"
    ],
    "evidence": [
@@ -18797,9 +18758,10 @@
     "YeshDin-Kramim-2-22-Heb-04-pdf#0002",
     "YeshDin-Kramim-2-22-Heb-04-pdf#0052",
     "shepherding-outposts-HEB-pdf#0018",
-    "shepherding-outposts-HEB-pdf#0055"
+    "shepherding-outposts-HEB-pdf#0055",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0048"
    ],
-   "support": 6
+   "support": 7
   },
   {
    "key": "שירות בתי הסוהר",
@@ -19150,16 +19112,18 @@
    "name": "א-לובן א-שרקייה",
    "type": "GPE",
    "aliases": [
-    "א-לובן א-שרקייה"
+    "א-לובן א-שרקייה",
+    "כפר א-לובן א-שרקייה"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0068",
     "202103-this-is-ours-and-this-too-heb-pdf#0076",
     "202103-this-is-ours-and-this-too-heb-pdf#0080",
     "202103-this-is-ours-and-this-too-heb-pdf#0081",
-    "202103-this-is-ours-and-this-too-heb-pdf#0078"
+    "202103-this-is-ours-and-this-too-heb-pdf#0078",
+    "202103-this-is-ours-and-this-too-heb-pdf#0070"
    ],
-   "support": 5
+   "support": 6
   },
   {
    "key": "אברהמ",
@@ -19270,22 +19234,6 @@
     "Hafiha-HEB-pdf#0043",
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0035",
     "occupation-report-2025-pdf#0031"
-   ],
-   "support": 5
-  },
-  {
-   "key": "איז\"ש",
-   "name": "איז\"ש",
-   "type": "GPE",
-   "aliases": [
-    "איז\"ש"
-   ],
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0073",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0093",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0122",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
    "support": 5
   },
@@ -21048,7 +20996,8 @@
    "type": "LOCATION",
    "aliases": [
     "תל שילה-ח'רבת סילון",
-    "תל שילה-חרבת סילון"
+    "תל שילה-חרבת סילון",
+    "תל-שילה-ח'רבת סילון"
    ],
    "evidence": [
     "Menachsim-Heb-Web-pdf#0030",
@@ -21057,25 +21006,14 @@
     "Menachsim-Heb-Web-pdf#0073",
     "Menachsim-Heb-Web-pdf#0077",
     "Menachsim-Heb-Web-pdf#0000",
-    "Menachsim-Heb-Web-pdf#0047"
-   ],
-   "support": 7
-  },
-  {
-   "key": "תל-שילה-ח'רבת סילונ",
-   "name": "תל-שילה-ח'רבת סילון",
-   "type": "LOCATION",
-   "aliases": [
-    "תל-שילה-ח'רבת סילון"
-   ],
-   "evidence": [
+    "Menachsim-Heb-Web-pdf#0047",
     "Menachsim-Heb-Web-pdf#0069",
     "Menachsim-Heb-Web-pdf#0072",
     "Menachsim-Heb-Web-pdf#0070",
     "Menachsim-Heb-Web-pdf#0071",
     "Menachsim-Heb-Web-pdf#0076"
    ],
-   "support": 5
+   "support": 12
   },
   {
    "key": "תפוח מערב",
@@ -21536,15 +21474,19 @@
    "name": "ארגון מתנדבים לזכויות אדם",
    "type": "ORG",
    "aliases": [
-    "ארגון מתנדבים לזכויות אדם"
+    "ארגון מתנדבים לזכויות אדם",
+    "יש דין ארגון מתנדבים לזכויות אדם"
    ],
    "evidence": [
     "Displaced-communities-HEB-pdf#0023",
     "Displaced-communities-HEB-pdf#0069",
     "Displaced-communities-HEB-pdf#0072",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0031"
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0031",
+    "Displaced-communities-HEB-pdf#0048",
+    "Displaced-communities-HEB-pdf#0053",
+    "Displaced-communities-HEB-pdf#0068"
    ],
-   "support": 4
+   "support": 7
   },
   {
    "key": "אשיפ",
@@ -22342,15 +22284,17 @@
    "name": "חוות צאן קדר",
    "type": "FACILITY",
    "aliases": [
-    "חוות צאן קדר"
+    "חוות צאן קדר",
+    "חוות צאן קידר"
    ],
    "evidence": [
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0043",
     "shepherding-outposts-HEB-pdf#0019",
     "shepherding-outposts-HEB-pdf#0018",
-    "shepherding-outposts-HEB-pdf#0025"
+    "shepherding-outposts-HEB-pdf#0025",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0036"
    ],
-   "support": 4
+   "support": 5
   },
   {
    "key": "חוות תאנה",
@@ -22877,21 +22821,6 @@
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0043",
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0039",
     "doc:a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf"
-   ],
-   "support": 4
-  },
-  {
-   "key": "משטר אפרטהייד",
-   "name": "משטר אפרטהייד",
-   "type": "CONCEPT",
-   "aliases": [
-    "משטר אפרטהייד"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0090",
-    "202507-our-genocide-heb-pdf#0006",
-    "202507-our-genocide-heb-pdf#0007",
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0020"
    ],
    "support": 4
   },
@@ -23440,15 +23369,20 @@
    "name": "קהילות פלסטיניות",
    "type": "PERSON",
    "aliases": [
+    "הקהילות הפלסטיניות",
+    "קהילות הפלסטיניות",
     "קהילות פלסטיניות"
    ],
    "evidence": [
     "202111-state-business-heb-pdf#0052",
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0023",
     "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0015",
-    "משכוכית-דוח-pdf#0004"
+    "משכוכית-דוח-pdf#0004",
+    "202507-our-genocide-heb-pdf#0043",
+    "Displaced-communities-HEB-pdf#0075",
+    "Displaced-communities-HEB-pdf#0083"
    ],
-   "support": 4
+   "support": 7
   },
   {
    "key": "קוסרה",
@@ -24205,14 +24139,16 @@
    "name": "The New York Times",
    "type": "ORG",
    "aliases": [
+    "New York Times",
     "The New York Times"
    ],
    "evidence": [
     "Hafiha-HEB-pdf#0035",
     "Hafiha-HEB-pdf#0039",
-    "report-all-2024-pdf#0041"
+    "report-all-2024-pdf#0041",
+    "Displaced-communities-HEB-pdf#0047"
    ],
-   "support": 3
+   "support": 4
   },
   {
    "key": "the rockefeller brothers fund",
@@ -24625,14 +24561,16 @@
    "name": "אמיר אל-פאח'ורי",
    "type": "PERSON",
    "aliases": [
-    "אמיר אל-פאח'ורי"
+    "אמיר אל-פאח'ורי",
+    "אמיר אל-פאחורי"
    ],
    "evidence": [
     "202412-unleashed-heb-pdf#0006",
     "202412-unleashed-heb-pdf#0010",
-    "202412-unleashed-heb-pdf#0016"
+    "202412-unleashed-heb-pdf#0016",
+    "202412-unleashed-heb-pdf#0005"
    ],
-   "support": 3
+   "support": 4
   },
   {
    "key": "אמנת האג משנת 1954",
@@ -24659,20 +24597,6 @@
     "202507-our-genocide-heb-pdf#0002",
     "202507-our-genocide-heb-pdf#0009",
     "202507-our-genocide-heb-pdf#0011"
-   ],
-   "support": 3
-  },
-  {
-   "key": "אמנת זינבה הרביעית",
-   "name": "אמנת זינבה הרביעית",
-   "type": "LAW",
-   "aliases": [
-    "אמנת זינבה הרביעית"
-   ],
-   "evidence": [
-    "כרם-נבות-חקלאות-pdf#0037",
-    "כרם-נבות-חקלאות-pdf#0038",
-    "כרם-נבות-חקלאות-pdf#0045"
    ],
    "support": 3
   },
@@ -26554,20 +26478,6 @@
    "support": 3
   },
   {
-   "key": "יש דינ ארגונ מתנדבימ לזכויות אדמ",
-   "name": "יש דין ארגון מתנדבים לזכויות אדם",
-   "type": "ORG",
-   "aliases": [
-    "יש דין ארגון מתנדבים לזכויות אדם"
-   ],
-   "evidence": [
-    "Displaced-communities-HEB-pdf#0048",
-    "Displaced-communities-HEB-pdf#0053",
-    "Displaced-communities-HEB-pdf#0068"
-   ],
-   "support": 3
-  },
-  {
    "key": "ישי שנידור",
    "name": "ישי שנידור",
    "type": "PERSON",
@@ -27912,14 +27822,17 @@
    "name": "עיר העתיקה",
    "type": "LOCATION",
    "aliases": [
+    "העיר העתיקה",
     "עיר העתיקה"
    ],
    "evidence": [
     "occupation-report-2025-pdf#0062",
     "report-all-2024-pdf#0031",
-    "report-all-2024-pdf#0030"
+    "report-all-2024-pdf#0030",
+    "report-all-2024-pdf#0040",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0163"
    ],
-   "support": 3
+   "support": 5
   },
   {
    "key": "עיראק",
@@ -28164,14 +28077,16 @@
    "name": "פשעים נגד האנושות",
    "type": "CONCEPT",
    "aliases": [
+    "פשע נגד האנושות",
     "פשעים נגד האנושות"
    ],
    "evidence": [
     "Displaced-communities-HEB-pdf#0079",
     "Displaced-communities-HEB-pdf#0080",
-    "occupation-report-2025-pdf#0001"
+    "occupation-report-2025-pdf#0001",
+    "Displaced-communities-HEB-pdf#0073"
    ],
-   "support": 3
+   "support": 4
   },
   {
    "key": "פתחת רפיח",
@@ -30628,13 +30543,15 @@
    "name": "אייל זמיר",
    "type": "PERSON",
    "aliases": [
-    "אייל זמיר"
+    "אייל זמיר",
+    "איל זמיר"
    ],
    "evidence": [
     "202507-our-genocide-heb-pdf#0046",
-    "כרם-נבות-חקלאות-pdf#0114"
+    "כרם-נבות-חקלאות-pdf#0114",
+    "דוח-צווי-הפקעה-6-6-pdf#0017"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "איילה זוסמנ",
@@ -30862,7 +30779,10 @@
    "name": "אלימות מתנחלים",
    "type": "CONCEPT",
    "aliases": [
-    "אלימות מתנחלים"
+    "אלימות המתנחלים",
+    "אלימות מתנחלים",
+    "אלימות של מתנחלים",
+    "מעשי אלימות של מתנחלים"
    ],
    "evidence": [
     "Hafiha-HEB-pdf#0041",
@@ -30968,26 +30888,15 @@
    "name": "אמנה בינלאומית בדבר זכויות כלכליות, חברות ותרבותיות",
    "type": "LAW",
    "aliases": [
+    "אמנה בדבר זכויות כלכליות, חברתיות ותרבותיות",
     "אמנה בינלאומית בדבר זכויות כלכליות, חברות ותרבותיות"
    ],
    "evidence": [
     "Menachsim-Heb-Web-pdf#0014",
-    "Menachsim-Heb-Web-pdf#0018"
+    "Menachsim-Heb-Web-pdf#0018",
+    "כרם-נבות-חקלאות-pdf#0115"
    ],
-   "support": 2
-  },
-  {
-   "key": "אמנת ג'נבה הרביעית",
-   "name": "אמנת ג'נבה הרביעית",
-   "type": "LAW",
-   "aliases": [
-    "אמנת ג'נבה הרביעית"
-   ],
-   "evidence": [
-    "Displaced-communities-HEB-pdf#0076",
-    "כרם-נבות-חקלאות-pdf#0114"
-   ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "אמנת האג בדבר הגנה על נכסי תרבות בעת סכסוכ מזוינ",
@@ -31267,13 +31176,15 @@
    "name": "ארץ זית שמן מובחר",
    "type": "ORG",
    "aliases": [
-    "ארץ זית שמן מובחר"
+    "ארץ זית שמן מובחר",
+    "ארץ זית שמן מובחר בע\"מ"
    ],
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0036",
-    "כרם-נבות-חקלאות-pdf#0109"
+    "כרם-נבות-חקלאות-pdf#0109",
+    "202103-this-is-ours-and-this-too-heb-pdf#0085"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "ארצנו",
@@ -31558,19 +31469,6 @@
    "evidence": [
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0033",
     "דוח-צווי-הפקעה-6-6-pdf#0005"
-   ],
-   "support": 2
-  },
-  {
-   "key": "בית משפט העליונ",
-   "name": "בית משפט העליון",
-   "type": "ORG",
-   "aliases": [
-    "בית משפט העליון"
-   ],
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0041",
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0048"
    ],
    "support": 2
   },
@@ -32633,13 +32531,15 @@
    "name": "האפוטרופוס הכללי",
    "type": "ORG",
    "aliases": [
+    "אפוטרופוס הכללי",
     "האפוטרופוס הכללי"
    ],
    "evidence": [
     "occupation-report-2025-pdf#0055",
-    "report-all-2024-pdf#0030"
+    "report-all-2024-pdf#0030",
+    "report-all-2024-pdf#0029"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "הבית האדומ",
@@ -32755,19 +32655,6 @@
    "evidence": [
     "Hafiha-HEB-pdf#0056",
     "Hafiha-HEB-pdf#0052"
-   ],
-   "support": 2
-  },
-  {
-   "key": "ההרודיונ",
-   "name": "ההרודיון",
-   "type": "LOCATION",
-   "aliases": [
-    "ההרודיון"
-   ],
-   "evidence": [
-    "Menachsim-Heb-Web-pdf#0060",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0078"
    ],
    "support": 2
   },
@@ -33037,19 +32924,6 @@
    "support": 2
   },
   {
-   "key": "המועצות האזוריות הישראליות",
-   "name": "המועצות האזוריות הישראליות",
-   "type": "ORG",
-   "aliases": [
-    "המועצות האזוריות הישראליות"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0030",
-    "כרם-נבות-חקלאות-pdf#0058"
-   ],
-   "support": 2
-  },
-  {
    "key": "המחלקה להתיישבות",
    "name": "המחלקה להתיישבות",
    "type": "ORG",
@@ -33173,26 +33047,16 @@
    "name": "המפקד הצבאי בגדה המערבית",
    "type": "PERSON",
    "aliases": [
-    "המפקד הצבאי בגדה המערבית"
-   ],
-   "evidence": [
-    "Menachsim-Heb-Web-pdf#0031",
-    "occupation-report-2025-pdf#0034"
-   ],
-   "support": 2
-  },
-  {
-   "key": "המפקד הצבאי של הגדה המערבית",
-   "name": "המפקד הצבאי של הגדה המערבית",
-   "type": "PERSON",
-   "aliases": [
+    "המפקד הצבאי בגדה המערבית",
     "המפקד הצבאי של הגדה המערבית"
    ],
    "evidence": [
+    "Menachsim-Heb-Web-pdf#0031",
+    "occupation-report-2025-pdf#0034",
     "Menachsim-Heb-Web-pdf#0077",
     "דוח-צווי-הפקעה-6-6-pdf#0039"
    ],
-   "support": 2
+   "support": 4
   },
   {
    "key": "המרכז",
@@ -33468,19 +33332,6 @@
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0027",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0045"
-   ],
-   "support": 2
-  },
-  {
-   "key": "העיר העתיקה",
-   "name": "העיר העתיקה",
-   "type": "LOCATION",
-   "aliases": [
-    "העיר העתיקה"
-   ],
-   "evidence": [
-    "report-all-2024-pdf#0040",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0163"
    ],
    "support": 2
   },
@@ -34176,6 +34027,7 @@
    "name": "זה שלנו, זה גם כן",
    "type": "CONCEPT",
    "aliases": [
+    "זה שלנו זה גם כן",
     "זה שלנו, זה גם כן"
    ],
    "evidence": [
@@ -34871,13 +34723,15 @@
    "name": "חירבת א-תעלה",
    "type": "LOCATION",
    "aliases": [
+    "ח'ירבת א-תעלה",
     "חירבת א-תעלה"
    ],
    "evidence": [
     "202111-state-business-heb-pdf#0021",
-    "202111-state-business-heb-pdf#0020"
+    "202111-state-business-heb-pdf#0020",
+    "202111-state-business-heb-pdf#0010"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "חירבת טובא",
@@ -35439,19 +35293,6 @@
    "support": 2
   },
   {
-   "key": "יונתנ קנוניצ",
-   "name": "יונתן קנוניץ",
-   "type": "PERSON",
-   "aliases": [
-    "יונתן קנוניץ"
-   ],
-   "evidence": [
-    "Menachsim-Heb-Web-pdf#0000",
-    "Menachsim-Heb-Web-pdf#0079"
-   ],
-   "support": 2
-  },
-  {
    "key": "יוסי דגנ",
    "name": "יוסי דגן",
    "type": "PERSON",
@@ -35575,13 +35416,15 @@
    "name": "יישובים ערביים",
    "type": "GPE",
    "aliases": [
+    "יישובים הערביים",
     "יישובים ערביים"
    ],
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0125",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0124"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0124",
+    "202103-this-is-ours-and-this-too-heb-pdf#0037"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "יישובימ פלסטיניימ",
@@ -37552,19 +37395,6 @@
    "support": 2
   },
   {
-   "key": "משטר הישראלי",
-   "name": "משטר הישראלי",
-   "type": "ORG",
-   "aliases": [
-    "משטר הישראלי"
-   ],
-   "evidence": [
-    "202101-this-is-apartheid-heb-pdf#0009",
-    "202412-unleashed-heb-pdf#0002"
-   ],
-   "support": 2
-  },
-  {
    "key": "משפחת ג'אדאללה-מוחמד",
    "name": "משפחת ג'אדאללה-מוחמד",
    "type": "PERSON",
@@ -37582,13 +37412,15 @@
    "name": "משפט הישראלי",
    "type": "LAW",
    "aliases": [
+    "המשפט הישראלי",
     "משפט הישראלי"
    ],
    "evidence": [
     "Menachsim-Heb-Web-pdf#0024",
-    "occupation-report-2025-pdf#0077"
+    "occupation-report-2025-pdf#0077",
+    "report-all-2024-pdf#0024"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "משק המימ",
@@ -37803,13 +37635,15 @@
    "name": "מתכננים למען זכויות תכנון",
    "type": "ORG",
    "aliases": [
+    "במקום - מתכננים למען זכויות תכנון",
     "מתכננים למען זכויות תכנון"
    ],
    "evidence": [
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0003",
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0023"
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0023",
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0047"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "מתנחלימ קיצונימ",
@@ -39595,19 +39429,6 @@
    "support": 2
   },
   {
-   "key": "ציונות הדתית",
-   "name": "ציונות הדתית",
-   "type": "ORG",
-   "aliases": [
-    "ציונות הדתית"
-   ],
-   "evidence": [
-    "Hafiha-HEB-pdf#0015",
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0010"
-   ],
-   "support": 2
-  },
-  {
    "key": "ציר אלונ",
    "name": "ציר אלון",
    "type": "LOCATION",
@@ -39682,19 +39503,6 @@
    "evidence": [
     "report-all-2024-pdf#0030",
     "report-all-2024-pdf#0035"
-   ],
-   "support": 2
-  },
-  {
-   "key": "קהילות הפלסטיניות",
-   "name": "קהילות הפלסטיניות",
-   "type": "ORG",
-   "aliases": [
-    "קהילות הפלסטיניות"
-   ],
-   "evidence": [
-    "202507-our-genocide-heb-pdf#0043",
-    "Displaced-communities-HEB-pdf#0075"
    ],
    "support": 2
   },
@@ -39868,30 +39676,19 @@
    "support": 2
   },
   {
-   "key": "קמר משרקי-אסעד",
-   "name": "קמר משרקי-אסעד",
-   "type": "PERSON",
-   "aliases": [
-    "קמר משרקי-אסעד"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0000",
-    "doc:202103-this-is-ours-and-this-too-heb-pdf"
-   ],
-   "support": 2
-  },
-  {
    "key": "קרית גת",
    "name": "קרית גת",
    "type": "GPE",
    "aliases": [
+    "קריית גת",
     "קרית גת"
    ],
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0087",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0088"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0088",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0090"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "קרנ האוכלוסינ של האו\"מ",
@@ -48262,12 +48059,14 @@
    "name": "6 המועצות האזוריות היהודיות",
    "type": "ORG",
    "aliases": [
-    "6 המועצות האזוריות היהודיות"
+    "6 המועצות האזוריות היהודיות",
+    "שש המועצות האזוריות היהודיות"
    ],
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0061"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0061",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0024"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "6 יישובי מגילות ימ המלח",
@@ -50594,18 +50393,6 @@
    ],
    "evidence": [
     "shepherding-outposts-HEB-pdf#0001"
-   ],
-   "support": 1
-  },
-  {
-   "key": "new york times",
-   "name": "New York Times",
-   "type": "ORG",
-   "aliases": [
-    "New York Times"
-   ],
-   "evidence": [
-    "Displaced-communities-HEB-pdf#0047"
    ],
    "support": 1
   },
@@ -53910,18 +53697,6 @@
    "support": 1
   },
   {
-   "key": "איל זמיר",
-   "name": "איל זמיר",
-   "type": "PERSON",
-   "aliases": [
-    "איל זמיר"
-   ],
-   "evidence": [
-    "דוח-צווי-הפקעה-6-6-pdf#0017"
-   ],
-   "support": 1
-  },
-  {
    "key": "איליה קפיטולינה",
    "name": "איליה קפיטולינה",
    "type": "GPE",
@@ -55362,18 +55137,6 @@
    "support": 1
   },
   {
-   "key": "אמיר אל-פאחורי",
-   "name": "אמיר אל-פאחורי",
-   "type": "PERSON",
-   "aliases": [
-    "אמיר אל-פאחורי"
-   ],
-   "evidence": [
-    "202412-unleashed-heb-pdf#0005"
-   ],
-   "support": 1
-  },
-  {
    "key": "אמיר אלשטיינ",
    "name": "אמיר אלשטיין",
    "type": "PERSON",
@@ -55410,18 +55173,6 @@
     "דוח-צווי-הפקעה-6-6-pdf#0014"
    ],
    "support": 2
-  },
-  {
-   "key": "אמנה בדבר זכויות כלכליות, חברתיות ותרבותיות",
-   "name": "אמנה בדבר זכויות כלכליות, חברתיות ותרבותיות",
-   "type": "LAW",
-   "aliases": [
-    "אמנה בדבר זכויות כלכליות, חברתיות ותרבותיות"
-   ],
-   "evidence": [
-    "כרם-נבות-חקלאות-pdf#0115"
-   ],
-   "support": 1
   },
   {
    "key": "אמנונ האג",
@@ -55976,18 +55727,6 @@
    ],
    "evidence": [
     "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0018"
-   ],
-   "support": 1
-  },
-  {
-   "key": "אפוטרופוס הכללי",
-   "name": "אפוטרופוס הכללי",
-   "type": "ORG",
-   "aliases": [
-    "אפוטרופוס הכללי"
-   ],
-   "evidence": [
-    "report-all-2024-pdf#0029"
    ],
    "support": 1
   },
@@ -56780,18 +56519,6 @@
    ],
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0041"
-   ],
-   "support": 1
-  },
-  {
-   "key": "ארצ זית שמנ מובחר בע\"מ",
-   "name": "ארץ זית שמן מובחר בע\"מ",
-   "type": "ORG",
-   "aliases": [
-    "ארץ זית שמן מובחר בע\"מ"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0085"
    ],
    "support": 1
   },
@@ -58584,18 +58311,6 @@
    "support": 1
   },
   {
-   "key": "בית הדינ הבינלאומי",
-   "name": "בית הדין הבינלאומי",
-   "type": "ORG",
-   "aliases": [
-    "בית הדין הבינלאומי"
-   ],
-   "evidence": [
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0007"
-   ],
-   "support": 1
-  },
-  {
    "key": "בית הדינ לענייני מקרקעינ",
    "name": "בית הדין לענייני מקרקעין",
    "type": "FACILITY",
@@ -59008,24 +58723,14 @@
    "name": "בית כנסת \"שלום על ישראל\"",
    "type": "FACILITY",
    "aliases": [
-    "בית כנסת \"שלום על ישראל\""
-   ],
-   "evidence": [
-    "דוח-צווי-הפקעה-6-6-pdf#0043"
-   ],
-   "support": 1
-  },
-  {
-   "key": "בית כנסת \"שלומ על ישראל\" ביריחו",
-   "name": "בית כנסת \"שלום על ישראל\" ביריחו",
-   "type": "FACILITY",
-   "aliases": [
+    "בית כנסת \"שלום על ישראל\"",
     "בית כנסת \"שלום על ישראל\" ביריחו"
    ],
    "evidence": [
+    "דוח-צווי-הפקעה-6-6-pdf#0043",
     "דוח-צווי-הפקעה-6-6-pdf#0030"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "בית כנסת ה'תל אדיר",
@@ -59318,18 +59023,6 @@
    "support": 2
   },
   {
-   "key": "במקומ - מתכננימ למענ זכויות תכנונ",
-   "name": "במקום - מתכננים למען זכויות תכנון",
-   "type": "ORG",
-   "aliases": [
-    "במקום - מתכננים למען זכויות תכנון"
-   ],
-   "evidence": [
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0047"
-   ],
-   "support": 1
-  },
-  {
    "key": "במקומ - מתכננימ למענ זכויות תכנונ ואח'",
    "name": "במקום – מתכננים למען זכויות תכנון ואח'",
    "type": "ORG",
@@ -59562,12 +59255,14 @@
    "name": "בנייה הפלסטינית",
    "type": "CONCEPT",
    "aliases": [
-    "בנייה הפלסטינית"
+    "בנייה הפלסטינית",
+    "בנייה פלסטינית"
    ],
    "evidence": [
-    "Hafiha-HEB-pdf#0024"
+    "Hafiha-HEB-pdf#0024",
+    "Hafiha-HEB-pdf#0010"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "בנייה ופיתוח פלסטינימ",
@@ -59578,18 +59273,6 @@
    ],
    "evidence": [
     "Hafiha-HEB-pdf#0024"
-   ],
-   "support": 1
-  },
-  {
-   "key": "בנייה פלסטינית",
-   "name": "בנייה פלסטינית",
-   "type": "CONCEPT",
-   "aliases": [
-    "בנייה פלסטינית"
-   ],
-   "evidence": [
-    "Hafiha-HEB-pdf#0010"
    ],
    "support": 1
   },
@@ -59794,18 +59477,6 @@
    ],
    "evidence": [
     "202507-our-genocide-heb-pdf#0027"
-   ],
-   "support": 1
-  },
-  {
-   "key": "בצלאל סמוטריצ",
-   "name": "בצלאל סמוטריץ",
-   "type": "PERSON",
-   "aliases": [
-    "בצלאל סמוטריץ"
-   ],
-   "evidence": [
-    "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0002"
    ],
    "support": 1
   },
@@ -61985,18 +61656,6 @@
    "support": 1
   },
   {
-   "key": "ד\"ר אביחי מנדלבליט",
-   "name": "ד\"ר אביחי מנדלבליט",
-   "type": "PERSON",
-   "aliases": [
-    "ד\"ר אביחי מנדלבליט"
-   ],
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0036"
-   ],
-   "support": 1
-  },
-  {
    "key": "ד\"ר בילאל יונס",
    "name": "ד\"ר בילאל יונס",
    "type": "PERSON",
@@ -62837,18 +62496,6 @@
    "support": 1
   },
   {
-   "key": "דינ הבינלאומי",
-   "name": "דין הבינלאומי",
-   "type": "LAW",
-   "aliases": [
-    "דין הבינלאומי"
-   ],
-   "evidence": [
-    "occupation-report-2025-pdf#0036"
-   ],
-   "support": 1
-  },
-  {
    "key": "דינ הירדני",
    "name": "דין הירדני",
    "type": "LAW",
@@ -63613,18 +63260,6 @@
    ],
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0187"
-   ],
-   "support": 1
-  },
-  {
-   "key": "האיחוד האירופאי",
-   "name": "האיחוד האירופאי",
-   "type": "ORG",
-   "aliases": [
-    "האיחוד האירופאי"
-   ],
-   "evidence": [
-    "occupation-report-2025-pdf#0018"
    ],
    "support": 1
   },
@@ -64481,18 +64116,6 @@
    "support": 1
   },
   {
-   "key": "הוועד הציבורי נגד עינויימ",
-   "name": "הוועד הציבורי נגד עינויים",
-   "type": "ORG",
-   "aliases": [
-    "הוועד הציבורי נגד עינויים"
-   ],
-   "evidence": [
-    "occupation-report-2025-pdf#0067"
-   ],
-   "support": 1
-  },
-  {
    "key": "הוועד הציבורי נגד עניינימ בישראל",
    "name": "הוועד הציבורי נגד עניינים בישראל",
    "type": "ORG",
@@ -64893,7 +64516,8 @@
    "name": "החוק הבין-לאומי",
    "type": "LAW",
    "aliases": [
-    "החוק הבין-לאומי"
+    "החוק הבין-לאומי",
+    "חוק הבין-לאומי"
    ],
    "evidence": [
     "Displaced-communities-HEB-pdf#0084"
@@ -65143,18 +64767,6 @@
    "support": 1
   },
   {
-   "key": "החלטת הממשלה 150",
-   "name": "החלטת הממשלה 150",
-   "type": "LAW",
-   "aliases": [
-    "החלטת הממשלה 150"
-   ],
-   "evidence": [
-    "כרם-נבות-חקלאות-pdf#0043"
-   ],
-   "support": 1
-  },
-  {
    "key": "החלטת הממשלה מפברואר 2023",
    "name": "החלטת הממשלה מפברואר 2023",
    "type": "EVENT",
@@ -65207,12 +64819,14 @@
    "name": "החלטת ממשלה 150",
    "type": "LAW",
    "aliases": [
+    "החלטת הממשלה 150",
     "החלטת ממשלה 150"
    ],
    "evidence": [
-    "Hafiha-HEB-pdf#0021"
+    "Hafiha-HEB-pdf#0021",
+    "כרם-נבות-חקלאות-pdf#0043"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "החלטת ממשלה מס' 137",
@@ -66332,18 +65946,6 @@
    "support": 1
   },
   {
-   "key": "המועצות האזוריות היהודיות",
-   "name": "המועצות האזוריות היהודיות",
-   "type": "ORG",
-   "aliases": [
-    "המועצות האזוריות היהודיות"
-   ],
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0055"
-   ],
-   "support": 1
-  },
-  {
    "key": "המועצות האזוריות והמקומיות",
    "name": "המועצות האזוריות והמקומיות",
    "type": "ORG",
@@ -66724,18 +66326,6 @@
    ],
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0122"
-   ],
-   "support": 1
-  },
-  {
-   "key": "הממשל האמריקאי",
-   "name": "הממשל האמריקאי",
-   "type": "ORG",
-   "aliases": [
-    "הממשל האמריקאי"
-   ],
-   "evidence": [
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0035"
    ],
    "support": 1
   },
@@ -67208,18 +66798,6 @@
    "support": 1
   },
   {
-   "key": "המשפט הישראלי",
-   "name": "המשפט הישראלי",
-   "type": "LAW",
-   "aliases": [
-    "המשפט הישראלי"
-   ],
-   "evidence": [
-    "report-all-2024-pdf#0024"
-   ],
-   "support": 1
-  },
-  {
    "key": "המשפט המנהלי הישראלי",
    "name": "המשפט המנהלי הישראלי",
    "type": "CONCEPT",
@@ -67264,18 +66842,6 @@
    ],
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0038"
-   ],
-   "support": 1
-  },
-  {
-   "key": "המשרד להתיישבות",
-   "name": "המשרד להתיישבות",
-   "type": "ORG",
-   "aliases": [
-    "המשרד להתיישבות"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0047"
    ],
    "support": 1
   },
@@ -67584,24 +67150,15 @@
    "name": "הסדר המקרקעין",
    "type": "CONCEPT",
    "aliases": [
-    "הסדר המקרקעין"
-   ],
-   "evidence": [
-    "occupation-report-2025-pdf#0055"
-   ],
-   "support": 1
-  },
-  {
-   "key": "הסדר מקרקעינ",
-   "name": "הסדר מקרקעין",
-   "type": "CONCEPT",
-   "aliases": [
+    "הליך הסדר מקרקעין",
+    "הסדר המקרקעין",
     "הסדר מקרקעין"
    ],
    "evidence": [
+    "occupation-report-2025-pdf#0055",
     "occupation-report-2025-pdf#0056"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "הסדר רישומ המקרקעינ",
@@ -68281,13 +67838,15 @@
    "type": "LAW",
    "aliases": [
     "הצו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה והשומרון) (מס' 321), תשכ\"ט 1969",
-    "צו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה והשומרון) (מס' 321), תשכ\"ט 1969"
+    "צו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה והשומרון) (מס' 321), תשכ\"ט 1969",
+    "צו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה ושומרון) מס' 321 תשכ\"ט-1969"
    ],
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0014",
-    "דוח-צווי-הפקעה-6-6-pdf#0005"
+    "דוח-צווי-הפקעה-6-6-pdf#0005",
+    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0033"
    ],
-   "support": 2
+   "support": 3
   },
   {
    "key": "הצו בדבר עתיקות",
@@ -68466,18 +68025,6 @@
    ],
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0166"
-   ],
-   "support": 1
-  },
-  {
-   "key": "הקהילות הפלסטיניות",
-   "name": "הקהילות הפלסטיניות",
-   "type": "ORG",
-   "aliases": [
-    "הקהילות הפלסטיניות"
-   ],
-   "evidence": [
-    "Displaced-communities-HEB-pdf#0083"
    ],
    "support": 1
   },
@@ -69194,12 +68741,14 @@
    "name": "הרשות הפלשתינית",
    "type": "ORG",
    "aliases": [
-    "הרשות הפלשתינית"
+    "הרשות הפלשתינית",
+    "רשות הפלשתינית"
    ],
    "evidence": [
-    "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0015"
+    "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0015",
+    "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0019"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "הרשות השופטת",
@@ -69438,18 +68987,6 @@
    ],
    "evidence": [
     "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0020"
-   ],
-   "support": 1
-  },
-  {
-   "key": "השטחימ הכבושימ",
-   "name": "השטחים הכבושים",
-   "type": "LOCATION",
-   "aliases": [
-    "השטחים הכבושים"
-   ],
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0048"
    ],
    "support": 1
   },
@@ -69814,18 +69351,6 @@
    "support": 1
   },
   {
-   "key": "התנחלויות החרדיות",
-   "name": "התנחלויות החרדיות",
-   "type": "LOCATION",
-   "aliases": [
-    "התנחלויות החרדיות"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0037"
-   ],
-   "support": 1
-  },
-  {
    "key": "התנחלויות היגרעינ",
    "name": "התנחלויות היגרעין",
    "type": "FACILITY",
@@ -69854,12 +69379,14 @@
    "name": "התנחלויות חרדיות",
    "type": "LOCATION",
    "aliases": [
+    "התנחלויות החרדיות",
     "התנחלויות חרדיות"
    ],
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0124"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0124",
+    "202103-this-is-ours-and-this-too-heb-pdf#0037"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "התנחלויות יהודיות",
@@ -71663,18 +71190,6 @@
    "support": 1
   },
   {
-   "key": "ח'ירבת א-תעלה",
-   "name": "ח'ירבת א-תעלה",
-   "type": "LOCATION",
-   "aliases": [
-    "ח'ירבת א-תעלה"
-   ],
-   "evidence": [
-    "202111-state-business-heb-pdf#0010"
-   ],
-   "support": 1
-  },
-  {
    "key": "ח'ירבת אל-ח'רובה",
    "name": "ח'ירבת אל-ח'רובה",
    "type": "LOCATION",
@@ -73025,18 +72540,6 @@
    "support": 1
   },
   {
-   "key": "חוות צאנ קידר",
-   "name": "חוות צאן קידר",
-   "type": "FACILITY",
-   "aliases": [
-    "חוות צאן קידר"
-   ],
-   "evidence": [
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0036"
-   ],
-   "support": 1
-  },
-  {
    "key": "חוות צבי",
    "name": "חוות צבי",
    "type": "FACILITY",
@@ -73918,18 +73421,6 @@
    "type": "LOCATION",
    "aliases": [
     "חות גושן חמדת"
-   ],
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0039"
-   ],
-   "support": 1
-  },
-  {
-   "key": "חות גלעד",
-   "name": "חות גלעד",
-   "type": "LOCATION",
-   "aliases": [
-    "חות גלעד"
    ],
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0039"
@@ -75533,18 +75024,6 @@
    "support": 1
   },
   {
-   "key": "יהודה שומרונ",
-   "name": "יהודה שומרון",
-   "type": "LOCATION",
-   "aliases": [
-    "יהודה שומרון"
-   ],
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0037"
-   ],
-   "support": 1
-  },
-  {
    "key": "יהודה שומרונ וגולנ",
    "name": "יהודה שומרון וגולן",
    "type": "LOCATION",
@@ -75725,28 +75204,18 @@
    "support": 1
   },
   {
-   "key": "יוזמת השלומ של הליגה הערבית",
-   "name": "יוזמת השלום של הליגה הערבית",
-   "type": "LAW",
-   "aliases": [
-    "יוזמת השלום של הליגה הערבית"
-   ],
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0151"
-   ],
-   "support": 1
-  },
-  {
    "key": "יוזמת השלומ של הליגה הערבית מ-2002",
    "name": "יוזמת השלום של הליגה הערבית מ-2002",
    "type": "EVENT",
    "aliases": [
+    "יוזמת השלום של הליגה הערבית",
     "יוזמת השלום של הליגה הערבית מ-2002"
    ],
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0152"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0152",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0151"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "יוחננ פלסנר",
@@ -76465,18 +75934,6 @@
    ],
    "evidence": [
     "202101-this-is-apartheid-heb-pdf#0010"
-   ],
-   "support": 1
-  },
-  {
-   "key": "יישובימ הערביימ",
-   "name": "יישובים הערביים",
-   "type": "LOCATION",
-   "aliases": [
-    "יישובים הערביים"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0037"
    ],
    "support": 1
   },
@@ -78326,18 +77783,6 @@
    ],
    "evidence": [
     "Hafiha-HEB-pdf#0029"
-   ],
-   "support": 1
-  },
-  {
-   "key": "כפר א-לובנ א-שרקייה",
-   "name": "כפר א-לובן א-שרקייה",
-   "type": "GPE",
-   "aliases": [
-    "כפר א-לובן א-שרקייה"
-   ],
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0070"
    ],
    "support": 1
   },
@@ -83830,12 +83275,14 @@
    "name": "ממשל האמריקאי",
    "type": "ORG",
    "aliases": [
+    "הממשל האמריקאי",
     "ממשל האמריקאי"
    ],
    "evidence": [
-    "202507-our-genocide-heb-pdf#0031"
+    "202507-our-genocide-heb-pdf#0031",
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0035"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "ממשל טראמפ",
@@ -85566,28 +85013,18 @@
    "support": 1
   },
   {
-   "key": "מפקדת אזור יהודה ושומרונ",
-   "name": "מפקדת אזור יהודה ושומרון",
-   "type": "ORG",
-   "aliases": [
-    "מפקדת אזור יהודה ושומרון"
-   ],
-   "evidence": [
-    "shepherding-outposts-HEB-pdf#0050"
-   ],
-   "support": 1
-  },
-  {
    "key": "מפקדת יהודה ושומרונ",
    "name": "מפקדת יהודה ושומרון",
    "type": "ORG",
    "aliases": [
+    "מפקדת אזור יהודה ושומרון",
     "מפקדת יהודה ושומרון"
    ],
    "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0013"
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0013",
+    "shepherding-outposts-HEB-pdf#0050"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "מפת הדרכימ",
@@ -87334,12 +86771,14 @@
    "name": "משרד להתיישבות",
    "type": "ORG",
    "aliases": [
+    "המשרד להתיישבות",
     "משרד להתיישבות"
    ],
    "evidence": [
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0034"
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0034",
+    "202103-this-is-ours-and-this-too-heb-pdf#0047"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "משרד למשימות לאומיות",
@@ -91030,7 +90469,8 @@
    "name": "עבד אל רחמן קאסם",
    "type": "PERSON",
    "aliases": [
-    "עבד אל רחמן קאסם"
+    "עבד אל רחמן קאסם",
+    "עבד אל-רחמן קאסם"
    ],
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0043"
@@ -93390,18 +92830,6 @@
    "support": 1
   },
   {
-   "key": "עריית ירושלימ",
-   "name": "עריית ירושלים",
-   "type": "ORG",
-   "aliases": [
-    "עריית ירושלים"
-   ],
-   "evidence": [
-    "Menachsim-Heb-Web-pdf#0074"
-   ],
-   "support": 1
-  },
-  {
    "key": "ערפאת",
    "name": "ערפאת",
    "type": "PERSON",
@@ -94866,18 +94294,6 @@
    "support": 1
   },
   {
-   "key": "פרקליטות הצבאית",
-   "name": "פרקליטות הצבאית",
-   "type": "ORG",
-   "aliases": [
-    "פרקליטות הצבאית"
-   ],
-   "evidence": [
-    "משכוכית-דוח-pdf#0022"
-   ],
-   "support": 1
-  },
-  {
    "key": "פרקליטות לעניינימ מבצעיימ",
    "name": "פרקליטות לעניינים מבצעיים",
    "type": "ORG",
@@ -94946,18 +94362,6 @@
    ],
    "evidence": [
     "Displaced-communities-HEB-pdf#0084"
-   ],
-   "support": 1
-  },
-  {
-   "key": "פשע נגד האנושות",
-   "name": "פשע נגד האנושות",
-   "type": "CONCEPT",
-   "aliases": [
-    "פשע נגד האנושות"
-   ],
-   "evidence": [
-    "Displaced-communities-HEB-pdf#0073"
    ],
    "support": 1
   },
@@ -95382,18 +94786,6 @@
    "support": 1
   },
   {
-   "key": "צו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה ושומרונ) מס' 321 תשכ\"ט-1969",
-   "name": "צו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה ושומרון) מס' 321 תשכ\"ט-1969",
-   "type": "LAW",
-   "aliases": [
-    "צו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה ושומרון) מס' 321 תשכ\"ט-1969"
-   ],
-   "evidence": [
-    "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0033"
-   ],
-   "support": 1
-  },
-  {
    "key": "צו בדבר מועצות אזוריות",
    "name": "צו בדבר מועצות אזוריות",
    "type": "LAW",
@@ -95532,24 +94924,14 @@
    "name": "צו בדבר עסקאות במקרקעין (יהודה והשומרון (מס' 25) תשכ\"ז-1967",
    "type": "LAW",
    "aliases": [
-    "צו בדבר עסקאות במקרקעין (יהודה והשומרון (מס' 25) תשכ\"ז-1967"
-   ],
-   "evidence": [
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0017"
-   ],
-   "support": 1
-  },
-  {
-   "key": "צו בדבר עסקאות במקרקעינ (יהודה ושומרונ) (מס' 25), התשכ\"ז-1967",
-   "name": "צו בדבר עסקאות במקרקעין (יהודה ושומרון) (מס' 25), התשכ\"ז-1967",
-   "type": "LAW",
-   "aliases": [
+    "צו בדבר עסקאות במקרקעין (יהודה והשומרון (מס' 25) תשכ\"ז-1967",
     "צו בדבר עסקאות במקרקעין (יהודה ושומרון) (מס' 25), התשכ\"ז-1967"
    ],
    "evidence": [
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0017",
     "כרם-נבות-חקלאות-pdf#0035"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "צו בדבר רכוש ממשלתי (מס' 59) התשכ\"ז",
@@ -95720,18 +95102,6 @@
    "support": 1
   },
   {
-   "key": "צו הסגירה 576",
-   "name": "צו הסגירה 576",
-   "type": "LAW",
-   "aliases": [
-    "צו הסגירה 576"
-   ],
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0022"
-   ],
-   "support": 1
-  },
-  {
    "key": "צו הפקעה",
    "name": "צו הפקעה",
    "type": "CONCEPT",
@@ -95880,19 +95250,22 @@
    "name": "צו לסילוק פולשים",
    "type": "LAW",
    "aliases": [
-    "צו לסילוק פולשים"
+    "צו לסילוק פולשים",
+    "צו סילוק פולשים"
    ],
    "evidence": [
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0031"
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0031",
+    "כרם-נבות-חקלאות-pdf#0123"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "צו לשימוש מפריע",
    "name": "צו לשימוש מפריע",
    "type": "LAW",
    "aliases": [
-    "צו לשימוש מפריע"
+    "צו לשימוש מפריע",
+    "צו שימוש מפריע"
    ],
    "evidence": [
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0035"
@@ -95952,12 +95325,14 @@
    "name": "צו סגירה 576",
    "type": "LAW",
    "aliases": [
+    "צו הסגירה 576",
     "צו סגירה 576"
    ],
    "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0013"
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0013",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0022"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "צו סגירה צבאי",
@@ -95968,18 +95343,6 @@
    ],
    "evidence": [
     "Displaced-communities-HEB-pdf#0028"
-   ],
-   "support": 1
-  },
-  {
-   "key": "צו סילוק פולשימ",
-   "name": "צו סילוק פולשים",
-   "type": "LAW",
-   "aliases": [
-    "צו סילוק פולשים"
-   ],
-   "evidence": [
-    "כרם-נבות-חקלאות-pdf#0123"
    ],
    "support": 1
   },
@@ -97796,18 +97159,6 @@
    "support": 1
   },
   {
-   "key": "קריית גת",
-   "name": "קריית גת",
-   "type": "GPE",
-   "aliases": [
-    "קריית גת"
-   ],
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0090"
-   ],
-   "support": 1
-  },
-  {
    "key": "קרית גנונימ",
    "name": "קרית גנונים",
    "type": "LOCATION",
@@ -99586,18 +98937,6 @@
    "support": 1
   },
   {
-   "key": "רשות הפלשתינית",
-   "name": "רשות הפלשתינית",
-   "type": "ORG",
-   "aliases": [
-    "רשות הפלשתינית"
-   ],
-   "evidence": [
-    "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0019"
-   ],
-   "support": 1
-  },
-  {
    "key": "רשות השירות הלאומי-אזרחי",
    "name": "רשות השירות הלאומי-אזרחי",
    "type": "ORG",
@@ -101290,28 +100629,18 @@
    "support": 1
   },
   {
-   "key": "שלמה מושקוביצ",
-   "name": "שלמה מושקוביץ",
-   "type": "PERSON",
-   "aliases": [
-    "שלמה מושקוביץ"
-   ],
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0040"
-   ],
-   "support": 1
-  },
-  {
    "key": "שלמה מושקוביצ'",
    "name": "שלמה מושקוביץ'",
    "type": "PERSON",
    "aliases": [
+    "שלמה מושקוביץ",
     "שלמה מושקוביץ'"
    ],
    "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0018"
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0018",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0040"
    ],
-   "support": 1
+   "support": 2
   },
   {
    "key": "שלמה פיוטרקובסקי",
@@ -102006,18 +101335,6 @@
    ],
    "evidence": [
     "202507-our-genocide-heb-pdf#0086"
-   ],
-   "support": 1
-  },
-  {
-   "key": "שש המועצות האזוריות היהודיות",
-   "name": "שש המועצות האזוריות היהודיות",
-   "type": "ORG",
-   "aliases": [
-    "שש המועצות האזוריות היהודיות"
-   ],
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0024"
    ],
    "support": 1
   },
@@ -102890,7 +102207,8 @@
    "name": "תושבים הפלסטינים",
    "type": "CONCEPT",
    "aliases": [
-    "תושבים הפלסטינים"
+    "תושבים הפלסטינים",
+    "תושבים פלסטינים"
    ],
    "evidence": [
     "Displaced-communities-HEB-pdf#0075"
@@ -105367,17 +104685,6 @@
    "synthesized": true
   },
   {
-   "key": "אדמות הפלסטיניות",
-   "name": "אדמות הפלסטיניות",
-   "type": "CONCEPT",
-   "aliases": [
-    "אדמות הפלסטיניות"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
    "key": "אדמות וקפ",
    "name": "אדמות וקף",
    "type": "CONCEPT",
@@ -105459,6 +104766,7 @@
    "name": "אדמות פלסטיניות",
    "type": "CONCEPT",
    "aliases": [
+    "אדמות הפלסטיניות",
     "אדמות פלסטיניות"
    ],
    "evidence": [],
@@ -105917,17 +105225,6 @@
    "synthesized": true
   },
   {
-   "key": "אלימות המתנחלימ",
-   "name": "אלימות המתנחלים",
-   "type": "CONCEPT",
-   "aliases": [
-    "אלימות המתנחלים"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
    "key": "אלימות מינית במתקני הכליאה ובבתי הכלא",
    "name": "אלימות מינית במתקני הכליאה ובבתי הכלא",
    "type": "CONCEPT",
@@ -105966,17 +105263,6 @@
    "type": "CONCEPT",
    "aliases": [
     "אלימות של ישראלים נגד פלסטינים"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
-   "key": "אלימות של מתנחלימ",
-   "name": "אלימות של מתנחלים",
-   "type": "CONCEPT",
-   "aliases": [
-    "אלימות של מתנחלים"
    ],
    "evidence": [],
    "support": 0,
@@ -106845,17 +106131,7 @@
    "name": "בשליחות המדינה - השתלטות המדינה על קרקעות בגדה המערבית באמצעות אלימות מתנחלים",
    "type": "CONCEPT",
    "aliases": [
-    "בשליחות המדינה - השתלטות המדינה על קרקעות בגדה המערבית באמצעות אלימות מתנחלים"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
-   "key": "בשליחות המדינה: השתלטות המדינה על אדמות בגדה המערבית באמצעות אלימות של מתנחלימ",
-   "name": "בשליחות המדינה: השתלטות המדינה על אדמות בגדה המערבית באמצעות אלימות של מתנחלים",
-   "type": "CONCEPT",
-   "aliases": [
+    "בשליחות המדינה - השתלטות המדינה על קרקעות בגדה המערבית באמצעות אלימות מתנחלים",
     "בשליחות המדינה: השתלטות המדינה על אדמות בגדה המערבית באמצעות אלימות של מתנחלים"
    ],
    "evidence": [],
@@ -107776,17 +107052,6 @@
    "synthesized": true
   },
   {
-   "key": "הדינ בינלאומי",
-   "name": "הדין בינלאומי",
-   "type": "CONCEPT",
-   "aliases": [
-    "הדין בינלאומי"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
    "key": "הדרג המקצועי בפרקליטות",
    "name": "הדרג המקצועי בפרקליטות",
    "type": "CONCEPT",
@@ -108518,17 +107783,6 @@
    "type": "CONCEPT",
    "aliases": [
     "הליך הסדר הקרקעות"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
-   "key": "הליכ הסדר מקרקעינ",
-   "name": "הליך הסדר מקרקעין",
-   "type": "CONCEPT",
-   "aliases": [
-    "הליך הסדר מקרקעין"
    ],
    "evidence": [],
    "support": 0,
@@ -110570,17 +109824,6 @@
    "synthesized": true
   },
   {
-   "key": "זה שלנו זה גמ כנ",
-   "name": "זה שלנו זה גם כן",
-   "type": "CONCEPT",
-   "aliases": [
-    "זה שלנו זה גם כן"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
    "key": "זכויות במקרקעינ",
    "name": "זכויות במקרקעין",
    "type": "CONCEPT",
@@ -110829,17 +110072,6 @@
    "type": "CONCEPT",
    "aliases": [
     "חופש התנועה של פלסטינים"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
-   "key": "חוק הבינ-לאומי",
-   "name": "חוק הבין-לאומי",
-   "type": "CONCEPT",
-   "aliases": [
-    "חוק הבין-לאומי"
    ],
    "evidence": [],
    "support": 0,
@@ -113475,17 +112707,6 @@
    "synthesized": true
   },
   {
-   "key": "מעשי אלימות של מתנחלימ",
-   "name": "מעשי אלימות של מתנחלים",
-   "type": "CONCEPT",
-   "aliases": [
-    "מעשי אלימות של מתנחלים"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
    "key": "מעשי המתנחלימ",
    "name": "מעשי המתנחלים",
    "type": "CONCEPT",
@@ -114685,17 +113906,6 @@
    "synthesized": true
   },
   {
-   "key": "עבד אל-רחמנ קאסמ",
-   "name": "עבד אל-רחמן קאסם",
-   "type": "CONCEPT",
-   "aliases": [
-    "עבד אל-רחמן קאסם"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
    "key": "עבודות",
    "name": "עבודות",
    "type": "CONCEPT",
@@ -115889,17 +115099,6 @@
    "type": "CONCEPT",
    "aliases": [
     "צו צבאי מיוחד"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
-   "key": "צו שימוש מפריע",
-   "name": "צו שימוש מפריע",
-   "type": "CONCEPT",
-   "aliases": [
-    "צו שימוש מפריע"
    ],
    "evidence": [],
    "support": 0,
@@ -117222,7 +116421,8 @@
    "aliases": [
     "השר הנוסף במשרד הביטחון",
     "שר הנוסף במשרד הביטחון",
-    "שר נוסף במשרד הביטחון"
+    "שר נוסף במשרד הביטחון",
+    "תפקיד שר נוסף במשרד הביטחון"
    ],
    "evidence": [],
    "support": 0,
@@ -117713,17 +116913,6 @@
    "synthesized": true
   },
   {
-   "key": "תושבימ פלסטינימ",
-   "name": "תושבים פלסטינים",
-   "type": "CONCEPT",
-   "aliases": [
-    "תושבים פלסטינים"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
    "key": "תזכיר",
    "name": "תזכיר",
    "type": "CONCEPT",
@@ -117971,17 +117160,6 @@
    "type": "CONCEPT",
    "aliases": [
     "תפסת מרובה לא תפסת: גישות במאבק על גבולותיה של מדינת ישראל"
-   ],
-   "evidence": [],
-   "support": 0,
-   "synthesized": true
-  },
-  {
-   "key": "תפקיד שר נוספ במשרד הביטחונ",
-   "name": "תפקיד שר נוסף במשרד הביטחון",
-   "type": "CONCEPT",
-   "aliases": [
-    "תפקיד שר נוסף במשרד הביטחון"
    ],
    "evidence": [],
    "support": 0,
@@ -119417,11 +118595,12 @@
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0091",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 3
+   "support": 4
   },
   {
    "source": "מעלה אדומימ",
@@ -119861,17 +119040,18 @@
   },
   {
    "source": "אלקנה",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "אלקנה",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 3
   },
   {
    "source": "אספר",
@@ -120057,17 +119237,18 @@
   },
   {
    "source": "בנימינ",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "בנימין",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 3
   },
   {
    "source": "בצלאל סמוטריצ'",
@@ -120203,25 +119384,13 @@
    "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 2
-  },
-  {
-   "source": "גבעת זאב",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "גבעת זאב",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 4
   },
   {
    "source": "גוש ההתנחלויות שמדרומ לבית לחמ",
@@ -120646,17 +119815,18 @@
   },
   {
    "source": "הר אדר",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "הר אדר",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 3
   },
   {
    "source": "הר גילה",
@@ -120688,17 +119858,18 @@
   },
   {
    "source": "הר חברונ",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "הר חברון",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 3
   },
   {
    "source": "הרשות הפלסטינית",
@@ -121360,10 +120531,10 @@
   },
   {
    "source": "ישראל",
-   "target": "משפט הבינלאומי",
+   "target": "המשפט הבינלאומי",
    "type": "violates",
    "source_name": "ישראל",
-   "target_name": "משפט הבינלאומי",
+   "target_name": "המשפט הבינלאומי",
    "evidence": [
     "202507-our-genocide-heb-pdf#0018",
     "Menachsim-Heb-Web-pdf#0003"
@@ -122010,25 +121181,13 @@
    "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0027",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 2
-  },
-  {
-   "source": "מעלה אפרימ",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "מעלה אפרים",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 4
   },
   {
    "source": "מעלה לבונה",
@@ -122528,25 +121687,13 @@
    "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 2
-  },
-  {
-   "source": "עמנואל",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "עמנואל",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 4
   },
   {
    "source": "עמנואל",
@@ -122584,25 +121731,13 @@
    "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0107"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 2
-  },
-  {
-   "source": "ערבות הירדנ",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "ערבות הירדן",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0107",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 4
   },
   {
    "source": "פארק תעשיות אריאל",
@@ -122704,17 +121839,18 @@
   },
   {
    "source": "קדומימ",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "קדומים",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 3
   },
   {
    "source": "קהילות הרועימ הפלסטיניות",
@@ -122809,11 +121945,12 @@
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0027",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0111",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 3
+   "support": 4
   },
   {
    "source": "קריית ארבע",
@@ -122901,10 +122038,10 @@
    "support": 2
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "וועדת האו\"מ נגד עינויימ",
    "type": "submitted_report",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "וועדת האו\"ם נגד עינויים",
    "evidence": [
     "occupation-report-2025-pdf#0072",
@@ -123006,25 +122143,13 @@
    "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0091"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 2
-  },
-  {
-   "source": "שומרונ",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "שומרון",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0091",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 4
   },
   {
    "source": "שטח c",
@@ -127975,10 +127100,10 @@
   },
   {
    "source": "אוראל",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "אוראל",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
@@ -128409,24 +127534,12 @@
    "source_name": "אורנית",
    "target_name": "איו\"ש",
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "אורנית",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "אורנית",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "אורנית",
@@ -129547,10 +128660,10 @@
    "support": 1
   },
   {
-   "source": "איז\"ש",
+   "source": "איו\"ש",
    "target": "ישראל",
    "type": "located_in",
-   "source_name": "איז\"ש",
+   "source_name": "איו\"ש",
    "target_name": "ישראל",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0073"
@@ -131250,10 +130363,10 @@
    "support": 1
   },
   {
-   "source": "אלופ פיקוד מרכז",
+   "source": "אלופ פיקוד המרכז",
    "target": "סיכונ ביטחוני",
    "type": "does_not_see",
-   "source_name": "אלוף פיקוד מרכז",
+   "source_name": "אלוף פיקוד המרכז",
    "target_name": "סיכון ביטחוני",
    "evidence": [
     "Hafiha-HEB-pdf#0010"
@@ -131263,10 +130376,10 @@
    "support": 1
   },
   {
-   "source": "אלופ פיקוד מרכז",
+   "source": "אלופ פיקוד המרכז",
    "target": "צו צבאי",
    "type": "issued_military_order",
-   "source_name": "אלוף פיקוד מרכז",
+   "source_name": "אלוף פיקוד המרכז",
    "target_name": "צו צבאי",
    "evidence": [
     "202111-state-business-heb-pdf#0012"
@@ -131510,10 +130623,10 @@
    "support": 1
   },
   {
-   "source": "אלימות של מתנחלימ",
+   "source": "אלימות מתנחלימ",
    "target": "דו\"חות של ארגוני זכויות אדמ",
    "type": "תועדה_ב",
-   "source_name": "אלימות של מתנחלים",
+   "source_name": "אלימות מתנחלים",
    "target_name": "דו\"חות של ארגוני זכויות אדם",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0008"
@@ -131523,10 +130636,10 @@
    "support": 1
   },
   {
-   "source": "אלימות של מתנחלימ",
+   "source": "אלימות מתנחלימ",
    "target": "עדויות של פלסטינימ",
    "type": "תועדה_ב",
-   "source_name": "אלימות של מתנחלים",
+   "source_name": "אלימות מתנחלים",
    "target_name": "עדויות של פלסטינים",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0008"
@@ -131958,24 +131071,12 @@
    "source_name": "אלפי מנשה",
    "target_name": "איו\"ש",
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "אלפי מנשה",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "אלפי מנשה",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "אלפי מנשה",
@@ -132063,19 +131164,6 @@
    "target_name": "מאזן הגירה חיובי",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0066"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "אלקנה",
-   "target": "איו\"ש",
-   "type": "located_in",
-   "source_name": "אלקנה",
-   "target_name": "איו\"ש",
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
    ],
    "cross_boundary": false,
    "scope": "chunk",
@@ -132290,10 +131378,10 @@
    "support": 1
   },
   {
-   "source": "אמיר אל-פאחורי",
+   "source": "אמיר אל-פאח'ורי",
    "target": "בצלמ",
    "type": "testified_to",
-   "source_name": "אמיר אל-פאחורי",
+   "source_name": "אמיר אל-פאח'ורי",
    "target_name": "בצלם",
    "evidence": [
     "202412-unleashed-heb-pdf#0005"
@@ -132914,10 +132002,10 @@
    "support": 1
   },
   {
-   "source": "אמנת זינבה הרביעית",
+   "source": "אמנת ז'נבה הרביעית",
    "target": "ביזה של רכוש פרטי",
    "type": "אוסרת",
-   "source_name": "אמנת זינבה הרביעית",
+   "source_name": "אמנת ז'נבה הרביעית",
    "target_name": "ביזה של רכוש פרטי",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0037"
@@ -133440,24 +132528,12 @@
    "source_name": "אפרת",
    "target_name": "איו\"ש",
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "אפרת",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "אפרת",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "אפרת",
@@ -134514,10 +133590,10 @@
   },
   {
    "source": "אריאל גרינגליק",
-   "target": "חוות צאנ קידר",
+   "target": "חוות צאנ קדר",
    "type": "owns",
    "source_name": "אריאל גרינגליק",
-   "target_name": "חוות צאן קידר",
+   "target_name": "חוות צאן קדר",
    "evidence": [
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0036"
    ],
@@ -135046,10 +134122,10 @@
    "support": 1
   },
   {
-   "source": "ארצ זית שמנ מובחר בע\"מ",
+   "source": "ארצ זית שמנ מובחר",
    "target": "2003",
    "type": "founded_in",
-   "source_name": "ארץ זית שמן מובחר בע\"מ",
+   "source_name": "ארץ זית שמן מובחר",
    "target_name": "2003",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0085"
@@ -135059,10 +134135,10 @@
    "support": 1
   },
   {
-   "source": "ארצ זית שמנ מובחר בע\"מ",
+   "source": "ארצ זית שמנ מובחר",
    "target": "משק אחיה",
    "type": "markets_under_name",
-   "source_name": "ארץ זית שמן מובחר בע\"מ",
+   "source_name": "ארץ זית שמן מובחר",
    "target_name": "משק אחיה",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0085"
@@ -135072,10 +134148,10 @@
    "support": 1
   },
   {
-   "source": "ארצ זית שמנ מובחר בע\"מ",
+   "source": "ארצ זית שמנ מובחר",
    "target": "שילה",
    "type": "operates_in",
-   "source_name": "ארץ זית שמן מובחר בע\"מ",
+   "source_name": "ארץ זית שמן מובחר",
    "target_name": "שילה",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0085"
@@ -137075,10 +136151,10 @@
   },
   {
    "source": "בגדה המערבית",
-   "target": "משטר הישראלי",
+   "target": "המשטר הישראלי",
    "type": "controlled_by",
    "source_name": "בגדה המערבית",
-   "target_name": "משטר הישראלי",
+   "target_name": "המשטר הישראלי",
    "evidence": [
     "202412-unleashed-heb-pdf#0002"
    ],
@@ -137340,24 +136416,12 @@
    "source_name": "בית אל",
    "target_name": "איו\"ש",
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "בית אל",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "בית אל",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "בית אל",
@@ -137561,24 +136625,12 @@
    "source_name": "בית אריה",
    "target_name": "איו\"ש",
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "בית אריה",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "בית אריה",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "בית אריה",
@@ -138166,10 +137218,10 @@
    "support": 1
   },
   {
-   "source": "בית הדינ הבינלאומי",
+   "source": "בית הדינ הבינלאומי לצדק",
    "target": "בנימינ נתניהו",
    "type": "issued_arrest_warrant_against",
-   "source_name": "בית הדין הבינלאומי",
+   "source_name": "בית הדין הבינלאומי לצדק",
    "target_name": "בנימין נתניהו",
    "evidence": [
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0007"
@@ -138179,10 +137231,10 @@
    "support": 1
   },
   {
-   "source": "בית הדינ הבינלאומי",
+   "source": "בית הדינ הבינלאומי לצדק",
    "target": "יואב גלנט",
    "type": "issued_arrest_warrant_against",
-   "source_name": "בית הדין הבינלאומי",
+   "source_name": "בית הדין הבינלאומי לצדק",
    "target_name": "יואב גלנט",
    "evidence": [
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0007"
@@ -138192,10 +137244,10 @@
    "support": 1
   },
   {
-   "source": "בית הדינ הבינלאומי הפלילי",
+   "source": "בית הדינ הבינלאומי לצדק",
    "target": "גלנט",
    "type": "issued_arrest_warrant_for",
-   "source_name": "בית הדין הבינלאומי הפלילי",
+   "source_name": "בית הדין הבינלאומי לצדק",
    "target_name": "גלנט",
    "evidence": [
     "202507-our-genocide-heb-pdf#0088"
@@ -138205,10 +137257,10 @@
    "support": 1
   },
   {
-   "source": "בית הדינ הבינלאומי הפלילי",
+   "source": "בית הדינ הבינלאומי לצדק",
    "target": "נתניהו",
    "type": "issued_arrest_warrant_for",
-   "source_name": "בית הדין הבינלאומי הפלילי",
+   "source_name": "בית הדין הבינלאומי לצדק",
    "target_name": "נתניהו",
    "evidence": [
     "202507-our-genocide-heb-pdf#0088"
@@ -138322,10 +137374,10 @@
    "support": 1
   },
   {
-   "source": "בית הדינ הבינלאומי הפלילי",
+   "source": "בית הדינ הבינלאומי לצדק",
    "target": "פשע מלחמה",
    "type": "יש_סמכות_לחקור",
-   "source_name": "בית הדין הבינלאומי הפלילי",
+   "source_name": "בית הדין הבינלאומי לצדק",
    "target_name": "פשע מלחמה",
    "evidence": [
     "Displaced-communities-HEB-pdf#0073"
@@ -138335,10 +137387,10 @@
    "support": 1
   },
   {
-   "source": "בית הדינ הבינלאומי הפלילי",
+   "source": "בית הדינ הבינלאומי לצדק",
    "target": "הסכסוכ הישראלי-פלסטיני",
    "type": "קבעה_סמכות_ביחס_ל",
-   "source_name": "בית הדין הבינלאומי הפלילי",
+   "source_name": "בית הדין הבינלאומי לצדק",
    "target_name": "הסכסוך הישראלי-פלסטיני",
    "evidence": [
     "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0024"
@@ -138635,10 +137687,10 @@
   },
   {
    "source": "בית המשפט העליונ",
-   "target": "צו שימוש מפריע",
+   "target": "צו לשימוש מפריע",
    "type": "established_duty_to_enforce",
    "source_name": "בית המשפט העליון",
-   "target_name": "צו שימוש מפריע",
+   "target_name": "צו לשימוש מפריע",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0125"
    ],
@@ -139329,11 +138381,12 @@
    "source_name": "בית כנסת \"שלום על ישראל\"",
    "target_name": "יריחו",
    "evidence": [
-    "דוח-צווי-הפקעה-6-6-pdf#0043"
+    "דוח-צווי-הפקעה-6-6-pdf#0043",
+    "דוח-צווי-הפקעה-6-6-pdf#0030"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "בית כנסת \"שלומ על ישראל\"",
@@ -139343,19 +138396,6 @@
    "target_name": "הרשות הפלסטינית",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0043"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "בית כנסת \"שלומ על ישראל\" ביריחו",
-   "target": "יריחו",
-   "type": "located_in",
-   "source_name": "בית כנסת \"שלום על ישראל\" ביריחו",
-   "target_name": "יריחו",
-   "evidence": [
-    "דוח-צווי-הפקעה-6-6-pdf#0030"
    ],
    "cross_boundary": false,
    "scope": "chunk",
@@ -139505,10 +138545,10 @@
    "support": 1
   },
   {
-   "source": "בית משפט העליונ",
+   "source": "בית המשפט העליונ",
    "target": "השליטה הישראלית בשטחימ הכבושימ",
    "type": "deepened",
-   "source_name": "בית משפט העליון",
+   "source_name": "בית המשפט העליון",
    "target_name": "השליטה הישראלית בשטחים הכבושים",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0048"
@@ -139518,10 +138558,10 @@
    "support": 1
   },
   {
-   "source": "בית משפט העליונ",
+   "source": "בית המשפט העליונ",
    "target": "הפרות הדינ הבינלאומי",
    "type": "provides_legitimacy_to",
-   "source_name": "בית משפט העליון",
+   "source_name": "בית המשפט העליון",
    "target_name": "הפרות הדין הבינלאומי",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0048"
@@ -139922,10 +138962,10 @@
   },
   {
    "source": "ביתר עילית",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "ביתר עילית",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0093"
    ],
@@ -140207,10 +139247,10 @@
    "support": 1
   },
   {
-   "source": "במקומ - מתכננימ למענ זכויות תכנונ",
+   "source": "מתכננימ למענ זכויות תכנונ",
    "target": "תוכנית",
    "type": "הגיש_התנגדות",
-   "source_name": "במקום - מתכננים למען זכויות תכנון",
+   "source_name": "מתכננים למען זכויות תכנון",
    "target_name": "תוכנית",
    "evidence": [
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0047"
@@ -140234,10 +139274,10 @@
   },
   {
    "source": "במקומ - תכנונ וזכויות אדמ",
-   "target": "הסדר מקרקעינ",
+   "target": "הסדר המקרקעינ",
    "type": "published_report_about",
    "source_name": "במקום – תכנון וזכויות אדם",
-   "target_name": "הסדר מקרקעין",
+   "target_name": "הסדר המקרקעין",
    "evidence": [
     "occupation-report-2025-pdf#0056"
    ],
@@ -140715,19 +139755,6 @@
   },
   {
    "source": "בנימינ",
-   "target": "איו\"ש",
-   "type": "located_in",
-   "source_name": "בנימין",
-   "target_name": "איו\"ש",
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "בנימינ",
    "target": "גדה המערבית",
    "type": "located_in",
    "source_name": "בנימין",
@@ -141053,10 +140080,10 @@
   },
   {
    "source": "בעל זכויות באדמה",
-   "target": "צו סילוק פולשימ",
+   "target": "צו לסילוק פולשימ",
    "type": "uses",
    "source_name": "בעל זכויות באדמה",
-   "target_name": "צו סילוק פולשים",
+   "target_name": "צו לסילוק פולשים",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0123"
    ],
@@ -141834,10 +140861,10 @@
   },
   {
    "source": "בצלמ",
-   "target": "משטר אפרטהייד",
+   "target": "משטר האפרטהייד",
    "type": "joined_others_identifying",
    "source_name": "בצלם",
-   "target_name": "משטר אפרטהייד",
+   "target_name": "משטר האפרטהייד",
    "evidence": [
     "202507-our-genocide-heb-pdf#0005"
    ],
@@ -142016,10 +141043,10 @@
   },
   {
    "source": "בצלמ",
-   "target": "משטר אפרטהייד",
+   "target": "משטר האפרטהייד",
    "type": "published_position_paper_on",
    "source_name": "בצלם",
-   "target_name": "משטר אפרטהייד",
+   "target_name": "משטר האפרטהייד",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0003"
    ],
@@ -142185,10 +141212,10 @@
   },
   {
    "source": "בצלמ",
-   "target": "בשליחות המדינה: השתלטות המדינה על אדמות בגדה המערבית באמצעות אלימות של מתנחלימ",
+   "target": "בשליחות המדינה - השתלטות המדינה על קרקעות בגדה המערבית באמצעות אלימות מתנחלימ",
    "type": "פרסם",
    "source_name": "בצלם",
-   "target_name": "בשליחות המדינה: השתלטות המדינה על אדמות בגדה המערבית באמצעות אלימות של מתנחלים",
+   "target_name": "בשליחות המדינה - השתלטות המדינה על קרקעות בגדה המערבית באמצעות אלימות מתנחלים",
    "evidence": [
     "משכוכית-דוח-pdf#0005"
    ],
@@ -142224,10 +141251,10 @@
   },
   {
    "source": "בצלמ",
-   "target": "זה שלנו זה גמ כנ",
+   "target": "זה שלנו, זה גמ כנ",
    "type": "פרסמה",
    "source_name": "בצלם",
-   "target_name": "זה שלנו זה גם כן",
+   "target_name": "זה שלנו, זה גם כן",
    "evidence": [
     "202111-state-business-heb-pdf#0006"
    ],
@@ -142730,10 +141757,10 @@
    "support": 1
   },
   {
-   "source": "בשליחות המדינה: השתלטות המדינה על אדמות בגדה המערבית באמצעות אלימות של מתנחלימ",
+   "source": "בשליחות המדינה - השתלטות המדינה על קרקעות בגדה המערבית באמצעות אלימות מתנחלימ",
    "target": "נובמבר 2021",
    "type": "פורסם_ב",
-   "source_name": "בשליחות המדינה: השתלטות המדינה על אדמות בגדה המערבית באמצעות אלימות של מתנחלים",
+   "source_name": "בשליחות המדינה - השתלטות המדינה על קרקעות בגדה המערבית באמצעות אלימות מתנחלים",
    "target_name": "נובמבר 2021",
    "evidence": [
     "משכוכית-דוח-pdf#0005"
@@ -144616,10 +143643,10 @@
   },
   {
    "source": "גורמימ פלסטינימ",
-   "target": "בית הדינ הבינלאומי הפלילי",
+   "target": "בית הדינ הבינלאומי לצדק",
    "type": "פנו_ל",
    "source_name": "גורמים פלסטינים",
-   "target_name": "בית הדין הבינלאומי הפלילי",
+   "target_name": "בית הדין הבינלאומי לצדק",
    "evidence": [
     "202507-our-genocide-heb-pdf#0077"
    ],
@@ -144933,24 +143960,12 @@
    "source_name": "גוש עציון",
    "target_name": "איו\"ש",
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "גוש עציונ",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "גוש עציון",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "גוש עציונ",
@@ -145707,10 +144722,10 @@
    "support": 1
   },
   {
-   "source": "ד\"ר אביחי מנדלבליט",
+   "source": "אביחי מנדלבליט",
    "target": "היועצ המשפטי לממשלה",
    "type": "works_for",
-   "source_name": "ד\"ר אביחי מנדלבליט",
+   "source_name": "אביחי מנדלבליט",
    "target_name": "היועץ המשפטי לממשלה",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0036"
@@ -146397,10 +145412,10 @@
   },
   {
    "source": "דו\"ח ששונ",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "concerns",
    "source_name": "דו\"ח ששון",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0033"
    ],
@@ -148191,10 +147206,10 @@
    "support": 1
   },
   {
-   "source": "האיחוד האירופאי",
+   "source": "האיחוד האירופי",
    "target": "רצועת עזה",
    "type": "assessed",
-   "source_name": "האיחוד האירופאי",
+   "source_name": "האיחוד האירופי",
    "target_name": "רצועת עזה",
    "evidence": [
     "occupation-report-2025-pdf#0018"
@@ -149687,10 +148702,10 @@
   },
   {
    "source": "ההתנחלויות",
-   "target": "אמנת זינבה הרביעית",
+   "target": "אמנת ז'נבה הרביעית",
    "type": "violates",
    "source_name": "ההתנחלויות",
-   "target_name": "אמנת זינבה הרביעית",
+   "target_name": "אמנת ז'נבה הרביעית",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0038"
    ],
@@ -149855,10 +148870,10 @@
    "support": 1
   },
   {
-   "source": "הוועד הציבורי נגד עינויימ",
+   "source": "הוועד הציבורי נגד עינויימ בישראל",
    "target": "חוק הלב\"חימ",
    "type": "filed_petition_against",
-   "source_name": "הוועד הציבורי נגד עינויים",
+   "source_name": "הוועד הציבורי נגד עינויים בישראל",
    "target_name": "חוק הלב\"חים",
    "evidence": [
     "occupation-report-2025-pdf#0067"
@@ -150953,11 +149968,12 @@
    "source_name": "החטיבה להתיישבות",
    "target_name": "ההסתדרות הציונית",
    "evidence": [
-    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0001"
+    "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0001",
+    "כרם-נבות-חקלאות-pdf#0043"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "החטיבה להתיישבות",
@@ -150967,11 +149983,12 @@
    "target_name": "ההסתדרות הציונית העולמית",
    "evidence": [
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0019",
-    "shepherding-outposts-HEB-pdf#0009"
+    "shepherding-outposts-HEB-pdf#0009",
+    "YeshDin-Kramim-2-22-Heb-04-pdf#0028"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 2
+   "support": 3
   },
   {
    "source": "החטיבה להתיישבות",
@@ -152823,10 +151840,10 @@
   },
   {
    "source": "הליכוד",
-   "target": "ציונות הדתית",
+   "target": "הציונות הדתית",
    "type": "חתם_הסכם_קואליציוני_עם",
    "source_name": "הליכוד",
-   "target_name": "ציונות הדתית",
+   "target_name": "הציונות הדתית",
    "evidence": [
     "Hafiha-HEB-pdf#0015"
    ],
@@ -153629,10 +152646,10 @@
   },
   {
    "source": "המועצה האזורית",
-   "target": "תל-שילה-ח'רבת סילונ",
+   "target": "תל שילה-ח'רבת סילונ",
    "type": "manages",
    "source_name": "המועצה האזורית",
-   "target_name": "תל-שילה-ח'רבת סילון",
+   "target_name": "תל שילה-ח'רבת סילון",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0076"
    ],
@@ -154200,10 +153217,10 @@
    "support": 1
   },
   {
-   "source": "המועצות האזוריות הישראליות",
+   "source": "המועצות האזוריות",
    "target": "גדה המערבית",
    "type": "פועלות_ב",
-   "source_name": "המועצות האזוריות הישראליות",
+   "source_name": "המועצות האזוריות",
    "target_name": "גדה המערבית",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0030"
@@ -154635,11 +153652,12 @@
    "source_name": "המינהל האזרחי",
    "target_name": "שטח C",
    "evidence": [
-    "Displaced-communities-HEB-pdf#0059"
+    "Displaced-communities-HEB-pdf#0059",
+    "202305-parched-heb-pdf#0027"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "המינהל האזרחי",
@@ -156021,10 +155039,10 @@
    "support": 1
   },
   {
-   "source": "הממשל האמריקאי",
+   "source": "ממשל האמריקאי",
    "target": "ארגונ השומר יו\"ש",
    "type": "imposed_sanctions_on",
-   "source_name": "הממשל האמריקאי",
+   "source_name": "ממשל האמריקאי",
    "target_name": "ארגון השומר יו\"ש",
    "evidence": [
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0035"
@@ -156815,10 +155833,10 @@
   },
   {
    "source": "הממשלה",
-   "target": "הסדר מקרקעינ",
+   "target": "הסדר המקרקעינ",
    "type": "החליטה_לפתוח_בהליכי",
    "source_name": "הממשלה",
-   "target_name": "הסדר מקרקעין",
+   "target_name": "הסדר המקרקעין",
    "evidence": [
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0004"
    ],
@@ -157724,10 +156742,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "הגדה המערבית",
    "type": "administers",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "הגדה המערבית",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0041"
@@ -157737,10 +156755,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "פלסטינימ",
    "type": "agent_of_violence_against",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "פלסטינים",
    "evidence": [
     "202111-state-business-heb-pdf#0051"
@@ -157750,10 +156768,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "גוש עציונ",
    "type": "conducting_survey_in",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "גוש עציון",
    "evidence": [
     "cdb1a7-042fec58eafb449888ad93fef0b1bd01-pdf#0004"
@@ -157763,10 +156781,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "המדינה",
    "type": "confiscated_materials_from",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "המדינה",
    "evidence": [
     "202111-state-business-heb-pdf#0022"
@@ -157776,10 +156794,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "גדה המערבית",
    "type": "controls",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "גדה המערבית",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0028"
@@ -157789,23 +156807,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
-   "target": "שטח c",
-   "type": "controls",
-   "source_name": "המנהל האזרחי",
-   "target_name": "שטח C",
-   "evidence": [
-    "202305-parched-heb-pdf#0027"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "מעיינ אל-קוס",
    "type": "declared_as_archaeological_site",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "מעיין אל-קוס",
    "evidence": [
     "202111-state-business-heb-pdf#0028"
@@ -157815,10 +156820,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "השתלטות על קרקע",
    "type": "involved_in",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "השתלטות על קרקע",
    "evidence": [
     "משכוכית-דוח-pdf#0004"
@@ -157828,10 +156833,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "בתי מגורימ",
    "type": "issue_demolition_orders_against",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "בתי מגורים",
    "evidence": [
     "202111-state-business-heb-pdf#0052"
@@ -157841,10 +156846,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "צווי פינוי",
    "type": "issued",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "צווי פינוי",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0065"
@@ -157854,10 +156859,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "הפלסטינימ",
    "type": "issued_demolition_orders_against",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "הפלסטינים",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0007"
@@ -157867,10 +156872,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "חוות גלעד",
    "type": "issued_demolition_orders_for",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "חוות גלעד",
    "evidence": [
     "202111-state-business-heb-pdf#0035"
@@ -157880,10 +156885,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "חוות מעונ",
    "type": "issued_demolition_orders_for",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "חוות מעון",
    "evidence": [
     "202111-state-business-heb-pdf#0015"
@@ -157893,10 +156898,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "חירבת זנותה",
    "type": "issued_demolition_orders_in",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "חירבת זנותה",
    "evidence": [
     "202111-state-business-heb-pdf#0020"
@@ -157906,11 +156911,11 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
-   "target": "ארצ זית שמנ מובחר בע\"מ",
+   "source": "המינהל האזרחי",
+   "target": "ארצ זית שמנ מובחר",
    "type": "issued_evacuation_orders_against",
-   "source_name": "המנהל האזרחי",
-   "target_name": "ארץ זית שמן מובחר בע\"מ",
+   "source_name": "המינהל האזרחי",
+   "target_name": "ארץ זית שמן מובחר",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0085"
    ],
@@ -157919,10 +156924,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "מערת המכפלה",
    "type": "received_control",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "מערת המכפלה",
    "evidence": [
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0014"
@@ -157932,10 +156937,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "בקשות חופש מידע",
    "type": "rejected",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "בקשות חופש מידע",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0013"
@@ -157945,10 +156950,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "המתנחלימ",
    "type": "transfers_land_to",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "המתנחלים",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0014"
@@ -157958,10 +156963,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "מתנחלימ",
    "type": "transfers_land_to",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "מתנחלים",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0100"
@@ -157971,10 +156976,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "מתנחלימ",
    "type": "אישר_הקצאות_קרקע",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "מתנחלים",
    "evidence": [
     "משכוכית-דוח-pdf#0040"
@@ -157984,10 +156989,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "עינ סאמיה",
    "type": "הוציא_צווי_הריסה",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "עין סאמיה",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0003"
@@ -157997,10 +157002,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "אומ רקבה",
    "type": "הוציא_צווי_הריסה_ל",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "אום רקבה",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0061"
@@ -158010,10 +157015,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "וידאדי א-תחתא",
    "type": "הוציא_צווי_הריסה_ל",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "וידאדי א-תחתא",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0004"
@@ -158023,10 +157028,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "אל-קבונ",
    "type": "הוציא_צווי_הריסה_נגד",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "אל-קבון",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0004"
@@ -158036,10 +157041,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "חוות גלעד",
    "type": "הוציא_צווי_הריסה_נגד",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "חוות גלעד",
    "evidence": [
     "202111-state-business-heb-pdf#0038"
@@ -158049,10 +157054,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "ראס א-תינ",
    "type": "הוציא_צווי_הריסה_נגד",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "ראס א-תין",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0002"
@@ -158062,10 +157067,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "מערכת מידע גיאוגרפית",
    "type": "העביר",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "מערכת מידע גיאוגרפית",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0011"
@@ -158075,10 +157080,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "החטיבה להתיישבות",
    "type": "העביר_קרקעות_ל",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "החטיבה להתיישבות",
    "evidence": [
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0020"
@@ -158088,10 +157093,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "הפלסטינימ",
    "type": "העמיד_הגנות",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "הפלסטינים",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0121"
@@ -158101,10 +157106,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "תשתיות המימ והחשמל",
    "type": "הרס",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "תשתיות המים והחשמל",
    "evidence": [
     "202507-our-genocide-heb-pdf#0043"
@@ -158114,10 +157119,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "87 התנחלויות",
    "type": "לא_גבה_דמי_חכירה_מ",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "87 התנחלויות",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0031"
@@ -158127,10 +157132,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "סטטוס הבעלות על הקרקעות",
    "type": "מיפה",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "סטטוס הבעלות על הקרקעות",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0027"
@@ -158140,10 +157145,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "הגדה המערבית",
    "type": "מיפוי_בעלות",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "הגדה המערבית",
    "evidence": [
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0017"
@@ -158153,10 +157158,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "תוכניות מתאר",
    "type": "מסרב_להכין",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "תוכניות מתאר",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0005"
@@ -158166,10 +157171,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "גדה המערבית",
    "type": "פעיל_ב",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "גדה המערבית",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0021"
@@ -158179,10 +157184,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "קו כחול",
    "type": "פעל_דרך",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "קו כחול",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0078"
@@ -158192,10 +157197,10 @@
    "support": 1
   },
   {
-   "source": "המנהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "צווי הפקעה",
    "type": "פרסם",
-   "source_name": "המנהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "צווי הפקעה",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0011"
@@ -158491,10 +157496,10 @@
    "support": 1
   },
   {
-   "source": "המפקד הצבאי של הגדה המערבית",
+   "source": "המפקד הצבאי בגדה המערבית",
    "target": "הכרזה",
    "type": "חתם",
-   "source_name": "המפקד הצבאי של הגדה המערבית",
+   "source_name": "המפקד הצבאי בגדה המערבית",
    "target_name": "הכרזה",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0077"
@@ -158999,10 +158004,10 @@
   },
   {
    "source": "המשטרה",
-   "target": "אלימות המתנחלימ",
+   "target": "אלימות מתנחלימ",
    "type": "failed_to_prevent",
    "source_name": "המשטרה",
-   "target_name": "אלימות המתנחלים",
+   "target_name": "אלימות מתנחלים",
    "evidence": [
     "Displaced-communities-HEB-pdf#0013"
    ],
@@ -160187,24 +159192,12 @@
    "source_name": "הסדר המקרקעין",
    "target_name": "ירושלים המזרחית",
    "evidence": [
-    "occupation-report-2025-pdf#0055"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "הסדר מקרקעינ",
-   "target": "ירושלימ המזרחית",
-   "type": "located_in",
-   "source_name": "הסדר מקרקעין",
-   "target_name": "ירושלים המזרחית",
-   "evidence": [
+    "occupation-report-2025-pdf#0055",
     "occupation-report-2025-pdf#0056"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "הסדר רישומ המקרקעינ",
@@ -160533,10 +159526,10 @@
   },
   {
    "source": "הסכמ הביניימ",
-   "target": "רשות הפלסטינית",
+   "target": "הרשות הפלסטינית",
    "type": "signed_between",
    "source_name": "הסכם הביניים",
-   "target_name": "רשות הפלסטינית",
+   "target_name": "הרשות הפלסטינית",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0117"
    ],
@@ -161482,10 +160475,10 @@
   },
   {
    "source": "העברה בכפייה של פלסטינימ",
-   "target": "הדינ בינלאומי",
+   "target": "הדינ הבינלאומי",
    "type": "violates",
    "source_name": "העברה בכפייה של פלסטינים",
-   "target_name": "הדין בינלאומי",
+   "target_name": "הדין הבינלאומי",
    "evidence": [
     "occupation-report-2025-pdf#0047"
    ],
@@ -161495,10 +160488,10 @@
   },
   {
    "source": "העברת אתרי עתיקות לשליטה ישראלית",
-   "target": "משפט הבינלאומי",
+   "target": "המשפט הבינלאומי",
    "type": "protected_by",
    "source_name": "העברת אתרי עתיקות לשליטה ישראלית",
-   "target_name": "משפט הבינלאומי",
+   "target_name": "המשפט הבינלאומי",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0024"
    ],
@@ -161533,10 +160526,10 @@
    "support": 1
   },
   {
-   "source": "העיר העתיקה",
+   "source": "עיר העתיקה",
    "target": "אגנ ההיסטורי",
    "type": "located_in",
-   "source_name": "העיר העתיקה",
+   "source_name": "עיר העתיקה",
    "target_name": "אגן ההיסטורי",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0163"
@@ -162496,10 +161489,10 @@
   },
   {
    "source": "הצבא",
-   "target": "אלימות המתנחלימ",
+   "target": "אלימות מתנחלימ",
    "type": "failed_to_prevent",
    "source_name": "הצבא",
-   "target_name": "אלימות המתנחלים",
+   "target_name": "אלימות מתנחלים",
    "evidence": [
     "Displaced-communities-HEB-pdf#0013"
    ],
@@ -162678,10 +161671,10 @@
   },
   {
    "source": "הצבא",
-   "target": "השטחימ הכבושימ",
+   "target": "שטחימ הכבושימ",
    "type": "operates_in",
    "source_name": "הצבא",
-   "target_name": "השטחים הכבושים",
+   "target_name": "שטחים הכבושים",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0048"
    ],
@@ -164303,19 +163296,6 @@
   },
   {
    "source": "הר אדר",
-   "target": "איו\"ש",
-   "type": "located_in",
-   "source_name": "הר אדר",
-   "target_name": "איו\"ש",
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "הר אדר",
    "target": "יהודה ושומרונ",
    "type": "located_in",
    "source_name": "הר אדר",
@@ -164621,19 +163601,6 @@
    "target_name": "שומרון-שכם",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0096"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "הר חברונ",
-   "target": "איו\"ש",
-   "type": "located_in",
-   "source_name": "הר חברון",
-   "target_name": "איו\"ש",
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
    ],
    "cross_boundary": false,
    "scope": "chunk",
@@ -166656,10 +165623,10 @@
   },
   {
    "source": "התנחלויות",
-   "target": "אלופ פיקוד מרכז",
+   "target": "אלופ פיקוד המרכז",
    "type": "have_jurisdiction_set_by",
    "source_name": "התנחלויות",
-   "target_name": "אלוף פיקוד מרכז",
+   "target_name": "אלוף פיקוד המרכז",
    "evidence": [
     "Hafiha-HEB-pdf#0032"
    ],
@@ -167358,10 +166325,10 @@
   },
   {
    "source": "וועדת התכנונ העליונה",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "שייכת_ל",
    "source_name": "וועדת התכנון העליונה",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "202305-parched-heb-pdf#0017"
    ],
@@ -168151,10 +167118,10 @@
   },
   {
    "source": "ועדת לוי",
-   "target": "צו שימוש מפריע",
+   "target": "צו לשימוש מפריע",
    "type": "recommended_cancellation_of",
    "source_name": "ועדת לוי",
-   "target_name": "צו שימוש מפריע",
+   "target_name": "צו לשימוש מפריע",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0125"
    ],
@@ -168203,10 +167170,10 @@
   },
   {
    "source": "ועדת לוי",
-   "target": "הליכ הסדר מקרקעינ",
+   "target": "הסדר המקרקעינ",
    "type": "המליצה_על",
    "source_name": "ועדת לוי",
-   "target_name": "הליך הסדר מקרקעין",
+   "target_name": "הסדר המקרקעין",
    "evidence": [
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0019"
    ],
@@ -168281,10 +167248,10 @@
   },
   {
    "source": "ועדת שרימ לענייני מורשת",
-   "target": "תל-שילה-ח'רבת סילונ",
+   "target": "תל שילה-ח'רבת סילונ",
    "type": "decided_to_include",
    "source_name": "ועדת שרים לענייני מורשת",
-   "target_name": "תל-שילה-ח'רבת סילון",
+   "target_name": "תל שילה-ח'רבת סילון",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0072"
    ],
@@ -172752,10 +171719,10 @@
    "support": 1
   },
   {
-   "source": "חטיבה להתיישבות",
+   "source": "החטיבה להתיישבות",
    "target": "מצפה כרמימ",
    "type": "contributed_to_establishment",
-   "source_name": "חטיבה להתיישבות",
+   "source_name": "החטיבה להתיישבות",
    "target_name": "מצפה כרמים",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0002"
@@ -172765,36 +171732,10 @@
    "support": 1
   },
   {
-   "source": "חטיבה להתיישבות",
-   "target": "ההסתדרות הציונית העולמית",
-   "type": "part_of",
-   "source_name": "חטיבה להתיישבות",
-   "target_name": "ההסתדרות הציונית העולמית",
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0028"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "חטיבה להתיישבות",
-   "target": "ההסתדרות הציונית",
-   "type": "part_of",
-   "source_name": "חטיבה להתיישבות",
-   "target_name": "ההסתדרות הציונית",
-   "evidence": [
-    "כרם-נבות-חקלאות-pdf#0043"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "חטיבה להתיישבות",
+   "source": "החטיבה להתיישבות",
    "target": "הסכמ ההרשאה",
    "type": "party_to",
-   "source_name": "חטיבה להתיישבות",
+   "source_name": "החטיבה להתיישבות",
    "target_name": "הסכם ההרשאה",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0039"
@@ -172804,10 +171745,10 @@
    "support": 1
   },
   {
-   "source": "חטיבה להתיישבות",
+   "source": "החטיבה להתיישבות",
    "target": "מתנחלי מצפה כרמימ",
    "type": "signed_agreement_with",
-   "source_name": "חטיבה להתיישבות",
+   "source_name": "החטיבה להתיישבות",
    "target_name": "מתנחלי מצפה כרמים",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0028"
@@ -172817,10 +171758,10 @@
    "support": 1
   },
   {
-   "source": "חטיבה להתיישבות",
+   "source": "החטיבה להתיישבות",
    "target": "מרצ 1981",
    "type": "הוקצו_דונם_ב",
-   "source_name": "חטיבה להתיישבות",
+   "source_name": "החטיבה להתיישבות",
    "target_name": "מרץ 1981",
    "evidence": [
     "משכוכית-דוח-pdf#0009"
@@ -172830,10 +171771,10 @@
    "support": 1
   },
   {
-   "source": "חטיבה להתיישבות",
+   "source": "החטיבה להתיישבות",
    "target": "כוכב השחר",
    "type": "הרחיבה_את_שטח",
-   "source_name": "חטיבה להתיישבות",
+   "source_name": "החטיבה להתיישבות",
    "target_name": "כוכב השחר",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0017"
@@ -172843,10 +171784,10 @@
    "support": 1
   },
   {
-   "source": "חטיבה להתיישבות",
+   "source": "החטיבה להתיישבות",
    "target": "התנחלויות",
    "type": "מתחייבת_לביסוס",
-   "source_name": "חטיבה להתיישבות",
+   "source_name": "החטיבה להתיישבות",
    "target_name": "התנחלויות",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0017"
@@ -173000,10 +171941,10 @@
   },
   {
    "source": "חיילימ",
-   "target": "הקהילות הפלסטיניות",
+   "target": "קהילות פלסטיניות",
    "type": "forced_displacement_of",
    "source_name": "חיילים",
-   "target_name": "הקהילות הפלסטיניות",
+   "target_name": "קהילות פלסטיניות",
    "evidence": [
     "Displaced-communities-HEB-pdf#0083"
    ],
@@ -174456,10 +173397,10 @@
   },
   {
    "source": "חקל - ברית להגנה על זכויות אדמ",
-   "target": "תושבימ פלסטינימ",
+   "target": "תושבימ הפלסטינימ",
    "type": "represents",
    "source_name": "חקל - ברית להגנה על זכויות אדם",
-   "target_name": "תושבים פלסטינים",
+   "target_name": "תושבים הפלסטינים",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0001"
    ],
@@ -175886,10 +174827,10 @@
   },
   {
    "source": "יהודה פוקס",
-   "target": "אלופ פיקוד מרכז",
+   "target": "אלופ פיקוד המרכז",
    "type": "served_as",
    "source_name": "יהודה פוקס",
-   "target_name": "אלוף פיקוד מרכז",
+   "target_name": "אלוף פיקוד המרכז",
    "evidence": [
     "Hafiha-HEB-pdf#0034"
    ],
@@ -176379,10 +175320,10 @@
    "support": 1
   },
   {
-   "source": "יוזמת השלומ של הליגה הערבית",
+   "source": "יוזמת השלומ של הליגה הערבית מ-2002",
    "target": "אנאפוליס 2008",
    "type": "basis_for",
-   "source_name": "יוזמת השלום של הליגה הערבית",
+   "source_name": "יוזמת השלום של הליגה הערבית מ-2002",
    "target_name": "אנאפוליס 2008",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0151"
@@ -176392,10 +175333,10 @@
    "support": 1
   },
   {
-   "source": "יוזמת השלומ של הליגה הערבית",
+   "source": "יוזמת השלומ של הליגה הערבית מ-2002",
    "target": "2002",
    "type": "proposed_in",
-   "source_name": "יוזמת השלום של הליגה הערבית",
+   "source_name": "יוזמת השלום של הליגה הערבית מ-2002",
    "target_name": "2002",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0151"
@@ -176535,10 +175476,10 @@
    "support": 1
   },
   {
-   "source": "יונתנ קנוניצ",
+   "source": "יונתנ קנוניצ'",
    "target": "צוות יש דינ",
    "type": "member_of",
-   "source_name": "יונתן קנוניץ",
+   "source_name": "יונתן קנוניץ'",
    "target_name": "צוות יש דין",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0079"
@@ -177160,10 +176101,10 @@
   },
   {
    "source": "יחידת הפיקוח",
-   "target": "מינהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "part_of",
    "source_name": "יחידת הפיקוח",
-   "target_name": "מינהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "a76eb4-fee43c1eefca4e87a56adf4244ae8795-pdf#0024"
    ],
@@ -181580,29 +180521,17 @@
   },
   {
    "source": "ישראל",
-   "target": "משטר אפרטהייד",
-   "type": "implements",
-   "source_name": "ישראל",
-   "target_name": "משטר אפרטהייד",
-   "evidence": [
-    "202103-this-is-ours-and-this-too-heb-pdf#0090"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "ישראל",
    "target": "משטר האפרטהייד",
    "type": "implements",
    "source_name": "ישראל",
    "target_name": "משטר האפרטהייד",
    "evidence": [
+    "202103-this-is-ours-and-this-too-heb-pdf#0090",
     "202507-our-genocide-heb-pdf#0005"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "ישראל",
@@ -182919,10 +181848,10 @@
   },
   {
    "source": "ישראל",
-   "target": "אמנת ג'נבה הרביעית",
+   "target": "אמנת ז'נבה הרביעית",
    "type": "violates",
    "source_name": "ישראל",
-   "target_name": "אמנת ג'נבה הרביעית",
+   "target_name": "אמנת ז'נבה הרביעית",
    "evidence": [
     "Displaced-communities-HEB-pdf#0076"
    ],
@@ -182971,10 +181900,10 @@
   },
   {
    "source": "ישראל",
-   "target": "חוק הבינ-לאומי",
+   "target": "החוק הבינ-לאומי",
    "type": "violates",
    "source_name": "ישראל",
-   "target_name": "חוק הבין-לאומי",
+   "target_name": "החוק הבין-לאומי",
    "evidence": [
     "Displaced-communities-HEB-pdf#0039"
    ],
@@ -183582,10 +182511,10 @@
   },
   {
    "source": "ישראל",
-   "target": "רשות הפלסטינית",
+   "target": "הרשות הפלסטינית",
    "type": "העבירה_ל",
    "source_name": "ישראל",
-   "target_name": "רשות הפלסטינית",
+   "target_name": "הרשות הפלסטינית",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0054"
    ],
@@ -183608,10 +182537,10 @@
   },
   {
    "source": "ישראל",
-   "target": "רשות הפלסטינית",
+   "target": "הרשות הפלסטינית",
    "type": "העבירה_סמכויות_ל",
    "source_name": "ישראל",
-   "target_name": "רשות הפלסטינית",
+   "target_name": "הרשות הפלסטינית",
    "evidence": [
     "202101-this-is-apartheid-heb-pdf#0002"
    ],
@@ -189458,10 +188387,10 @@
   },
   {
    "source": "כרמ נבות",
-   "target": "זה שלנו זה גמ כנ",
+   "target": "זה שלנו, זה גמ כנ",
    "type": "פרסמה",
    "source_name": "כרם נבות",
-   "target_name": "זה שלנו זה גם כן",
+   "target_name": "זה שלנו, זה גם כן",
    "evidence": [
     "202111-state-business-heb-pdf#0006"
    ],
@@ -191252,10 +190181,10 @@
   },
   {
    "source": "מאחזימ",
-   "target": "תושבימ פלסטינימ",
+   "target": "תושבימ הפלסטינימ",
    "type": "הוקמו_על_אדמות_של",
    "source_name": "מאחזים",
-   "target_name": "תושבים פלסטינים",
+   "target_name": "תושבים הפלסטינים",
    "evidence": [
     "202111-state-business-heb-pdf#0002"
    ],
@@ -191564,10 +190493,10 @@
   },
   {
    "source": "מבואות יריחו",
-   "target": "חטיבה להתיישבות",
+   "target": "החטיבה להתיישבות",
    "type": "established_on_land_allocated_to",
    "source_name": "מבואות יריחו",
-   "target_name": "חטיבה להתיישבות",
+   "target_name": "החטיבה להתיישבות",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0043"
    ],
@@ -191902,10 +190831,10 @@
   },
   {
    "source": "מגילות",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "מגילות",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
@@ -193423,10 +192352,10 @@
   },
   {
    "source": "מודיעינ עילית",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "מודיעין עילית",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0093"
    ],
@@ -194580,10 +193509,10 @@
   },
   {
    "source": "מועצות אזוריות",
-   "target": "אלופ פיקוד מרכז",
+   "target": "אלופ פיקוד המרכז",
    "type": "have_jurisdiction_set_by",
    "source_name": "מועצות אזוריות",
-   "target_name": "אלוף פיקוד מרכז",
+   "target_name": "אלוף פיקוד המרכז",
    "evidence": [
     "Hafiha-HEB-pdf#0032"
    ],
@@ -196088,10 +195017,10 @@
   },
   {
    "source": "מטה בנימינ",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "מטה בנימין",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0123"
    ],
@@ -196542,10 +195471,10 @@
    "support": 1
   },
   {
-   "source": "מינהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "ביטול הקפאת הליכי ההסדר",
    "type": "המליץ_על",
-   "source_name": "מינהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "ביטול הקפאת הליכי ההסדר",
    "evidence": [
     "Hafiha-HEB-pdf#0038"
@@ -196555,10 +195484,10 @@
    "support": 1
   },
   {
-   "source": "מינהל האזרחי",
+   "source": "המינהל האזרחי",
    "target": "מינהלת ההתיישבות",
    "type": "מגיש_ל",
-   "source_name": "מינהל האזרחי",
+   "source_name": "המינהל האזרחי",
    "target_name": "מינהלת ההתיישבות",
    "evidence": [
     "Hafiha-HEB-pdf#0038"
@@ -196634,10 +195563,10 @@
   },
   {
    "source": "מינהלת ההתיישבות",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "controls",
    "source_name": "מינהלת ההתיישבות",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "Hafiha-HEB-pdf#0007"
    ],
@@ -197102,10 +196031,10 @@
   },
   {
    "source": "מכללות ימ המלח",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "מכללות ים המלח",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
@@ -198077,10 +197006,10 @@
   },
   {
    "source": "ממשלות ישראל",
-   "target": "אלימות המתנחלימ",
+   "target": "אלימות מתנחלימ",
    "type": "גילו_סובלנות_כלפי",
    "source_name": "ממשלות ישראל",
-   "target_name": "אלימות המתנחלים",
+   "target_name": "אלימות מתנחלים",
    "evidence": [
     "HE-Report-השומרוני-הרע-27-באפריל-2025-pdf#0005"
    ],
@@ -198675,10 +197604,10 @@
   },
   {
    "source": "ממשלת ישראל",
-   "target": "בנייה פלסטינית",
+   "target": "בנייה הפלסטינית",
    "type": "אוסרת",
    "source_name": "ממשלת ישראל",
-   "target_name": "בנייה פלסטינית",
+   "target_name": "בנייה הפלסטינית",
    "evidence": [
     "occupation-report-2025-pdf#0034"
    ],
@@ -199234,10 +198163,10 @@
   },
   {
    "source": "מנגנונ לקבלת החלטות בנושא בנייה בלתי חוקית",
-   "target": "אלופ פיקוד מרכז",
+   "target": "אלופ פיקוד המרכז",
    "type": "הוסכם_על_ידי",
    "source_name": "מנגנון לקבלת החלטות בנושא בנייה בלתי חוקית",
-   "target_name": "אלוף פיקוד מרכז",
+   "target_name": "אלוף פיקוד המרכז",
    "evidence": [
     "Hafiha-HEB-pdf#0038"
    ],
@@ -199955,19 +198884,6 @@
    "target_name": "אי\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0067"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "מעלה אדומימ",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "מעלה אדומים",
-   "target_name": "איז\"ש",
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
@@ -201118,10 +200034,10 @@
    "support": 1
   },
   {
-   "source": "מעשי אלימות של מתנחלימ",
+   "source": "אלימות מתנחלימ",
    "target": "הגדה",
    "type": "occur_in",
-   "source_name": "מעשי אלימות של מתנחלים",
+   "source_name": "אלימות מתנחלים",
    "target_name": "הגדה",
    "evidence": [
     "202111-state-business-heb-pdf#0052"
@@ -202094,10 +201010,10 @@
   },
   {
    "source": "מצפה כרמימ",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "located_in",
    "source_name": "מצפה כרמים",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0037"
    ],
@@ -202873,10 +201789,10 @@
    "support": 1
   },
   {
-   "source": "משטר אפרטהייד",
+   "source": "משטר האפרטהייד",
    "target": "מדינת ישראל",
    "type": "established_in",
-   "source_name": "משטר אפרטהייד",
+   "source_name": "משטר האפרטהייד",
    "target_name": "מדינת ישראל",
    "evidence": [
     "202507-our-genocide-heb-pdf#0006"
@@ -202886,10 +201802,10 @@
    "support": 1
   },
   {
-   "source": "משטר אפרטהייד",
+   "source": "משטר האפרטהייד",
    "target": "ישראל",
    "type": "exists_in",
-   "source_name": "משטר אפרטהייד",
+   "source_name": "משטר האפרטהייד",
    "target_name": "ישראל",
    "evidence": [
     "202507-our-genocide-heb-pdf#0007"
@@ -203043,10 +201959,10 @@
   },
   {
    "source": "משטר האפרטהייד הישראלי",
-   "target": "מעשי אלימות של מתנחלימ",
+   "target": "אלימות מתנחלימ",
    "type": "enable",
    "source_name": "משטר האפרטהייד הישראלי",
-   "target_name": "מעשי אלימות של מתנחלים",
+   "target_name": "אלימות מתנחלים",
    "evidence": [
     "202111-state-business-heb-pdf#0052"
    ],
@@ -203107,10 +202023,10 @@
    "support": 1
   },
   {
-   "source": "משטר הישראלי",
+   "source": "המשטר הישראלי",
    "target": "הימ לירדנ",
    "type": "operates_in",
-   "source_name": "משטר הישראלי",
+   "source_name": "המשטר הישראלי",
    "target_name": "הים לירדן",
    "evidence": [
     "202507-our-genocide-heb-pdf#0005"
@@ -203120,10 +202036,10 @@
    "support": 1
   },
   {
-   "source": "משטר הישראלי",
+   "source": "המשטר הישראלי",
    "target": "פלסטינימ",
    "type": "oppresses",
-   "source_name": "משטר הישראלי",
+   "source_name": "המשטר הישראלי",
    "target_name": "פלסטינים",
    "evidence": [
     "202507-our-genocide-heb-pdf#0005"
@@ -203133,10 +202049,10 @@
    "support": 1
   },
   {
-   "source": "משטר הישראלי",
+   "source": "המשטר הישראלי",
    "target": "יהודימ",
    "type": "promotes_supremacy_of",
-   "source_name": "משטר הישראלי",
+   "source_name": "המשטר הישראלי",
    "target_name": "יהודים",
    "evidence": [
     "202507-our-genocide-heb-pdf#0005"
@@ -203459,10 +202375,10 @@
   },
   {
    "source": "משכנ שילה",
-   "target": "תל-שילה-ח'רבת סילונ",
+   "target": "תל שילה-ח'רבת סילונ",
    "type": "operates_at",
    "source_name": "משכן שילה",
-   "target_name": "תל-שילה-ח'רבת סילון",
+   "target_name": "תל שילה-ח'רבת סילון",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0069"
    ],
@@ -204928,10 +203844,10 @@
   },
   {
    "source": "משרד המורשת",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "operates_in",
    "source_name": "משרד המורשת",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "Hafiha-HEB-pdf#0017"
    ],
@@ -205149,10 +204065,10 @@
   },
   {
    "source": "משרד הפנימ",
-   "target": "התנחלויות החרדיות",
+   "target": "התנחלויות חרדיות",
    "type": "מעניק_מענקים_ל",
    "source_name": "משרד הפנים",
-   "target_name": "התנחלויות החרדיות",
+   "target_name": "התנחלויות חרדיות",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0037"
    ],
@@ -205175,10 +204091,10 @@
   },
   {
    "source": "משרד הפנימ",
-   "target": "יישובימ הערביימ",
+   "target": "יישובימ ערביימ",
    "type": "מעניק_מענקים_ל",
    "source_name": "משרד הפנים",
-   "target_name": "יישובים הערביים",
+   "target_name": "יישובים ערביים",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0037"
    ],
@@ -206956,10 +205872,10 @@
   },
   {
    "source": "מתנחלימ",
-   "target": "הקהילות הפלסטיניות",
+   "target": "קהילות פלסטיניות",
    "type": "forced_displacement_of",
    "source_name": "מתנחלים",
-   "target_name": "הקהילות הפלסטיניות",
+   "target_name": "קהילות פלסטיניות",
    "evidence": [
     "Displaced-communities-HEB-pdf#0083"
    ],
@@ -206969,10 +205885,10 @@
   },
   {
    "source": "מתנחלימ",
-   "target": "אדמות הפלסטיניות",
+   "target": "אדמות פלסטיניות",
    "type": "grazed_herds_in",
    "source_name": "מתנחלים",
-   "target_name": "אדמות הפלסטיניות",
+   "target_name": "אדמות פלסטיניות",
    "evidence": [
     "Displaced-communities-HEB-pdf#0013"
    ],
@@ -207749,10 +206665,10 @@
   },
   {
    "source": "מתנחלימ",
-   "target": "תושבימ פלסטינימ",
+   "target": "תושבימ הפלסטינימ",
    "type": "גזלו_מ",
    "source_name": "מתנחלים",
-   "target_name": "תושבים פלסטינים",
+   "target_name": "תושבים הפלסטינים",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0106"
    ],
@@ -209439,10 +208355,10 @@
   },
   {
    "source": "מתתיהו דרובלס",
-   "target": "חטיבה להתיישבות",
+   "target": "החטיבה להתיישבות",
    "type": "led",
    "source_name": "מתתיהו דרובלס",
-   "target_name": "חטיבה להתיישבות",
+   "target_name": "החטיבה להתיישבות",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0029"
    ],
@@ -210674,10 +209590,10 @@
   },
   {
    "source": "ניר כהנ אלורו",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "works_for",
    "source_name": "ניר כהן אלורו",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0062"
    ],
@@ -213443,10 +212359,10 @@
   },
   {
    "source": "סמוטריצ'",
-   "target": "תפקיד שר נוספ במשרד הביטחונ",
+   "target": "שר נוספ במשרד הביטחונ",
    "type": "מונה",
    "source_name": "סמוטריץ'",
-   "target_name": "תפקיד שר נוסף במשרד הביטחון",
+   "target_name": "שר נוסף במשרד הביטחון",
    "evidence": [
     "review-icjs-advisory-opinion-regarding-israels-actions-in-th#0014"
    ],
@@ -213729,10 +212645,10 @@
   },
   {
    "source": "סעיפ 28(2)(a)(2)(a) לחוקת רומא של בית הדינ הבינלאומי הפלילי",
-   "target": "בית הדינ הבינלאומי הפלילי",
+   "target": "בית הדינ הבינלאומי לצדק",
    "type": "part_of",
    "source_name": "סעיף 28(2)(a)(2)(a) לחוקת רומא של בית הדין הבינלאומי הפלילי",
-   "target_name": "בית הדין הבינלאומי הפלילי",
+   "target_name": "בית הדין הבינלאומי לצדק",
    "evidence": [
     "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0054"
    ],
@@ -214235,19 +213151,6 @@
    "support": 1
   },
   {
-   "source": "עבד אל-רחמנ קאסמ",
-   "target": "שר הביטחונ",
-   "type": "filed_petition_against",
-   "source_name": "עבד אל-רחמן קאסם",
-   "target_name": "שר הביטחון",
-   "evidence": [
-    "YeshDin-Kramim-2-22-Heb-04-pdf#0043"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
    "source": "עבד אלדאימ עגאג",
    "target": "ג'ריר",
    "type": "resides_in",
@@ -214418,10 +213321,10 @@
   },
   {
    "source": "עדויות",
-   "target": "רופאימ לזכויות אדמ",
+   "target": "רופאימ לזכויות אדמ ישראל",
    "type": "תועדו_על_ידי",
    "source_name": "עדויות",
-   "target_name": "רופאים לזכויות אדם",
+   "target_name": "רופאים לזכויות אדם ישראל",
    "evidence": [
     "occupation-report-2025-pdf#0075"
    ],
@@ -214756,10 +213659,10 @@
   },
   {
    "source": "עו\"ד פליאה אלבק",
-   "target": "פרקליטות הצבאית",
+   "target": "הפרקליטות הצבאית",
    "type": "sent_letter_to",
    "source_name": "עו\"ד פליאה אלבק",
-   "target_name": "פרקליטות הצבאית",
+   "target_name": "הפרקליטות הצבאית",
    "evidence": [
     "משכוכית-דוח-pdf#0022"
    ],
@@ -215939,10 +214842,10 @@
   },
   {
    "source": "עיקרונ המשלמות",
-   "target": "בית הדינ הבינלאומי הפלילי",
+   "target": "בית הדינ הבינלאומי לצדק",
    "type": "מנע_העמדה_לדין_בשל",
    "source_name": "עיקרון המשלמות",
-   "target_name": "בית הדין הבינלאומי הפלילי",
+   "target_name": "בית הדין הבינלאומי לצדק",
    "evidence": [
     "202507-our-genocide-heb-pdf#0080"
    ],
@@ -216615,10 +215518,10 @@
   },
   {
    "source": "עמותת משכנ שילה",
-   "target": "תל-שילה-ח'רבת סילונ",
+   "target": "תל שילה-ח'רבת סילונ",
    "type": "manages",
    "source_name": "עמותת משכן שילה",
-   "target_name": "תל-שילה-ח'רבת סילון",
+   "target_name": "תל שילה-ח'רבת סילון",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0070"
    ],
@@ -218188,10 +217091,10 @@
   },
   {
    "source": "עת\"מ 6128-08-19",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "against",
    "source_name": "עת\"מ 6128-08-19",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "משכוכית-דוח-pdf#0039"
    ],
@@ -220684,10 +219587,10 @@
   },
   {
    "source": "צבי",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "supported_by",
    "source_name": "צבי",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "202111-state-business-heb-pdf#0036"
    ],
@@ -221399,10 +220302,10 @@
   },
   {
    "source": "צה\"ל",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "operates_in",
    "source_name": "צה\"ל",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0115"
    ],
@@ -221867,10 +220770,10 @@
   },
   {
    "source": "צו 1651",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "applies_to",
    "source_name": "צו 1651",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0126"
    ],
@@ -221945,10 +220848,10 @@
   },
   {
    "source": "צו בדבר הוראות ביטחונ (יהודה והשומרונ) (מס' 378), התשי\"ל-1970",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "applies_to",
    "source_name": "צו בדבר הוראות ביטחון (יהודה והשומרון) (מס' 378), התשי\"ל-1970",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0027"
    ],
@@ -221971,10 +220874,10 @@
   },
   {
    "source": "הצו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה והשומרונ) (מס' 321), תשכ\"ט 1969",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "applies_to",
    "source_name": "הצו בדבר חוק הקרקעות (רכישה לצרכי ציבור) (יהודה והשומרון) (מס' 321), תשכ\"ט 1969",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0005"
    ],
@@ -222028,24 +220931,12 @@
    "source_name": "צו בדבר עסקאות במקרקעין (יהודה והשומרון (מס' 25) תשכ\"ז-1967",
    "target_name": "עסקאות במקרקעין",
    "evidence": [
-    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0017"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "צו בדבר עסקאות במקרקעינ (יהודה ושומרונ) (מס' 25), התשכ\"ז-1967",
-   "target": "עסקאות במקרקעינ",
-   "type": "regulates",
-   "source_name": "צו בדבר עסקאות במקרקעין (יהודה ושומרון) (מס' 25), התשכ\"ז-1967",
-   "target_name": "עסקאות במקרקעין",
-   "evidence": [
+    "fron-occupation-to-annexation-final-Hebrew-Web-pdf#0017",
     "כרם-נבות-חקלאות-pdf#0035"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "צו בדבר רכוש ממשלתי (יהודה והשומרונ) (מס' 59)",
@@ -222062,10 +220953,10 @@
   },
   {
    "source": "צו בדבר רכוש ממשלתי (יהודה והשומרונ) (מס' 59)",
-   "target": "יהודה והשומרונ",
+   "target": "יהודה ושומרונ",
    "type": "located_in",
    "source_name": "צו בדבר רכוש ממשלתי (יהודה והשומרון) (מס' 59)",
-   "target_name": "יהודה והשומרון",
+   "target_name": "יהודה ושומרון",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0037"
    ],
@@ -222166,10 +221057,10 @@
   },
   {
    "source": "צו ההפקעה הראשונ",
-   "target": "כפר א-לובנ א-שרקייה",
+   "target": "א-לובנ א-שרקייה",
    "type": "affects",
    "source_name": "צו ההפקעה הראשון",
-   "target_name": "כפר א-לובן א-שרקייה",
+   "target_name": "א-לובן א-שרקייה",
    "evidence": [
     "202103-this-is-ours-and-this-too-heb-pdf#0070"
    ],
@@ -222542,10 +221433,10 @@
    "support": 1
   },
   {
-   "source": "צו סילוק פולשימ",
+   "source": "צו לסילוק פולשימ",
    "target": "1999",
    "type": "exists_since",
-   "source_name": "צו סילוק פולשים",
+   "source_name": "צו לסילוק פולשים",
    "target_name": "1999",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0123"
@@ -222829,10 +221720,10 @@
   },
   {
    "source": "צווי הפקעה צבאיימ",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "issued_by",
    "source_name": "צווי הפקעה צבאיים",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0003"
    ],
@@ -223830,19 +222721,6 @@
   },
   {
    "source": "קדומימ",
-   "target": "איו\"ש",
-   "type": "located_in",
-   "source_name": "קדומים",
-   "target_name": "איו\"ש",
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "קדומימ",
    "target": "יהודה ושומרונ",
    "type": "located_in",
    "source_name": "קדומים",
@@ -223934,10 +222812,10 @@
   },
   {
    "source": "קדמה",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "requires_approval_from",
    "source_name": "קדמה",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "משכוכית-דוח-pdf#0044"
    ],
@@ -225078,10 +223956,10 @@
   },
   {
    "source": "קלקיליה",
-   "target": "איז\"ש",
+   "target": "איו\"ש",
    "type": "located_in",
    "source_name": "קלקיליה",
-   "target_name": "איז\"ש",
+   "target_name": "איו\"ש",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0093"
    ],
@@ -225208,10 +224086,10 @@
   },
   {
    "source": "קמ\"ט ארכיאולוגיה",
-   "target": "תל-שילה-ח'רבת סילונ",
+   "target": "תל שילה-ח'רבת סילונ",
    "type": "has_authority_over",
    "source_name": "קמ\"ט ארכיאולוגיה",
-   "target_name": "תל-שילה-ח'רבת סילון",
+   "target_name": "תל שילה-ח'רבת סילון",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0070"
    ],
@@ -225234,10 +224112,10 @@
   },
   {
    "source": "קמ\"ט ארכיאולוגיה",
-   "target": "מינהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "located_in",
    "source_name": "קמ\"ט ארכיאולוגיה",
-   "target_name": "מינהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0078"
    ],
@@ -225689,10 +224567,10 @@
   },
   {
    "source": "קמ\"ט ארכיאולוגיה",
-   "target": "מינהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "operates_in",
    "source_name": "קמ\"ט ארכיאולוגיה",
-   "target_name": "מינהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0024"
    ],
@@ -226261,19 +225139,6 @@
   },
   {
    "source": "קריית ארבע",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "קריית ארבע",
-   "target_name": "איז\"ש",
-   "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "קריית ארבע",
    "target": "גדה המערבית",
    "type": "located_in",
    "source_name": "קריית ארבע",
@@ -226526,24 +225391,12 @@
    "source_name": "קרני שומרון",
    "target_name": "איו\"ש",
    "evidence": [
-    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044"
-   ],
-   "cross_boundary": false,
-   "scope": "chunk",
-   "support": 1
-  },
-  {
-   "source": "קרני שומרונ",
-   "target": "איז\"ש",
-   "type": "located_in",
-   "source_name": "קרני שומרון",
-   "target_name": "איז\"ש",
-   "evidence": [
+    "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0044",
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0072"
    ],
    "cross_boundary": false,
    "scope": "chunk",
-   "support": 1
+   "support": 2
   },
   {
    "source": "קרני שומרונ",
@@ -227703,10 +226556,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "הליכימ משפטיימ",
    "type": "analyzed",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "הליכים משפטיים",
    "evidence": [
     "occupation-report-2025-pdf#0026"
@@ -227716,10 +226569,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "מניעת טיפול רפואי",
    "type": "analyzed",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "מניעת טיפול רפואי",
    "evidence": [
     "202601-living-hell-heb-pdf#0012"
@@ -227729,10 +226582,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "עזה",
    "type": "collected_testimonies_about",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "עזה",
    "evidence": [
     "occupation-report-2025-pdf#0022"
@@ -227742,10 +226595,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "קהילות הרועימ הפלסטיניות",
    "type": "documents",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "קהילות הרועים הפלסטיניות",
    "evidence": [
     "Displaced-communities-HEB-pdf#0003"
@@ -227755,10 +226608,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "הוועד נגד עינויימ",
    "type": "filed_petition",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "הוועד נגד עינויים",
    "evidence": [
     "occupation-report-2025-pdf#0072"
@@ -227768,10 +226621,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "חוק הלב\"חימ",
    "type": "filed_petition_against",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "חוק הלב\"חים",
    "evidence": [
     "occupation-report-2025-pdf#0067"
@@ -227781,10 +226634,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "שדה תימנ",
    "type": "filed_petition_regarding",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "שדה תימן",
    "evidence": [
     "occupation-report-2025-pdf#0071"
@@ -227794,10 +226647,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "אמהות תחת אש",
    "type": "published",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "אמהות תחת אש",
    "evidence": [
     "occupation-report-2025-pdf#0022"
@@ -227807,10 +226660,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "משרד הבריאות הפלסטיני ברצועת עזה",
    "type": "received_data_from",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "משרד הבריאות הפלסטיני ברצועת עזה",
    "evidence": [
     "202507-our-genocide-heb-pdf#0021"
@@ -227820,10 +226673,10 @@
    "support": 1
   },
   {
-   "source": "רופאימ לזכויות אדמ",
+   "source": "רופאימ לזכויות אדמ ישראל",
    "target": "קהילות פלסטיניות",
    "type": "visited",
-   "source_name": "רופאים לזכויות אדם",
+   "source_name": "רופאים לזכויות אדם ישראל",
    "target_name": "קהילות פלסטיניות",
    "evidence": [
     "Displaced-communities-HEB-pdf#0002"
@@ -228627,10 +227480,10 @@
   },
   {
    "source": "רס\"נ עזרא אפרתי",
-   "target": "מפקדת אזור יהודה ושומרונ",
+   "target": "מפקדת יהודה ושומרונ",
    "type": "works_for",
    "source_name": "רס\"ן עזרא אפרתי",
-   "target_name": "מפקדת אזור יהודה ושומרון",
+   "target_name": "מפקדת יהודה ושומרון",
    "evidence": [
     "shepherding-outposts-HEB-pdf#0050"
    ],
@@ -229068,10 +227921,10 @@
    "support": 1
   },
   {
-   "source": "רשות הפלסטינית",
+   "source": "הרשות הפלסטינית",
    "target": "1994",
    "type": "established_in",
-   "source_name": "רשות הפלסטינית",
+   "source_name": "הרשות הפלסטינית",
    "target_name": "1994",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0149"
@@ -229081,10 +227934,10 @@
    "support": 1
   },
   {
-   "source": "רשות הפלסטינית",
+   "source": "הרשות הפלסטינית",
    "target": "אתרימ ארכיאולוגיימ בעזה",
    "type": "קיבלה_שליטה",
-   "source_name": "רשות הפלסטינית",
+   "source_name": "הרשות הפלסטינית",
    "target_name": "אתרים ארכיאולוגיים בעזה",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0019"
@@ -229094,10 +227947,10 @@
    "support": 1
   },
   {
-   "source": "רשות הפלשתינית",
+   "source": "הרשות הפלשתינית",
    "target": "ערביי יהודה ושומרונ",
    "type": "governs",
-   "source_name": "רשות הפלשתינית",
+   "source_name": "הרשות הפלשתינית",
    "target_name": "ערביי יהודה ושומרון",
    "evidence": [
     "תוכנית-ההכרעה-של-בצלאל-סמוטריצ-pdf#0019"
@@ -230720,10 +229573,10 @@
   },
   {
    "source": "שופטת פרוקצ'יה",
-   "target": "צו סילוק פולשימ",
+   "target": "צו לסילוק פולשימ",
    "type": "commented_on",
    "source_name": "שופטת פרוקצ'יה",
-   "target_name": "צו סילוק פולשים",
+   "target_name": "צו לסילוק פולשים",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0123"
    ],
@@ -231097,10 +229950,10 @@
   },
   {
    "source": "שטחי אש",
-   "target": "המועצות האזוריות הישראליות",
+   "target": "המועצות האזוריות",
    "type": "overlap_with",
    "source_name": "שטחי אש",
-   "target_name": "המועצות האזוריות הישראליות",
+   "target_name": "המועצות האזוריות",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0058"
    ],
@@ -231227,10 +230080,10 @@
   },
   {
    "source": "שייקה ארז",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "heads",
    "source_name": "שייקה ארז",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "דוח-צווי-הפקעה-6-6-pdf#0040"
    ],
@@ -231279,10 +230132,10 @@
   },
   {
    "source": "שילה",
-   "target": "תל-שילה-ח'רבת סילונ",
+   "target": "תל שילה-ח'רבת סילונ",
    "type": "controls",
    "source_name": "שילה",
-   "target_name": "תל-שילה-ח'רבת סילון",
+   "target_name": "תל שילה-ח'רבת סילון",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0076"
    ],
@@ -231578,10 +230431,10 @@
   },
   {
    "source": "שימוש של חיילימ בפלסטינימ כ\"מגנימ אנושיימ\"",
-   "target": "המשפט הישראלי",
+   "target": "משפט הישראלי",
    "type": "violates",
    "source_name": "שימוש של חיילים בפלסטינים כ\"מגנים אנושיים\"",
-   "target_name": "המשפט הישראלי",
+   "target_name": "משפט הישראלי",
    "evidence": [
     "report-all-2024-pdf#0024"
    ],
@@ -232124,10 +230977,10 @@
   },
   {
    "source": "שלומ עכשיו",
-   "target": "המנהל האזרחי",
+   "target": "המינהל האזרחי",
    "type": "received_data_from",
    "source_name": "שלום עכשיו",
-   "target_name": "המנהל האזרחי",
+   "target_name": "המינהל האזרחי",
    "evidence": [
     "202309-pogroms-are-working-transfer-already-happening-heb-pd#0006"
    ],
@@ -232448,10 +231301,10 @@
    "support": 1
   },
   {
-   "source": "שלמה מושקוביצ",
+   "source": "שלמה מושקוביצ'",
    "target": "לשכת התכנונ",
    "type": "headed",
-   "source_name": "שלמה מושקוביץ",
+   "source_name": "שלמה מושקוביץ'",
    "target_name": "לשכת התכנון",
    "evidence": [
     "YeshDin-Kramim-2-22-Heb-04-pdf#0040"
@@ -232566,10 +231419,10 @@
   },
   {
    "source": "שמורות טבע",
-   "target": "המועצות האזוריות הישראליות",
+   "target": "המועצות האזוריות",
    "type": "overlap_with",
    "source_name": "שמורות טבע",
-   "target_name": "המועצות האזוריות הישראליות",
+   "target_name": "המועצות האזוריות",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0058"
    ],
@@ -233449,10 +232302,10 @@
    "support": 1
   },
   {
-   "source": "שש המועצות האזוריות היהודיות",
+   "source": "6 המועצות האזוריות היהודיות",
    "target": "יהודה ושומרונ",
    "type": "located_in",
-   "source_name": "שש המועצות האזוריות היהודיות",
+   "source_name": "6 המועצות האזוריות היהודיות",
    "target_name": "יהודה ושומרון",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0024"
@@ -233528,10 +232381,10 @@
   },
   {
    "source": "תאיל מוטי אלמוז",
-   "target": "צו שימוש מפריע",
+   "target": "צו לשימוש מפריע",
    "type": "refrained_from_enforcing",
    "source_name": "תאיל מוטי אלמוז",
-   "target_name": "צו שימוש מפריע",
+   "target_name": "צו לשימוש מפריע",
    "evidence": [
     "כרם-נבות-חקלאות-pdf#0125"
    ],
@@ -234906,10 +233759,10 @@
   },
   {
    "source": "תושבי הר חברונ",
-   "target": "קריית גת",
+   "target": "קרית גת",
    "type": "travel_to",
    "source_name": "תושבי הר חברון",
-   "target_name": "קריית גת",
+   "target_name": "קרית גת",
    "evidence": [
     "נאחזים-בשטח-או-מאחזים-עיניים-שאול-אריאלי-pdf#0090"
    ],
@@ -235504,10 +234357,10 @@
   },
   {
    "source": "תכנית מתאר 2000",
-   "target": "עריית ירושלימ",
+   "target": "עיריית ירושלימ",
    "type": "created_by",
    "source_name": "תכנית מתאר 2000",
-   "target_name": "עריית ירושלים",
+   "target_name": "עיריית ירושלים",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0074"
    ],
@@ -235737,10 +234590,10 @@
    "support": 1
   },
   {
-   "source": "תל-שילה-ח'רבת סילונ",
+   "source": "תל שילה-ח'רבת סילונ",
    "target": "תכנית אתרי מורשת לאומית",
    "type": "included_in",
-   "source_name": "תל-שילה-ח'רבת סילון",
+   "source_name": "תל שילה-ח'רבת סילון",
    "target_name": "תכנית אתרי מורשת לאומית",
    "evidence": [
     "Menachsim-Heb-Web-pdf#0072"

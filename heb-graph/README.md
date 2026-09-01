@@ -6,8 +6,12 @@ pipeline (`kg_pipeline/build_evidence_graph.py` -> `build_ontology.py` ->
 `entity_resolution.py`). Committed here rather than in `nanonto`, since
 this data is corpus-specific to this demo, not general pipeline code.
 
-Run once, manually, on 2026-08-31, against the actual uploaded corpus (not
-a fixture) — not wired into `.github/workflows/deploy.yml` yet.
+Run manually on 2026-08-31 (extraction, ontology, first dedup pass) and
+2026-09-01 (second dedup pass), against the actual uploaded corpus (not a
+fixture). Served live by `mcp-server/` (an MCP server, see its README) and
+by the static graph/ontology explorer published via GitHub Pages
+(`.github/workflows/pages.yml`) — not wired into `.github/workflows/deploy.yml`
+(the BYOK chat site under `site/`) yet.
 
 ## What's here
 
@@ -68,13 +72,28 @@ the actual dedup work here.
   value.
 - cost: 90 calls, $0.41
 
-**Entity resolution / dedup** (`entity_resolution.py --language he`):
-- 300 candidate pairs verified (capped by `--max-candidates`), 103 SAME / 197 DIFFERENT
-- 98 merges applied (some SAME pairs collapsed via transitive union — flagged `size>2` in the audit for extra scrutiny)
-- final graph: **8,757 entities, 9,159 relationships**
-- cost: not captured (lost to a log-truncation mistake on my end, not a real omission) — call count and prompt size put it well under $0.20, negligible next to the extraction cost above
+**Entity resolution / dedup** (`entity_resolution.py --language he`), run twice:
+- Pass 1: 300 candidates verified, 103 SAME / 197 DIFFERENT, 98 merges applied
+  → 8,855 → 8,757 entities.
+- Pass 2 (after fixing a real bug — see below): 300 more candidates
+  (already-audited pairs excluded), 81 SAME / 219 DIFFERENT, 81 merges applied
+  → 8,757 → **8,676 entities, 9,132 relationships**. Cost: $0.25.
+- The dedup pass first failed silently for about an hour: the API key in use
+  was scoped to multiple workspaces, so every call was rejected with "
+  anthropic-workspace-id is required..." and retried 5 times before moving
+  on — burning wall-clock time at **$0 actual cost** (every call failed
+  before being billed). Fixed in `nanonto` by adding
+  `ANTHROPIC_WORKSPACE_ID` env var support to `llm_client.get_client()`.
+- `alias_candidates_audit.tsv` accumulates across both passes — every
+  candidate either run has considered, accepted or not, is in there.
+- Real fragmentation was still present after pass 1 (found by querying the
+  live MCP server, not by inspecting the file directly): 15+ separate
+  entities for "settlers" alone (מתנחלימ, המתנחלימ, מתנחלימ ישראלימ, ...)
+  from OCR-artifact spelling variants and definite-article prefixes never
+  merged. Pass 2 cut into this but candidates are capped at 300/run by
+  design (cost control) — a further pass would likely find more.
 
-**Total: ~$6.0** across all three steps.
+**Total: ~$6.25** across extraction + ontology + both dedup passes.
 
 ## Known rough edges (spot-checked, not fixed)
 
