@@ -1,0 +1,61 @@
+# Publishes a self-contained knowledge-graph + ontology explorer to GitHub
+# Pages. Zero secrets, zero LLM calls -- build_explorer.py is a pure data
+# transform: it splices this repo's already-built heb-graph/*.json into
+# nanonto's generic explorer template (cloned fresh each run, not vendored
+# here) and disables the template's unrelated built-in chat panel.
+
+name: Deploy KG explorer to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "heb-graph/**"
+      - "build_explorer.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Clone nanonto (for the explorer template)
+        run: git clone --depth 1 https://github.com/yoavbendor/nanonto.git nanonto-engine
+
+      - name: Build the explorer page
+        run: |
+          mkdir -p _site
+          python3 build_explorer.py \
+            --template nanonto-engine/kg_pipeline/explorer/kg_explorer_template.html \
+            --graph heb-graph/graph.json \
+            --ontology heb-graph/ontology.json \
+            --chunks heb-graph/chunks.json \
+            --label "Hebrew corpus (KeremNavotHeb)" \
+            --out _site/index.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
