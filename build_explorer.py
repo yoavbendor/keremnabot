@@ -57,6 +57,7 @@ def build_dataset(graph: Dict[str, Any], ontology: Dict[str, Any], chunks: List[
             "a": e.get("aliases", []),
             "y": False,
             "d": primary_doc,
+            "ev": e.get("evidence", []),
         })
 
     relations = []
@@ -66,6 +67,7 @@ def build_dataset(graph: Dict[str, Any], ontology: Dict[str, Any], chunks: List[
             "t": r["target"],
             "p": r["type"],
             "w": r.get("support", len(r.get("evidence", []))),
+            "ev": r.get("evidence", []),
         })
 
     classes = []
@@ -78,9 +80,44 @@ def build_dataset(graph: Dict[str, Any], ontology: Dict[str, Any], chunks: List[
         "relations": relations,
         "classes": classes,
         "docs": docs_list,
+        "doc_index": doc_index,
         "label": f"{label} — {len(entities)} entities, {len(relations)} relations, "
                  f"{len(docs_list)} documents, {len(classes)} ontology classes",
     }
+
+
+def build_evidence_index(dataset: Dict[str, Any], chunks: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Client-side lookup table for evidence chunk-ids -> quoted text, so the
+    static explorer can show real source quotes with no LLM/MCP call -- just
+    the same evidence-id -> chunk mapping get_evidence_text resolves server-
+    side, fetched lazily as a sibling JSON file instead of baked into the page
+    (would roughly double an already multi-MB __KG_DATA__ payload, for quotes
+    most visitors never open).
+    """
+    doc_index = dataset["doc_index"]
+    referenced: set = set()
+    for e in dataset["entities"]:
+        referenced.update(e.get("ev", []))
+    for r in dataset["relations"]:
+        referenced.update(r.get("ev", []))
+
+    chunk_by_id = {c["chunk_id"]: c for c in chunks}
+    index: Dict[str, Any] = {}
+    for evidence_id in referenced:
+        if evidence_id.startswith("doc:"):
+            doc_id = evidence_id[len("doc:"):]
+            if doc_id in doc_index:
+                index[evidence_id] = {"doc": True, "d": doc_index[doc_id]}
+            continue
+        chunk = chunk_by_id.get(evidence_id)
+        if chunk is None:
+            continue
+        index[evidence_id] = {
+            "d": doc_index.get(chunk["doc_id"]),
+            "h": chunk.get("heading_path", ""),
+            "b": chunk.get("body", ""),
+        }
+    return index
 
 
 def splice(template_html: str, dataset: Dict[str, Any], arm_key: str, arm_title: str,
@@ -146,11 +183,19 @@ def main() -> int:
     build_version = args.build_version or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
 
     dataset = build_dataset(graph, ontology, chunks, args.label)
-    html = splice(template_html, dataset, args.arm_key, args.label, build_version)
+    evidence_index = build_evidence_index(dataset, chunks)
+    dataset_for_page = {k: v for k, v in dataset.items() if k != "doc_index"}
+    html = splice(template_html, dataset_for_page, args.arm_key, args.label, build_version)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(html, encoding="utf-8")
+
+    evidence_path = args.out.parent / "evidence.json"
+    evidence_path.write_text(json.dumps(evidence_index, ensure_ascii=False), encoding="utf-8")
+
     print(f"wrote {args.out} ({len(html):,} chars) -- {dataset['label']} -- build {build_version}")
+    print(f"wrote {evidence_path} ({evidence_path.stat().st_size:,} bytes) -- "
+          f"{len(evidence_index):,} evidence entries resolved")
     return 0
 
 

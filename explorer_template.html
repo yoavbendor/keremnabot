@@ -176,6 +176,26 @@
 
   .class-desc { font-size: 12px; color: var(--ink-dim); text-wrap: balance; margin: 4px 0 10px; }
 
+  /* ---- Evidence quotes (client-side, no LLM -- straight off the graph's
+     evidence chunk-ids and the evidence.json lookup fetched lazily) ---- */
+  .evidence-toggle {
+    font-size: 11.5px; background: none; border: 1px solid var(--border); border-radius: 5px;
+    color: var(--ink-dim); padding: 3px 8px; cursor: pointer; margin: 2px 0;
+  }
+  .evidence-toggle:hover { border-color: var(--accent); color: var(--accent); }
+  .evidence-list { list-style: none; margin: 8px 0 0; padding: 0; }
+  .evidence-item { padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .evidence-src { font-size: 10.5px; color: var(--ink-faint); margin-bottom: 3px; }
+  .evidence-quote { color: var(--ink); text-wrap: balance; }
+  .evidence-quote mark { background: var(--accent-2); color: var(--accent-ink); border-radius: 2px; }
+  .evidence-doc-note { font-style: italic; color: var(--ink-faint); }
+  .edge-ev-btn {
+    font-size: 10px; background: none; border: none; color: var(--ink-faint); cursor: pointer;
+    padding: 0; margin-top: 2px; text-decoration: underline; text-underline-offset: 2px;
+  }
+  .edge-ev-btn:hover { color: var(--accent); }
+  .edge-evidence { margin: 4px 0 0; padding-left: 10px; border-left: 2px solid var(--border); }
+
   .trace-hop { display: flex; align-items: baseline; gap: 6px; font-size: 12px; padding: 3px 0; cursor: pointer; }
   .trace-hop:hover .trace-name { color: var(--accent); }
   .trace-pred { font-family: var(--font-mono); font-size: 10px; color: var(--ink-faint); flex-shrink: 0; }
@@ -1093,6 +1113,12 @@
       </div>
       ${e.a.length ? `<div class="alias-list">also seen as: ${e.a.map(escapeHtml).join(", ")}</div>` : ""}
       <button class="btn" id="copyCtxBtn" style="margin-top:10px;width:100%">Copy context for chat</button>
+      ${(e.ev || []).length ? `
+      <section class="panel" style="margin-top:16px">
+        <h2>Evidence</h2>
+        <button class="evidence-toggle" id="evToggleBtn" type="button" data-label="Show ${e.ev.length} quote${e.ev.length === 1 ? "" : "s"}">Show ${e.ev.length} quote${e.ev.length === 1 ? "" : "s"}</button>
+        <div id="evPanel"></div>
+      </section>` : ""}
       <section class="panel" style="margin-top:16px">
         <h2>Outgoing (${out.length})</h2>
         <ul class="edge-list">${edgeRows(out, "t")}</ul>
@@ -1104,6 +1130,13 @@
 
     box.querySelectorAll(".edge-row").forEach(el => el.addEventListener("click", () => focusEntity(el.dataset.key)));
     document.getElementById("copyCtxBtn").addEventListener("click", () => copyContext(e, out, inn, cls));
+    if ((e.ev || []).length) attachEvidenceToggle(document.getElementById("evToggleBtn"), e.ev, document.getElementById("evPanel"));
+    box.querySelectorAll(".edge-ev-btn").forEach(btn => {
+      btn.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        toggleEvidencePanel(btn, JSON.parse(btn.getAttribute("data-ev")), btn.nextElementSibling);
+      });
+    });
   }
 
   function renderMemberList(keys) {
@@ -1121,14 +1154,66 @@
     const rows = shown.map(r => {
       const otherKey = r[otherField];
       const other = state.byKey.get(otherKey);
+      const ev = r.ev || [];
       return `<li class="edge-row" data-key="${escapeAttr(otherKey)}">
         <span class="edge-pred">${escapeHtml(r.p)}</span>
         <span class="edge-target">${escapeHtml(other ? other.n : otherKey)}</span>
         <span class="edge-weight">support ${r.w} · strength ${(r.z ?? 0.3).toFixed(2)}</span>
+        ${ev.length ? `<button class="edge-ev-btn" type="button" data-ev="${escapeAttr(JSON.stringify(ev))}" data-label="Show ${ev.length} quote${ev.length === 1 ? "" : "s"}">Show ${ev.length} quote${ev.length === 1 ? "" : "s"}</button><div class="edge-evidence"></div>` : ""}
       </li>`;
     }).join("");
     const more = list.length > 25 ? `<div class="more-note">+${list.length - 25} more</div>` : "";
     return rows + more;
+  }
+
+  // ---------------- Evidence quotes (client-side, straight off graph.json's
+  // evidence chunk-ids -- no LLM, no MCP call; same data get_evidence_text
+  // serves, just resolved locally against a lazily-fetched lookup table) ----
+  let evidenceCache = null, evidencePromise = null;
+  function loadEvidence() {
+    if (evidenceCache) return Promise.resolve(evidenceCache);
+    if (!evidencePromise) {
+      evidencePromise = fetch("evidence.json").then(r => r.json())
+        .then(j => { evidenceCache = j; return j; })
+        .catch(() => { evidenceCache = {}; return evidenceCache; });
+    }
+    return evidencePromise;
+  }
+
+  function renderEvidenceEntries(ids) {
+    const seen = new Set(), rows = [];
+    for (const id of ids) {
+      if (seen.has(id)) continue;
+      seen.add(id);
+      const ent = evidenceCache[id];
+      if (!ent) continue;
+      const src = `${escapeHtml(state.docs[ent.d] || "")}${ent.h ? " · " + escapeHtml(ent.h) : ""}`;
+      rows.push(ent.doc
+        ? `<li class="evidence-item"><div class="evidence-src">${src}</div>
+             <div class="evidence-doc-note">Document-level fact — not tied to one passage in this document.</div></li>`
+        : `<li class="evidence-item"><div class="evidence-src">${src}</div>
+             <div class="evidence-quote" dir="auto">${escapeHtml(ent.b)}</div></li>`);
+    }
+    return rows.length ? `<ul class="evidence-list">${rows.join("")}</ul>`
+      : `<div class="empty-state">No quoted passages resolved for these evidence ids.</div>`;
+  }
+
+  function toggleEvidencePanel(btn, ids, targetEl) {
+    if (targetEl.dataset.open === "1") {
+      targetEl.innerHTML = ""; targetEl.dataset.open = "0";
+      btn.textContent = btn.dataset.label;
+      return;
+    }
+    btn.textContent = "Loading…";
+    loadEvidence().then(() => {
+      targetEl.innerHTML = renderEvidenceEntries(ids);
+      targetEl.dataset.open = "1";
+      btn.textContent = btn.dataset.label.replace("Show", "Hide");
+    });
+  }
+
+  function attachEvidenceToggle(btn, ids, targetEl) {
+    btn.addEventListener("click", () => toggleEvidencePanel(btn, ids, targetEl));
   }
 
   function copyContext(e, out, inn, cls) {
