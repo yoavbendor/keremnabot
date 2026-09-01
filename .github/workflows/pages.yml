@@ -49,6 +49,7 @@ jobs:
             --ontology heb-graph/ontology.json \
             --chunks heb-graph/chunks.json \
             --label "Hebrew corpus (KeremNavotHeb)" \
+            --build-version "${GITHUB_SHA::7} ($(date -u +%Y-%m-%dT%H:%MZ))" \
             --out _site/index.html
 
       # enablement: true -- Pages was never turned on for this repo (no one

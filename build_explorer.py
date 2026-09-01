@@ -20,6 +20,7 @@ import argparse
 import collections
 import json
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -82,9 +83,11 @@ def build_dataset(graph: Dict[str, Any], ontology: Dict[str, Any], chunks: List[
     }
 
 
-def splice(template_html: str, dataset: Dict[str, Any], arm_key: str, arm_title: str) -> str:
+def splice(template_html: str, dataset: Dict[str, Any], arm_key: str, arm_title: str,
+           build_version: str) -> str:
     data_json = json.dumps({arm_key: dataset}, ensure_ascii=False)
     html = template_html.replace("__KG_DATA__", data_json)
+    html = html.replace("__BUILD_VERSION__", build_version)
 
     html = re.sub(
         r'const ARM_ORDER = \[.*?\];',
@@ -96,6 +99,19 @@ def splice(template_html: str, dataset: Dict[str, Any], arm_key: str, arm_title:
         f'const ARM_TITLES = {{ "{arm_key}": {json.dumps(arm_title, ensure_ascii=False)} }};',
         html, count=1,
     )
+
+    # The template's initial-load call is a separate hardcoded arm name, not
+    # derived from ARM_ORDER -- missing this left the page rendering its
+    # static HTML shell (search box, sliders, etc.) while DATA["A"] was
+    # undefined, throwing inside loadArm() and silently aborting before any
+    # node ever rendered. Exactly one occurrence in the template; error out
+    # instead of silently doing nothing if that ever stops being true.
+    html, n = re.subn(r'loadArm\("A"\)', f'loadArm("{arm_key}")', html, count=1)
+    if n != 1:
+        raise RuntimeError(
+            f"expected exactly one loadArm(\"A\") call in the template, found {n} -- "
+            "the template's init call site may have changed; update this script"
+        )
 
     # The template's bundled "chat" panel calls api.anthropic.com directly with
     # no key -- not this repo's design (BYOK/MCP happen elsewhere). Hide it
@@ -116,6 +132,9 @@ def main() -> int:
     ap.add_argument("--chunks", required=True, type=Path)
     ap.add_argument("--label", default="Hebrew corpus (KeremNavotHeb)")
     ap.add_argument("--arm-key", default="HE")
+    ap.add_argument("--build-version", default=None,
+                     help="shown in the page's build badge, to confirm a deploy matches what "
+                          "you expect; defaults to a UTC build timestamp if not given")
     ap.add_argument("--out", required=True, type=Path)
     args = ap.parse_args()
 
@@ -124,12 +143,14 @@ def main() -> int:
     chunks = json.loads(args.chunks.read_text(encoding="utf-8"))
     template_html = args.template.read_text(encoding="utf-8")
 
+    build_version = args.build_version or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+
     dataset = build_dataset(graph, ontology, chunks, args.label)
-    html = splice(template_html, dataset, args.arm_key, args.label)
+    html = splice(template_html, dataset, args.arm_key, args.label, build_version)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(html, encoding="utf-8")
-    print(f"wrote {args.out} ({len(html):,} chars) -- {dataset['label']}")
+    print(f"wrote {args.out} ({len(html):,} chars) -- {dataset['label']} -- build {build_version}")
     return 0
 
 
