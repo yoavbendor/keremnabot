@@ -51,7 +51,13 @@ jobs:
             --label "Hebrew corpus (KeremNavotHeb)" \
             --out _site/index.html
 
+      # enablement: true -- Pages was never turned on for this repo (no one
+      # had visited Settings > Pages yet); without this, configure-pages
+      # fails with "Get Pages site failed... Not Found" instead of creating
+      # the site. Only matters on the very first successful run.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
