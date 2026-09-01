@@ -1,0 +1,1336 @@
+<title>Kerem Navot Graph</title>
+<style>
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141813; --surface: #1b2018; --surface-2: #232a1f; --surface-3: #2b3325;
+      --border: #34402c; --ink: #e7e8de; --ink-dim: #a6ac98; --ink-faint: #6d7362;
+      --accent: #8fa662; --accent-ink: #141813; --accent-2: #c97a46;
+      --edge: #454f3d; --edge-strong: #6b7a5a; --cross-doc: #e0b23d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141813; --surface: #1b2018; --surface-2: #232a1f; --surface-3: #2b3325;
+    --border: #34402c; --ink: #e7e8de; --ink-dim: #a6ac98; --ink-faint: #6d7362;
+    --accent: #8fa662; --accent-ink: #141813; --accent-2: #c97a46;
+    --edge: #454f3d; --edge-strong: #6b7a5a; --cross-doc: #e0b23d;
+  }
+  :root {
+    --bg: #eef0ea; --surface: #f7f8f4; --surface-2: #e4e7dc; --surface-3: #dadec9;
+    --border: #c7cdba; --ink: #1e2420; --ink-dim: #55604f; --ink-faint: #8b9380;
+    --accent: #5b6b3f; --accent-ink: #f7f8f4; --accent-2: #a15c33;
+    --edge: #c2c8b3; --edge-strong: #9aa387; --cross-doc: #a3781f;
+
+    --type-person: #b5533c; --type-org: #3c6e8f; --type-gpe: #6b4c9a;
+    --type-location: #3d8a6f; --type-facility: #a67c3d; --type-event: #9a4c74;
+    --type-law: #2f8a8a; --type-date: #8c8c4c; --type-concept: #6b6f5a;
+
+    --font-display: ui-serif, Charter, "Iowan Old Style", "Noto Serif", Georgia, serif;
+    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body {
+    background: var(--bg); color: var(--ink); font-family: var(--font-ui);
+    font-size: 13.5px; line-height: 1.5; overflow: hidden;
+  }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+  button, input { font-family: inherit; font-size: inherit; color: inherit; }
+  button:focus-visible, input:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 1px;
+  }
+
+  #app { display: grid; grid-template-rows: auto 1fr; height: 100vh; }
+
+  /* ---- Top bar ---- */
+  header {
+    display: flex; align-items: center; gap: 20px; padding: 10px 18px;
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    z-index: 5;
+  }
+  .brand { display: flex; align-items: baseline; gap: 9px; flex-shrink: 0; }
+  .brand h1 {
+    font-family: var(--font-display); font-size: 18px; font-weight: 600;
+    margin: 0; letter-spacing: 0.2px; text-wrap: balance;
+  }
+  .brand .sub { font-size: 11px; color: var(--ink-faint); }
+  .build-badge {
+    font-family: var(--font-mono); font-size: 10px; color: var(--accent);
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px;
+    padding: 2px 6px; letter-spacing: 0.2px;
+  }
+  .arm-tabs { display: flex; gap: 2px; background: var(--surface-2); border-radius: 5px; padding: 2px; }
+  .arm-tab {
+    border: none; background: transparent; color: var(--ink-dim); cursor: pointer;
+    padding: 6px 13px; border-radius: 4px; font-weight: 600; font-size: 12.5px;
+    letter-spacing: 0.3px;
+  }
+  .arm-tab[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); }
+  .arm-meta { font-size: 11.5px; color: var(--ink-faint); font-family: var(--font-mono); }
+  .top-spacer { flex: 1; }
+  .top-actions { display: flex; gap: 8px; align-items: center; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border);
+    background: var(--surface-2); color: var(--ink); border-radius: 5px;
+    padding: 6px 11px; cursor: pointer; font-size: 12px; font-weight: 500;
+  }
+  .btn:hover { background: var(--surface-3); }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .btn.primary:hover { filter: brightness(1.08); }
+  .btn:disabled { opacity: 0.45; cursor: default; }
+  .check-label {
+    display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: var(--ink-dim);
+    cursor: pointer; user-select: none; white-space: nowrap;
+  }
+  .check-label input { accent-color: var(--cross-doc); }
+
+  /* ---- Layout ---- */
+  .layout { display: grid; grid-template-columns: 280px 1fr 320px; min-height: 0; }
+  aside, .inspector { background: var(--surface); overflow-y: auto; min-height: 0; }
+  aside { border-right: 1px solid var(--border); padding: 14px; }
+  .inspector { border-left: 1px solid var(--border); padding: 14px; }
+  section.panel { margin-bottom: 20px; }
+  .panel h2 {
+    font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.9px;
+    color: var(--ink-faint); margin: 0 0 9px; font-weight: 700;
+  }
+
+  input[type="search"], input[type="text"] {
+    width: 100%; background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--ink); border-radius: 5px; padding: 7px 9px;
+  }
+  input[type="range"] { width: 100%; accent-color: var(--accent); }
+  .range-row { display: flex; justify-content: space-between; font-size: 11px; color: var(--ink-faint); margin-top: 3px; }
+
+  .result-list { max-height: 220px; overflow-y: auto; margin-top: 8px; }
+  .result-item {
+    display: flex; align-items: center; gap: 7px; padding: 5px 6px; border-radius: 4px;
+    cursor: pointer; font-size: 12.5px;
+  }
+  .result-item:hover { background: var(--surface-2); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .result-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .result-count { margin-left: auto; font-family: var(--font-mono); color: var(--ink-faint); font-size: 10.5px; }
+
+  .legend { display: flex; flex-direction: column; gap: 5px; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; cursor: pointer; }
+  .legend-item.off { opacity: 0.35; }
+  .legend-count { margin-left: auto; font-family: var(--font-mono); color: var(--ink-faint); font-size: 10.5px; }
+
+  .tree { font-size: 12.5px; }
+  .tree-node { margin: 1px 0; }
+  .tree-row {
+    display: flex; align-items: center; gap: 5px; padding: 3px 5px; border-radius: 4px;
+    cursor: pointer;
+  }
+  .tree-row:hover { background: var(--surface-2); }
+  .tree-row.active { background: var(--surface-3); }
+  .tree-children { margin-left: 14px; border-left: 1px solid var(--border); padding-left: 8px; }
+  .tree-count { margin-left: auto; font-family: var(--font-mono); color: var(--ink-faint); font-size: 10.5px; }
+
+  /* ---- Canvas ---- */
+  .canvas-wrap { position: relative; background: var(--bg); overflow: hidden; }
+  canvas { display: block; width: 100%; height: 100%; cursor: grab; }
+  canvas.dragging { cursor: grabbing; }
+  .canvas-hint {
+    position: absolute; bottom: 12px; left: 14px; font-size: 11px; color: var(--ink-faint);
+    font-family: var(--font-mono); pointer-events: none;
+  }
+  .canvas-status {
+    position: absolute; top: 12px; left: 14px; font-size: 11.5px; color: var(--ink-dim);
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    padding: 4px 9px; border-radius: 5px; border: 1px solid var(--border);
+  }
+  .relax-overlay {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    background: color-mix(in srgb, var(--bg) 70%, transparent);
+    font-family: var(--font-mono); font-size: 12px; color: var(--ink-dim);
+  }
+  .relax-overlay[hidden] { display: none; }
+
+  /* ---- Inspector ---- */
+  .empty-state { color: var(--ink-faint); font-size: 12.5px; padding: 10px 2px; text-wrap: balance; }
+  .insp-name { font-family: var(--font-display); font-size: 17px; margin: 0 0 2px; text-wrap: balance; }
+  .insp-key { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint); word-break: break-all; }
+  .badge-row { display: flex; flex-wrap: wrap; gap: 5px; margin: 10px 0; }
+  .badge {
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.3px; padding: 3px 7px;
+    border-radius: 4px; background: var(--surface-2); color: var(--ink-dim);
+  }
+  .badge.type { color: var(--accent-ink); }
+  .badge.synth { background: var(--accent-2); color: var(--accent-ink); }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: 12px; margin: 10px 0; }
+  .kv dt { color: var(--ink-faint); }
+  .kv dd { margin: 0; font-family: var(--font-mono); }
+  .alias-list { font-size: 12px; color: var(--ink-dim); }
+  .edge-list { list-style: none; margin: 6px 0 0; padding: 0; }
+  .edge-row {
+    padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12px; cursor: pointer;
+  }
+  .edge-row:hover .edge-target { color: var(--accent); }
+  .edge-pred { color: var(--ink-faint); font-family: var(--font-mono); font-size: 10.5px; }
+  .edge-target { display: block; margin-top: 1px; }
+  .edge-weight { font-family: var(--font-mono); color: var(--ink-faint); font-size: 10.5px; }
+  .more-note { color: var(--ink-faint); font-size: 11px; margin-top: 6px; }
+
+  .class-desc { font-size: 12px; color: var(--ink-dim); text-wrap: balance; margin: 4px 0 10px; }
+
+  .trace-hop { display: flex; align-items: baseline; gap: 6px; font-size: 12px; padding: 3px 0; cursor: pointer; }
+  .trace-hop:hover .trace-name { color: var(--accent); }
+  .trace-pred { font-family: var(--font-mono); font-size: 10px; color: var(--ink-faint); flex-shrink: 0; }
+  .trace-arrow { color: var(--ink-faint); flex-shrink: 0; }
+  .trace-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .trace-score {
+    display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10.5px;
+    color: var(--ink-faint); margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border);
+  }
+  .trace-score b { color: var(--accent); font-weight: 700; }
+  .trace-empty { font-size: 11.5px; color: var(--ink-faint); }
+  .trace-alt { font-size: 10.5px; color: var(--ink-faint); margin-top: 4px; cursor: pointer; }
+  .trace-alt:hover { color: var(--accent); }
+
+  ::-webkit-scrollbar { width: 9px; height: 9px; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+
+  /* ---- Chat drawer ---- */
+  .chat-drawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: min(400px, 92vw);
+    background: var(--surface); border-left: 1px solid var(--border);
+    display: flex; flex-direction: column; z-index: 20;
+    transform: translateX(100%); transition: transform 0.18s ease;
+    box-shadow: -8px 0 24px rgba(0,0,0,0.18);
+  }
+  .chat-drawer.open { transform: translateX(0); }
+  .chat-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px; border-bottom: 1px solid var(--border);
+  }
+  .chat-head h2 { margin: 0; font-family: var(--font-display); font-size: 16px; font-weight: 600; }
+  .icon-btn { padding: 4px 8px; }
+  .chat-scope-tabs {
+    display: flex; gap: 2px; background: var(--surface-2); border-radius: 5px;
+    padding: 2px; margin: 12px 16px 0;
+  }
+  .chat-scope-tab {
+    flex: 1; border: none; background: transparent; color: var(--ink-dim); cursor: pointer;
+    padding: 6px 8px; border-radius: 4px; font-weight: 600; font-size: 11.5px;
+  }
+  .chat-scope-tab[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); }
+  .chat-context-info {
+    font-size: 10.5px; color: var(--ink-faint); font-family: var(--font-mono);
+    padding: 8px 16px 0;
+  }
+  .chat-messages { flex: 1; overflow-y: auto; padding: 12px 16px; display: flex; flex-direction: column; gap: 10px; }
+  .chat-empty { color: var(--ink-faint); font-size: 12.5px; line-height: 1.6; }
+  .chat-msg {
+    border-radius: 8px; padding: 9px 11px; font-size: 12.5px; line-height: 1.55;
+    white-space: pre-wrap; max-width: 92%;
+  }
+  .chat-msg.user { align-self: flex-end; background: var(--accent); color: var(--accent-ink); }
+  .chat-msg.assistant { align-self: flex-start; background: var(--surface-2); border: 1px solid var(--border); }
+  .chat-msg.notice {
+    align-self: stretch; max-width: none; background: var(--surface-2);
+    border: 1px solid var(--cross-doc); color: var(--ink); font-size: 12px;
+  }
+  .chat-msg.pending { align-self: flex-start; color: var(--ink-faint); font-style: italic; background: transparent; border: none; padding: 4px 2px; }
+  .chat-input-row { display: flex; gap: 8px; padding: 10px 16px; border-top: 1px solid var(--border); }
+  .chat-input-row textarea {
+    flex: 1; resize: none; border: 1px solid var(--border); border-radius: 6px;
+    background: var(--surface-2); color: var(--ink); padding: 9px 10px; font-family: inherit;
+    font-size: 12.5px; max-height: 120px;
+  }
+  .chat-foot {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 6px 16px 12px; font-size: 10.5px; color: var(--ink-faint);
+  }
+  .chat-foot a { color: var(--ink-faint); cursor: pointer; }
+  .chat-foot a:hover { color: var(--accent); }
+</style>
+
+<div id="app">
+  <header>
+    <div class="brand">
+      <h1>Kerem Navot Graph</h1>
+      <span class="sub">evidence-linked KG explorer</span>
+      <span class="build-badge" id="buildBadge" title="Redeploy identifier — confirm this matches what you expect before trusting the data">__BUILD_VERSION__</span>
+    </div>
+    <div class="arm-tabs" id="armTabs" role="tablist"></div>
+    <span class="arm-meta" id="armMeta"></span>
+    <div class="top-spacer"></div>
+    <div class="top-actions">
+      <div class="arm-tabs" id="layoutTabs" role="tablist"></div>
+      <label class="check-label">
+        <input type="checkbox" id="crossDocToggle" checked>
+        highlight inter-document edges
+      </label>
+      <button class="btn" id="resetViewBtn" title="Reset pan/zoom">Reset view</button>
+      <button class="btn" id="downloadBtn">Export visible subgraph</button>
+      <button class="btn primary" id="chatToggleBtn">Chat about this arm</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <section class="panel">
+        <h2>Search entities</h2>
+        <input type="search" id="searchInput" placeholder="Name contains…" autocomplete="off">
+        <div class="result-list" id="searchResults"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Visible nodes</h2>
+        <input type="range" id="topNSlider" min="30" max="500" step="10">
+        <div class="range-row"><span id="topNLabel"></span><span>ranked by support</span></div>
+      </section>
+
+      <section class="panel">
+        <h2>Entity type</h2>
+        <div class="legend" id="typeLegend"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Ontology classes</h2>
+        <div class="tree" id="classTree"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Trace connection</h2>
+        <input type="text" id="traceFrom" placeholder="From entity…" autocomplete="off">
+        <input type="text" id="traceTo" placeholder="To entity…" autocomplete="off" style="margin-top:6px">
+        <button class="btn primary" id="traceBtn" style="width:100%;margin-top:8px;justify-content:center">Find weighted path</button>
+        <div id="traceResult" style="margin-top:10px"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Inter-document edges</h2>
+        <div id="crossDocPanel" class="result-list" style="max-height:260px"></div>
+      </section>
+    </aside>
+
+    <div class="canvas-wrap" id="canvasWrap">
+      <canvas id="graphCanvas"></canvas>
+      <div class="canvas-status" id="canvasStatus"></div>
+      <div class="canvas-hint">drag to pan · scroll to zoom · click a node</div>
+      <div class="relax-overlay" id="relaxOverlay" hidden>settling layout…</div>
+    </div>
+
+    <div class="inspector" id="inspector">
+      <div class="empty-state">Click a node to inspect it, or a class in the left panel to see its members.</div>
+    </div>
+  </div>
+
+  <div class="chat-drawer" id="chatDrawer">
+    <div class="chat-head">
+      <h2>Chat about this arm</h2>
+      <button class="btn icon-btn" id="chatCloseBtn" title="Close">✕</button>
+    </div>
+    <div class="chat-scope-tabs" id="chatScopeTabs" role="tablist"></div>
+    <div class="chat-context-info" id="chatContextInfo"></div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-empty">Ask about the ontology classes, the entities and relations currently visible in the graph, or both.</div>
+    </div>
+    <div class="chat-input-row">
+      <textarea id="chatInput" rows="1" placeholder="Ask about this data…"></textarea>
+      <button class="btn primary" id="chatSendBtn">Send</button>
+    </div>
+    <div class="chat-foot">
+      <span id="chatModelLabel"></span>
+      <a href="#" id="chatClearBtn">Clear conversation</a>
+    </div>
+  </div>
+</div>
+
+<script id="kg-data" type="application/json">__KG_DATA__</script>
+<script>
+(function () {
+  "use strict";
+  const DATA = JSON.parse(document.getElementById("kg-data").textContent);
+  const ARM_ORDER = ["A", "B", "D", "F"];
+  const ARM_TITLES = { A: "A", B: "B", D: "D", F: "F" };
+
+  const TYPE_COLORS = {
+    PERSON: "--type-person", ORG: "--type-org", GPE: "--type-gpe",
+    LOCATION: "--type-location", FACILITY: "--type-facility", EVENT: "--type-event",
+    LAW: "--type-law", DATE: "--type-date", CONCEPT: "--type-concept",
+  };
+  function typeColor(t) {
+    const v = TYPE_COLORS[t] || "--type-concept";
+    return getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  }
+
+  // ---------------- State ----------------
+  let state = {
+    arm: "A",
+    entities: [], relations: [], classes: [], byKey: new Map(), classOf: new Map(),
+    topN: 150,
+    visibleKeys: new Set(),
+    hiddenTypes: new Set(),
+    nodes: [], edges: [], // laid-out subset
+    selected: null, // key
+    hoverKey: null,
+    activeClass: null,
+    view: { x: 0, y: 0, scale: 1 },
+    docs: [],
+    layoutMode: "force", // "force" | "doc"
+    highlightCrossDoc: true,
+  };
+
+  const canvas = document.getElementById("graphCanvas");
+  const ctx = canvas.getContext("2d");
+  const wrap = document.getElementById("canvasWrap");
+  const statusEl = document.getElementById("canvasStatus");
+  const relaxOverlay = document.getElementById("relaxOverlay");
+
+  function resizeCanvas() {
+    const r = wrap.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = r.width * dpr; canvas.height = r.height * dpr;
+    canvas.style.width = r.width + "px"; canvas.style.height = r.height + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    draw();
+  }
+  window.addEventListener("resize", resizeCanvas);
+
+  // ---------------- Load arm ----------------
+  function loadArm(arm) {
+    state.arm = arm;
+    const d = DATA[arm];
+    state.entities = d.entities;
+    state.relations = d.relations;
+    state.classes = d.classes;
+    state.byKey = new Map(d.entities.map(e => [e.k, e]));
+    state.classOf = new Map();
+    for (const c of d.classes) for (const k of c.i) if (!state.classOf.has(k)) state.classOf.set(k, c.n);
+    state.docs = d.docs || [];
+    state.hiddenTypes = new Set();
+    state.activeClass = null;
+    state.selected = null;
+    state.tracedPath = null;
+    state.tracedSrc = null;
+    state.topN = Math.min(150, d.entities.length);
+    document.getElementById("topNSlider").max = String(Math.min(600, d.entities.length));
+    document.getElementById("topNSlider").value = String(state.topN);
+    document.getElementById("armMeta").textContent = d.label;
+    if (typeof chatState !== "undefined" && chatState.open) updateChatContextInfo();
+    document.getElementById("searchInput").value = "";
+    document.getElementById("searchResults").innerHTML = "";
+    document.getElementById("traceFrom").value = "";
+    document.getElementById("traceTo").value = "";
+    document.getElementById("traceResult").innerHTML = "";
+    renderTabs();
+    renderLayoutTabs();
+    renderLegend();
+    renderClassTree();
+    rebuildVisible();
+    renderInspector();
+  }
+
+  function renderTabs() {
+    const wrap = document.getElementById("armTabs");
+    wrap.innerHTML = "";
+    for (const arm of ARM_ORDER) {
+      const b = document.createElement("button");
+      b.className = "arm-tab"; b.setAttribute("role", "tab"); b.textContent = ARM_TITLES[arm];
+      b.setAttribute("aria-selected", String(arm === state.arm));
+      b.addEventListener("click", () => loadArm(arm));
+      wrap.appendChild(b);
+    }
+  }
+
+  function renderLayoutTabs() {
+    const wrap = document.getElementById("layoutTabs");
+    wrap.innerHTML = "";
+    for (const [mode, label] of [["force", "Force"], ["doc", "By document"]]) {
+      const b = document.createElement("button");
+      b.className = "arm-tab"; b.setAttribute("role", "tab"); b.textContent = label;
+      b.setAttribute("aria-selected", String(state.layoutMode === mode));
+      b.addEventListener("click", () => {
+        if (state.layoutMode === mode) return;
+        state.layoutMode = mode;
+        renderLayoutTabs();
+        rebuildVisible();
+      });
+      wrap.appendChild(b);
+    }
+  }
+
+  document.getElementById("crossDocToggle").addEventListener("change", (ev) => {
+    state.highlightCrossDoc = ev.target.checked;
+    draw();
+  });
+
+  // ---------------- Visible subset + layout ----------------
+  function currentEntities() {
+    let list = state.entities;
+    if (state.activeClass) {
+      const cls = state.classes.find(c => c.n === state.activeClass);
+      const set = new Set(cls ? cls.i : []);
+      list = list.filter(e => set.has(e.k));
+    }
+    if (state.hiddenTypes.size) list = list.filter(e => !state.hiddenTypes.has(e.t));
+    return list;
+  }
+
+  function rebuildVisible(onDone) {
+    let list = currentEntities().slice().sort((a, b) => b.s - a.s);
+    if (!state.activeClass) list = list.slice(0, state.topN);
+    state.visibleKeys = new Set(list.map(e => e.k));
+    const edges = state.relations.filter(r => state.visibleKeys.has(r.s) && state.visibleKeys.has(r.t));
+    layoutAndSet(list, edges, onDone);
+    statusEl.textContent = `${list.length} nodes shown of ${state.entities.length} · ${edges.length} edges`;
+  }
+
+  function layoutAndSet(entities, relEdges, onDone) {
+    relaxOverlay.hidden = false;
+    setTimeout(() => {
+      const nodes = entities.map(e => ({
+        key: e.k, name: e.n, type: e.t, support: e.s, aliases: e.a, synth: !!e.y, doc: e.d,
+        x: (Math.random() - 0.5) * 600, y: (Math.random() - 0.5) * 600, vx: 0, vy: 0,
+      }));
+      const idx = new Map(nodes.map((n, i) => [n.key, i]));
+      const edges = relEdges.map(r => ({ s: idx.get(r.s), t: idx.get(r.t), pred: r.p, w: r.w, z: r.z }))
+        .filter(e => e.s !== undefined && e.t !== undefined);
+
+      if (state.layoutMode === "doc") {
+        computeDocLayout(nodes);
+      } else {
+        // multiple relation types often connect the same pair of entities;
+        // the physics only needs one spring per pair or hub nodes get
+        // over-constrained by stacked parallel springs and the integrator diverges
+        const seenPairs = new Set();
+        const physicsEdges = [];
+        for (const e of edges) {
+          const key = e.s < e.t ? e.s + "-" + e.t : e.t + "-" + e.s;
+          if (seenPairs.has(key)) continue;
+          seenPairs.add(key);
+          physicsEdges.push(e);
+        }
+        forceLayout(nodes, physicsEdges);
+      }
+      state.nodes = nodes; state.edges = edges;
+      state.nodeIndex = idx;
+      resetView();
+      relaxOverlay.hidden = true;
+      renderCrossDocPanel();
+      draw();
+      if (onDone) onDone();
+    }, 10);
+  }
+
+  function computeDocLayout(nodes) {
+    // chord-diagram style: one ring, nodes grouped into contiguous arcs by
+    // primary document, small gaps between arcs so document boundaries read
+    // at a glance.
+    const byDoc = new Map();
+    for (const nd of nodes) {
+      if (!byDoc.has(nd.doc)) byDoc.set(nd.doc, []);
+      byDoc.get(nd.doc).push(nd);
+    }
+    const docKeys = [...byDoc.keys()].sort((a, b) => a - b);
+    const gapSlots = 1.4;
+    const totalSlots = nodes.length + gapSlots * docKeys.length;
+    const R = 420;
+    let slot = 0;
+    state.docArcs = [];
+    for (const dk of docKeys) {
+      const group = byDoc.get(dk);
+      const startSlot = slot;
+      for (const nd of group) {
+        const angle = (slot / totalSlots) * Math.PI * 2 - Math.PI / 2;
+        nd.x = R * Math.cos(angle); nd.y = R * Math.sin(angle);
+        nd.vx = 0; nd.vy = 0;
+        slot += 1;
+      }
+      const midAngle = ((startSlot + slot - 1) / 2 / totalSlots) * Math.PI * 2 - Math.PI / 2;
+      state.docArcs.push({ doc: dk, midAngle, count: group.length });
+      slot += gapSlots;
+    }
+  }
+
+  function forceLayout(nodes, edges) {
+    const n = nodes.length;
+    if (!n) return;
+    const iterations = n > 300 ? 150 : 190;
+    const repel = 2600;
+    const springLen = 60, springK = 0.02;
+    const gravity = 0.006;
+
+    const degree = new Array(n).fill(0);
+    for (const e of edges) { degree[e.s]++; degree[e.t]++; }
+    // isolated/pendant nodes only feel gravity, so pull them in harder or they
+    // drift outside the repulsion cutoff and never come back
+    const gravityMult = degree.map(d => (d === 0 ? 7 : d === 1 ? 3 : 1));
+
+    for (let it = 0; it < iterations; it++) {
+      const cool = 1 - it / iterations;
+      for (let i = 0; i < n; i++) {
+        let fx = 0, fy = 0;
+        for (let j = 0; j < n; j++) {
+          if (i === j) continue;
+          let dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
+          let d2 = dx * dx + dy * dy || 0.01;
+          if (d2 > 160000) continue;
+          const d = Math.sqrt(d2);
+          const f = repel / d2;
+          fx += (dx / d) * f; fy += (dy / d) * f;
+        }
+        nodes[i].vx += fx * cool; nodes[i].vy += fy * cool;
+      }
+      for (const e of edges) {
+        const a = nodes[e.s], b = nodes[e.t];
+        let dx = b.x - a.x, dy = b.y - a.y;
+        const d = Math.sqrt(dx * dx + dy * dy) || 0.01;
+        const f = (d - springLen) * springK;
+        const fx = (dx / d) * f, fy = (dy / d) * f;
+        a.vx += fx; a.vy += fy; b.vx -= fx; b.vy -= fy;
+      }
+      const maxSpeed = 40;
+      for (let i = 0; i < n; i++) {
+        const nd = nodes[i];
+        const g = gravity * gravityMult[i];
+        nd.vx -= nd.x * g; nd.vy -= nd.y * g;
+        nd.vx *= 0.82; nd.vy *= 0.82;
+        // hard clamp: guards against any residual over-constrained hub
+        // (stacked springs, dense repulsion) blowing up the integration
+        const speed = Math.hypot(nd.vx, nd.vy);
+        if (speed > maxSpeed) { nd.vx = (nd.vx / speed) * maxSpeed; nd.vy = (nd.vy / speed) * maxSpeed; }
+        nd.x += nd.vx; nd.y += nd.vy;
+      }
+    }
+  }
+
+  // ---------------- View transform ----------------
+  function resetView() {
+    if (!state.nodes.length) { state.view = { x: 0, y: 0, scale: 1 }; return; }
+    // percentile-trimmed bounds: a lone far-flung outlier (isolated node the
+    // layout couldn't fully pull in) shouldn't force the whole view to zoom
+    // out and crush the real cluster into a corner
+    let minX, maxX, minY, maxY;
+    if (state.nodes.length >= 20) {
+      const xs = state.nodes.map(nd => nd.x).sort((a, b) => a - b);
+      const ys = state.nodes.map(nd => nd.y).sort((a, b) => a - b);
+      const lo = Math.floor(xs.length * 0.03), hi = Math.ceil(xs.length * 0.97) - 1;
+      minX = xs[lo]; maxX = xs[hi]; minY = ys[lo]; maxY = ys[hi];
+    } else {
+      minX = Infinity; maxX = -Infinity; minY = Infinity; maxY = -Infinity;
+      for (const nd of state.nodes) {
+        minX = Math.min(minX, nd.x); maxX = Math.max(maxX, nd.x);
+        minY = Math.min(minY, nd.y); maxY = Math.max(maxY, nd.y);
+      }
+    }
+    const r = wrap.getBoundingClientRect();
+    const gw = Math.max(maxX - minX, 100), gh = Math.max(maxY - minY, 100);
+    const scale = Math.min((r.width - 80) / gw, (r.height - 80) / gh, 2.2);
+    state.view = { x: r.width / 2 - ((minX + maxX) / 2) * scale, y: r.height / 2 - ((minY + maxY) / 2) * scale, scale };
+  }
+  document.getElementById("resetViewBtn").addEventListener("click", () => { resetView(); draw(); });
+
+  function worldToScreen(x, y) { return [x * state.view.scale + state.view.x, y * state.view.scale + state.view.y]; }
+  function screenToWorld(x, y) { return [(x - state.view.x) / state.view.scale, (y - state.view.y) / state.view.scale]; }
+
+  // ---------------- Drawing ----------------
+  function draw() {
+    const r = wrap.getBoundingClientRect();
+    ctx.clearRect(0, 0, r.width, r.height);
+    const bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+    ctx.fillStyle = bg; ctx.fillRect(0, 0, r.width, r.height);
+    if (!state.nodes.length) return;
+
+    const edgeColor = getComputedStyle(document.documentElement).getPropertyValue("--edge").trim();
+    const edgeStrong = getComputedStyle(document.documentElement).getPropertyValue("--edge-strong").trim();
+    const ink = getComputedStyle(document.documentElement).getPropertyValue("--ink").trim();
+    const inkFaint = getComputedStyle(document.documentElement).getPropertyValue("--ink-faint").trim();
+    const accent = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
+
+    const accent2 = getComputedStyle(document.documentElement).getPropertyValue("--accent-2").trim();
+    const crossDocColor = getComputedStyle(document.documentElement).getPropertyValue("--cross-doc").trim();
+    const selKey = state.selected;
+    const neighborSet = selKey ? neighborsOf(selKey) : null;
+    const pathNodeSet = new Set();
+    if (state.tracedPath) { pathNodeSet.add(state.tracedSrc); for (const e of state.tracedPath) { pathNodeSet.add(e.s); pathNodeSet.add(e.t); } }
+
+    ctx.lineWidth = 1;
+    for (const e of state.edges) {
+      const a = state.nodes[e.s], b = state.nodes[e.t];
+      const [ax, ay] = worldToScreen(a.x, a.y), [bx, by] = worldToScreen(b.x, b.y);
+      const involved = selKey && (a.key === selKey || b.key === selKey);
+      const baseAlpha = selKey ? (involved ? 0.9 : 0.08) : (state.tracedPath ? 0.15 : 0.5);
+      const crossDoc = state.highlightCrossDoc && a.doc !== b.doc && a.doc >= 0 && b.doc >= 0;
+      if (crossDoc && !involved) {
+        ctx.strokeStyle = crossDocColor; ctx.lineWidth = 1.7;
+        ctx.globalAlpha = selKey ? Math.max(baseAlpha, 0.25) : 0.75;
+      } else {
+        ctx.strokeStyle = involved ? accent : edgeColor; ctx.lineWidth = 1;
+        ctx.globalAlpha = baseAlpha;
+      }
+      ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+    }
+    ctx.globalAlpha = 1; ctx.lineWidth = 1;
+
+    if (state.layoutMode === "doc" && state.docArcs) {
+      ctx.font = "10px " + getComputedStyle(document.documentElement).getPropertyValue("--font-ui");
+      ctx.fillStyle = inkFaint;
+      for (const arc of state.docArcs) {
+        if (arc.count < 3) continue;
+        const lx = (state.view.scale * 460) * Math.cos(arc.midAngle) + state.view.x;
+        const ly = (state.view.scale * 460) * Math.sin(arc.midAngle) + state.view.y;
+        const label = (state.docs[arc.doc] || "").slice(0, 28);
+        ctx.textAlign = Math.cos(arc.midAngle) < -0.15 ? "right" : Math.cos(arc.midAngle) > 0.15 ? "left" : "center";
+        ctx.fillText(label, lx, ly);
+      }
+      ctx.textAlign = "left";
+    }
+
+    if (state.tracedPath) {
+      ctx.strokeStyle = accent2; ctx.lineWidth = 2.4; ctx.globalAlpha = 0.95;
+      for (const e of state.tracedPath) {
+        const ai = state.nodeIndex.get(e.s), bi = state.nodeIndex.get(e.t);
+        if (ai === undefined || bi === undefined) continue;
+        const a = state.nodes[ai], b = state.nodes[bi];
+        const [ax, ay] = worldToScreen(a.x, a.y), [bx, by] = worldToScreen(b.x, b.y);
+        ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    const scale = state.view.scale;
+    for (const nd of state.nodes) {
+      const [x, y] = worldToScreen(nd.x, nd.y);
+      const onPath = pathNodeSet.has(nd.key);
+      const dim = (selKey && nd.key !== selKey && !(neighborSet && neighborSet.has(nd.key)))
+        || (state.tracedPath && !onPath && nd.key !== selKey);
+      const radius = Math.max(2.2, Math.min(8, 2.2 + Math.sqrt(nd.support) * 1.1)) * Math.min(1, scale + 0.3);
+      ctx.globalAlpha = dim ? 0.18 : 1;
+      ctx.fillStyle = typeColor(nd.type);
+      ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fill();
+      if (nd.synth) { ctx.strokeStyle = ink; ctx.lineWidth = 0.6; ctx.setLineDash([1.5, 1.5]); ctx.stroke(); ctx.setLineDash([]); }
+      if (nd.key === selKey) { ctx.strokeStyle = ink; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.arc(x, y, radius + 2.5, 0, Math.PI * 2); ctx.stroke(); }
+      if (onPath) { ctx.strokeStyle = accent2; ctx.lineWidth = 1.8; ctx.beginPath(); ctx.arc(x, y, radius + (nd.key === selKey ? 5 : 2.5), 0, Math.PI * 2); ctx.stroke(); }
+      ctx.globalAlpha = 1;
+
+      const showLabel = nd.key === selKey || nd.key === state.hoverKey || onPath ||
+        (scale > 0.85 && radius > 4.5) || (neighborSet && neighborSet.has(nd.key) && scale > 0.5);
+      if (showLabel) {
+        ctx.font = "11px " + getComputedStyle(document.documentElement).getPropertyValue("--font-ui");
+        ctx.fillStyle = nd.key === selKey ? ink : (onPath ? accent2 : inkFaint);
+        ctx.fillText(nd.name, x + radius + 4, y + 3);
+      }
+    }
+  }
+
+  function neighborsOf(key) {
+    const set = new Set([key]);
+    for (const e of state.edges) {
+      const a = state.nodes[e.s].key, b = state.nodes[e.t].key;
+      if (a === key) set.add(b); if (b === key) set.add(a);
+    }
+    return set;
+  }
+
+  // ---------------- Pan / zoom / pick ----------------
+  let dragging = null; // {kind:'pan'|'node', startX, startY, node}
+  canvas.addEventListener("mousedown", (ev) => {
+    const [wx, wy] = screenToWorld(ev.offsetX, ev.offsetY);
+    const hit = pickNode(wx, wy);
+    if (hit) {
+      dragging = { kind: "node", node: hit };
+    } else {
+      dragging = { kind: "pan", sx: ev.clientX, sy: ev.clientY, ox: state.view.x, oy: state.view.y };
+      canvas.classList.add("dragging");
+    }
+  });
+  window.addEventListener("mousemove", (ev) => {
+    if (!dragging) {
+      const rect = canvas.getBoundingClientRect();
+      const [wx, wy] = screenToWorld(ev.clientX - rect.left, ev.clientY - rect.top);
+      const hit = pickNode(wx, wy);
+      const newHover = hit ? hit.key : null;
+      if (newHover !== state.hoverKey) { state.hoverKey = newHover; draw(); }
+      return;
+    }
+    if (dragging.kind === "pan") {
+      state.view.x = dragging.ox + (ev.clientX - dragging.sx);
+      state.view.y = dragging.oy + (ev.clientY - dragging.sy);
+      draw();
+    } else if (dragging.kind === "node") {
+      const rect = canvas.getBoundingClientRect();
+      const [wx, wy] = screenToWorld(ev.clientX - rect.left, ev.clientY - rect.top);
+      dragging.node.x = wx; dragging.node.y = wy; dragging.node.vx = 0; dragging.node.vy = 0;
+      draw();
+    }
+  });
+  window.addEventListener("mouseup", (ev) => {
+    if (dragging && dragging.kind === "node") {
+      const rect = canvas.getBoundingClientRect();
+      const dx = Math.abs(ev.clientX - rect.left - worldToScreen(dragging.node.x, dragging.node.y)[0]);
+      selectNode(dragging.node.key);
+    }
+    dragging = null; canvas.classList.remove("dragging");
+  });
+  canvas.addEventListener("wheel", (ev) => {
+    ev.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const mx = ev.clientX - rect.left, my = ev.clientY - rect.top;
+    const [wx, wy] = screenToWorld(mx, my);
+    const factor = Math.exp(-ev.deltaY * 0.0012);
+    state.view.scale = Math.max(0.05, Math.min(6, state.view.scale * factor));
+    state.view.x = mx - wx * state.view.scale;
+    state.view.y = my - wy * state.view.scale;
+    draw();
+  }, { passive: false });
+
+  function pickNode(wx, wy) {
+    let best = null, bestD = Infinity;
+    for (const nd of state.nodes) {
+      const d = (nd.x - wx) ** 2 + (nd.y - wy) ** 2;
+      const r = (10 / state.view.scale) ** 2;
+      if (d < r && d < bestD) { best = nd; bestD = d; }
+    }
+    return best;
+  }
+
+  function selectNode(key) {
+    state.selected = key; state.activeClass = null;
+    renderInspector(); draw(); renderClassTree();
+  }
+
+  // ---------------- Sidebar: search ----------------
+  const searchInput = document.getElementById("searchInput");
+  searchInput.addEventListener("input", () => {
+    const q = searchInput.value.trim().toLowerCase();
+    const box = document.getElementById("searchResults");
+    box.innerHTML = "";
+    if (q.length < 2) return;
+    const matches = state.entities.filter(e => e.n.toLowerCase().includes(q)).slice(0, 40);
+    for (const e of matches) {
+      const row = document.createElement("div");
+      row.className = "result-item";
+      row.innerHTML = `<span class="dot" style="background:${typeColor(e.t)}"></span>
+        <span class="result-name">${escapeHtml(e.n)}</span><span class="result-count">${e.s}</span>`;
+      row.addEventListener("click", () => focusEntity(e.k));
+      box.appendChild(row);
+    }
+  });
+
+  function focusEntity(key) {
+    if (!state.visibleKeys.has(key)) {
+      // pull it into view: bump topN filter or clear class filter until it appears
+      state.activeClass = null;
+      let list = currentEntities().slice().sort((a, b) => b.s - a.s);
+      const rank = list.findIndex(e => e.k === key);
+      if (rank >= 0) { state.topN = Math.max(state.topN, rank + 1); document.getElementById("topNSlider").value = String(Math.min(state.topN, +document.getElementById("topNSlider").max)); }
+      rebuildVisible();
+    }
+    selectNode(key);
+  }
+
+  function revealKeys(keys, onDone) {
+    state.activeClass = null;
+    const list = currentEntities().slice().sort((a, b) => b.s - a.s);
+    let maxRank = state.topN;
+    for (const key of keys) {
+      const rank = list.findIndex(e => e.k === key);
+      if (rank >= 0) maxRank = Math.max(maxRank, rank + 1);
+    }
+    const sliderMax = +document.getElementById("topNSlider").max;
+    state.topN = Math.min(maxRank, sliderMax);
+    document.getElementById("topNSlider").value = String(state.topN);
+    document.getElementById("topNLabel").textContent = state.topN + " nodes";
+    rebuildVisible(onDone);
+  }
+
+  // ---------------- Trace connection (weighted multi-hop path search) ----------------
+  function resolveEntity(query) {
+    const q = query.trim();
+    if (!q) return null;
+    const exact = state.entities.find(e => e.n === q);
+    if (exact) return exact.k;
+    const ql = q.toLowerCase();
+    const partial = state.entities.find(e => e.n.toLowerCase().includes(ql));
+    return partial ? partial.k : null;
+  }
+
+  function buildAdjIndex(branchCap) {
+    const adj = new Map();
+    for (const r of state.relations) {
+      if (!adj.has(r.s)) adj.set(r.s, []);
+      if (!adj.has(r.t)) adj.set(r.t, []);
+      adj.get(r.s).push(r); adj.get(r.t).push(r);
+    }
+    for (const [k, list] of adj) {
+      list.sort((a, b) => (b.z ?? 0.3) - (a.z ?? 0.3));
+      adj.set(k, list.slice(0, branchCap));
+    }
+    return adj;
+  }
+
+  function findWeightedPaths(src, dst, { maxHops = 6, branchCap = 30, maxPaths = 800 } = {}) {
+    const adj = buildAdjIndex(branchCap);
+    const found = [];
+    const visited = new Set([src]);
+    const pathEdges = [];
+    function otherEnd(edge, at) { return edge.s === at ? edge.t : edge.s; }
+    function dfs(node) {
+      if (found.length >= maxPaths) return;
+      if (node === dst && pathEdges.length) { found.push(pathEdges.slice()); return; }
+      if (pathEdges.length >= maxHops) return;
+      for (const edge of (adj.get(node) || [])) {
+        const nb = otherEnd(edge, node);
+        if (visited.has(nb)) continue;
+        visited.add(nb); pathEdges.push(edge);
+        dfs(nb);
+        pathEdges.pop(); visited.delete(nb);
+      }
+    }
+    dfs(src);
+    return found;
+  }
+
+  function scorePath(edges) {
+    const ws = edges.map(e => e.z ?? 0.3);
+    const mean = ws.reduce((a, b) => a + b, 0) / ws.length;
+    const variance = ws.reduce((a, w) => a + (w - mean) ** 2, 0) / ws.length;
+    const std = Math.sqrt(variance);
+    const snr = std > 1e-9 ? mean / std : mean * 10;
+    return { mean, std, snr };
+  }
+
+  let traceAlternates = [];
+  function renderTracePath(path, score, rank, total) {
+    const box = document.getElementById("traceResult");
+    let nodes = [state.tracedSrc];
+    let cur = state.tracedSrc;
+    for (const e of path) { cur = e.s === cur ? e.t : e.s; nodes.push(cur); }
+    const hops = path.map((e, i) => {
+      const from = state.byKey.get(nodes[i]), to = state.byKey.get(nodes[i + 1]);
+      return `<div class="trace-hop" data-key="${escapeAttr(nodes[i + 1])}">
+        <span class="trace-name">${escapeHtml(from ? from.n : nodes[i])}</span>
+        <span class="trace-arrow">→</span>
+        <span class="trace-pred">${escapeHtml(e.p)}</span>
+      </div>`;
+    }).join("");
+    const last = state.byKey.get(nodes[nodes.length - 1]);
+    box.innerHTML = `${hops}
+      <div class="trace-hop" style="font-weight:600">
+        <span class="trace-name">${escapeHtml(last ? last.n : "")}</span>
+      </div>
+      <div class="trace-score">
+        <span>${path.length} hop${path.length === 1 ? "" : "s"}</span>
+        <span>mean ${score.mean.toFixed(2)}</span>
+        <span>SNR <b>${score.snr.toFixed(2)}</b></span>
+      </div>
+      ${total > 1 ? `<div class="trace-alt" id="traceMoreBtn">show next-best path (${rank + 1} of ${total})</div>` : ""}`;
+    box.querySelectorAll(".trace-hop[data-key]").forEach(el =>
+      el.addEventListener("click", () => focusEntity(el.dataset.key)));
+    const moreBtn = document.getElementById("traceMoreBtn");
+    if (moreBtn) moreBtn.addEventListener("click", () => {
+      const nextRank = (rank + 1) % total;
+      state.tracedPath = traceAlternates[nextRank].path;
+      renderTracePath(traceAlternates[nextRank].path, traceAlternates[nextRank].score, nextRank, total);
+      draw();
+    });
+  }
+
+  document.getElementById("traceBtn").addEventListener("click", () => {
+    const fromQ = document.getElementById("traceFrom").value;
+    const toQ = document.getElementById("traceTo").value;
+    const box = document.getElementById("traceResult");
+    const src = resolveEntity(fromQ), dst = resolveEntity(toQ);
+    if (!src || !dst) {
+      box.innerHTML = `<div class="trace-empty">${!src ? "“" + escapeHtml(fromQ) + "” not found. " : ""}${!dst ? "“" + escapeHtml(toQ) + "” not found." : ""}</div>`;
+      return;
+    }
+    if (src === dst) { box.innerHTML = `<div class="trace-empty">same entity on both sides.</div>`; return; }
+    box.innerHTML = `<div class="trace-empty">searching…</div>`;
+    setTimeout(() => {
+      const paths = findWeightedPaths(src, dst);
+      if (!paths.length) {
+        box.innerHTML = `<div class="trace-empty">no path found within 6 hops.</div>`;
+        state.tracedPath = null; draw();
+        return;
+      }
+      traceAlternates = paths.map(p => ({ path: p, score: scorePath(p) }))
+        .sort((a, b) => b.score.snr - a.score.snr).slice(0, 5);
+      state.tracedSrc = src;
+      state.tracedPath = traceAlternates[0].path;
+      const allKeys = new Set([src, dst]);
+      for (const e of state.tracedPath) { allKeys.add(e.s); allKeys.add(e.t); }
+      revealKeys([...allKeys], () => {
+        renderTracePath(traceAlternates[0].path, traceAlternates[0].score, 0, traceAlternates.length);
+        draw();
+      });
+    }, 10);
+  });
+
+  // ---------------- Sidebar: top-N slider ----------------
+  const topNSlider = document.getElementById("topNSlider");
+  topNSlider.addEventListener("change", () => {
+    state.topN = +topNSlider.value;
+    document.getElementById("topNLabel").textContent = state.topN + " nodes";
+    rebuildVisible();
+  });
+  topNSlider.addEventListener("input", () => {
+    document.getElementById("topNLabel").textContent = topNSlider.value + " nodes";
+  });
+
+  // ---------------- Sidebar: type legend ----------------
+  function renderLegend() {
+    const box = document.getElementById("typeLegend");
+    box.innerHTML = "";
+    const counts = new Map();
+    for (const e of state.entities) counts.set(e.t, (counts.get(e.t) || 0) + 1);
+    const types = Array.from(counts.keys()).sort((a, b) => counts.get(b) - counts.get(a));
+    for (const t of types) {
+      const row = document.createElement("div");
+      row.className = "legend-item" + (state.hiddenTypes.has(t) ? " off" : "");
+      row.innerHTML = `<span class="dot" style="background:${typeColor(t)}"></span>${t}
+        <span class="legend-count">${counts.get(t)}</span>`;
+      row.addEventListener("click", () => {
+        if (state.hiddenTypes.has(t)) state.hiddenTypes.delete(t); else state.hiddenTypes.add(t);
+        renderLegend(); rebuildVisible();
+      });
+      box.appendChild(row);
+    }
+  }
+
+  // ---------------- Sidebar: class tree ----------------
+  function renderCrossDocPanel() {
+    const box = document.getElementById("crossDocPanel");
+    if (!box) return;
+    const crossEdges = state.edges.filter(e => {
+      const a = state.nodes[e.s], b = state.nodes[e.t];
+      return a.doc !== b.doc && a.doc >= 0 && b.doc >= 0;
+    }).sort((a, b) => (b.z ?? 0) - (a.z ?? 0));
+    if (!crossEdges.length) {
+      box.innerHTML = `<div class="trace-empty">none among the visible nodes.</div>`;
+      return;
+    }
+    box.innerHTML = `<div class="trace-empty" style="margin-bottom:6px">${crossEdges.length} of ${state.edges.length} visible edges cross documents</div>` +
+      crossEdges.slice(0, 30).map(e => {
+        const a = state.nodes[e.s], b = state.nodes[e.t];
+        return `<div class="trace-hop" data-key="${escapeAttr(a.key)}" style="flex-direction:column;align-items:stretch;border-bottom:1px solid var(--border);padding:6px 0">
+          <div><span class="trace-name">${escapeHtml(a.name)}</span> <span class="trace-arrow">→</span> <span class="trace-pred">${escapeHtml(e.pred)}</span> <span class="trace-arrow">→</span> <span class="trace-name">${escapeHtml(b.name)}</span></div>
+          <div class="edge-weight" style="margin-top:2px">${escapeHtml((state.docs[a.doc]||"").slice(0,22))} ↔ ${escapeHtml((state.docs[b.doc]||"").slice(0,22))} · strength ${(e.z ?? 0).toFixed(2)}</div>
+        </div>`;
+      }).join("");
+    box.querySelectorAll(".trace-hop[data-key]").forEach(el =>
+      el.addEventListener("click", () => selectNode(el.dataset.key)));
+  }
+
+  function renderClassTree() {
+    const box = document.getElementById("classTree");
+    box.innerHTML = "";
+    const byParent = new Map();
+    for (const c of state.classes) {
+      const p = c.p || "__root__";
+      if (!byParent.has(p)) byParent.set(p, []);
+      byParent.get(p).push(c);
+    }
+    function renderLevel(parent, container) {
+      const kids = (byParent.get(parent) || []).slice().sort((a, b) => b.i.length - a.i.length);
+      for (const c of kids) {
+        const row = document.createElement("div");
+        row.className = "tree-node";
+        const r = document.createElement("div");
+        r.className = "tree-row" + (state.activeClass === c.n ? " active" : "");
+        r.innerHTML = `<span>${escapeHtml(c.n)}</span><span class="tree-count">${c.i.length}</span>`;
+        r.addEventListener("click", () => {
+          state.activeClass = state.activeClass === c.n ? null : c.n;
+          state.selected = null;
+          rebuildVisible(); renderClassTree(); renderInspector();
+        });
+        row.appendChild(r);
+        const childBox = document.createElement("div");
+        childBox.className = "tree-children";
+        renderLevel(c.n, childBox);
+        if (childBox.children.length) row.appendChild(childBox);
+        container.appendChild(row);
+      }
+    }
+    renderLevel("__root__", box);
+  }
+
+  // ---------------- Inspector ----------------
+  function renderInspector() {
+    const box = document.getElementById("inspector");
+    if (state.activeClass && !state.selected) {
+      const cls = state.classes.find(c => c.n === state.activeClass);
+      box.innerHTML = `
+        <h2 class="insp-name" style="font-size:16px">${escapeHtml(cls.n)}</h2>
+        ${cls.p ? `<div class="badge-row"><span class="badge">subclass of ${escapeHtml(cls.p)}</span></div>` : ""}
+        <p class="class-desc">${escapeHtml(cls.c || "No description generated for this class.")}</p>
+        <div class="kv"><dt>members</dt><dd>${cls.i.length}</dd></div>
+        <div class="panel"><h2>Members</h2>${renderMemberList(cls.i)}</div>`;
+      box.querySelectorAll("[data-key]").forEach(el => el.addEventListener("click", () => focusEntity(el.dataset.key)));
+      return;
+    }
+    if (!state.selected) {
+      box.innerHTML = `<div class="empty-state">Click a node to inspect it, or a class in the left panel to see its members.</div>`;
+      return;
+    }
+    const e = state.byKey.get(state.selected);
+    if (!e) { box.innerHTML = `<div class="empty-state">Not found.</div>`; return; }
+    const cls = state.classOf.get(e.k);
+    const out = [], inn = [];
+    for (const r of state.relations) {
+      if (r.s === e.k) out.push(r); else if (r.t === e.k) inn.push(r);
+    }
+    out.sort((a, b) => b.w - a.w); inn.sort((a, b) => b.w - a.w);
+
+    box.innerHTML = `
+      <h2 class="insp-name">${escapeHtml(e.n)}</h2>
+      <div class="insp-key">${escapeHtml(e.k)}</div>
+      <div class="badge-row">
+        <span class="badge type" style="background:${typeColor(e.t)}">${e.t}</span>
+        ${cls ? `<span class="badge">${escapeHtml(cls)}</span>` : ""}
+        ${e.y ? `<span class="badge synth">synthesized</span>` : ""}
+      </div>
+      <div class="kv">
+        <dt>support</dt><dd>${e.s} evidence link${e.s === 1 ? "" : "s"}</dd>
+        <dt>relations</dt><dd>${out.length + inn.length}</dd>
+      </div>
+      ${e.a.length ? `<div class="alias-list">also seen as: ${e.a.map(escapeHtml).join(", ")}</div>` : ""}
+      <button class="btn" id="copyCtxBtn" style="margin-top:10px;width:100%">Copy context for chat</button>
+      <section class="panel" style="margin-top:16px">
+        <h2>Outgoing (${out.length})</h2>
+        <ul class="edge-list">${edgeRows(out, "t")}</ul>
+      </section>
+      <section class="panel">
+        <h2>Incoming (${inn.length})</h2>
+        <ul class="edge-list">${edgeRows(inn, "s")}</ul>
+      </section>`;
+
+    box.querySelectorAll(".edge-row").forEach(el => el.addEventListener("click", () => focusEntity(el.dataset.key)));
+    document.getElementById("copyCtxBtn").addEventListener("click", () => copyContext(e, out, inn, cls));
+  }
+
+  function renderMemberList(keys) {
+    const list = keys.map(k => state.byKey.get(k)).filter(Boolean).sort((a, b) => b.s - a.s).slice(0, 60);
+    return `<div class="result-list" style="max-height:none">${list.map(e => `
+      <div class="result-item" data-key="${escapeAttr(e.k)}">
+        <span class="dot" style="background:${typeColor(e.t)}"></span>
+        <span class="result-name">${escapeHtml(e.n)}</span><span class="result-count">${e.s}</span>
+      </div>`).join("")}</div>
+      ${keys.length > 60 ? `<div class="more-note">+${keys.length - 60} more</div>` : ""}`;
+  }
+
+  function edgeRows(list, otherField) {
+    const shown = list.slice(0, 25);
+    const rows = shown.map(r => {
+      const otherKey = r[otherField];
+      const other = state.byKey.get(otherKey);
+      return `<li class="edge-row" data-key="${escapeAttr(otherKey)}">
+        <span class="edge-pred">${escapeHtml(r.p)}</span>
+        <span class="edge-target">${escapeHtml(other ? other.n : otherKey)}</span>
+        <span class="edge-weight">support ${r.w} · strength ${(r.z ?? 0.3).toFixed(2)}</span>
+      </li>`;
+    }).join("");
+    const more = list.length > 25 ? `<div class="more-note">+${list.length - 25} more</div>` : "";
+    return rows + more;
+  }
+
+  function copyContext(e, out, inn, cls) {
+    const lines = [
+      `${e.n} (${e.t}${cls ? ", class: " + cls : ""}), ${e.s} evidence link(s)`,
+      e.a.length ? `Also seen as: ${e.a.join(", ")}` : null,
+      out.length ? "Outgoing:" : null,
+      ...out.slice(0, 15).map(r => `  ${e.n} --[${r.p}]--> ${(state.byKey.get(r.t) || {}).n || r.t} (support ${r.w})`),
+      inn.length ? "Incoming:" : null,
+      ...inn.slice(0, 15).map(r => `  ${(state.byKey.get(r.s) || {}).n || r.s} --[${r.p}]--> ${e.n} (support ${r.w})`),
+    ].filter(Boolean).join("\n");
+    navigator.clipboard.writeText(lines).then(() => {
+      const btn = document.getElementById("copyCtxBtn");
+      const prev = btn.textContent; btn.textContent = "Copied";
+      setTimeout(() => { btn.textContent = prev; }, 1400);
+    });
+  }
+
+  // ---------------- Export ----------------
+  document.getElementById("downloadBtn").addEventListener("click", async () => {
+    if (!window.claude || !window.claude.downloads) return;
+    const payload = {
+      arm: state.arm,
+      nodes: state.nodes.map(n => ({ key: n.key, name: n.name, type: n.type, support: n.support, synthesized: n.synth })),
+      edges: state.edges.map(e => ({ source: state.nodes[e.s].key, target: state.nodes[e.t].key, predicate: e.pred, support: e.w })),
+    };
+    try {
+      await window.claude.downloads.save({
+        filename: `kerem-navot-${state.arm}-visible-subgraph.json`,
+        data: JSON.stringify(payload, null, 1),
+      });
+    } catch (err) { /* declined or unavailable; no-op */ }
+  });
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+  function escapeAttr(s) { return escapeHtml(s); }
+
+  // ---------------- Chat (about the current arm's graph/ontology) ----------------
+  // IMPORTANT — read before assuming this "just works": published Claude
+  // Artifact pages run in a sandbox whose CSP blocks outbound requests to
+  // any external host, including api.anthropic.com. There is no runtime
+  // capability that grants a published Artifact a live model-call channel
+  // (only `downloads` and `mcp`-via-your-connectors are available at all).
+  // So the fetch below will always fail here — that is expected, not a bug
+  // to silently swallow. It is left in, and the failure is caught and
+  // explained in the transcript, rather than hidden, so this panel is
+  // honest about what a *published Artifact* can and can't do, while
+  // staying structurally identical to a page that does have a live-call
+  // channel (e.g. a "chat with your data" page builder), so pasting this
+  // file's source into such a builder is a faithful starting point.
+  const CHAT_SCOPES = [
+    { id: "ontology", label: "Ontology" },
+    { id: "graph", label: "Graph" },
+    { id: "both", label: "Graph + Ontology" },
+  ];
+  const chatState = { open: false, scope: "graph", messages: [], busy: false };
+
+  function renderScopeTabs() {
+    const wrap = document.getElementById("chatScopeTabs");
+    wrap.innerHTML = "";
+    for (const s of CHAT_SCOPES) {
+      const b = document.createElement("button");
+      b.className = "chat-scope-tab"; b.setAttribute("role", "tab");
+      b.setAttribute("aria-selected", String(s.id === chatState.scope));
+      b.textContent = s.label;
+      b.addEventListener("click", () => { chatState.scope = s.id; renderScopeTabs(); updateChatContextInfo(); });
+      wrap.appendChild(b);
+    }
+  }
+
+  function buildChatContext(scope) {
+    const d = DATA[state.arm];
+    const parts = [];
+    if (scope === "ontology" || scope === "both") {
+      parts.push("ONTOLOGY CLASSES:");
+      for (const c of d.classes) {
+        parts.push(`- ${c.n}${c.p ? ` (subclass of ${c.p})` : ""}: ${c.c || ""} [${c.i.length} instances]`);
+      }
+      parts.push("\nPROPERTIES:");
+      for (const p of d.properties) {
+        parts.push(`- ${p.n}: ${p.d || "?"} -> ${p.r || "?"} — ${p.c || ""}`);
+      }
+    }
+    if (scope === "graph" || scope === "both") {
+      parts.push("\nENTITIES:");
+      for (const e of d.entities) parts.push(`- ${e.n} (${e.t}, support=${e.s})`);
+      parts.push("\nRELATIONS:");
+      for (const r of d.relations) {
+        const sn = (d.entities.find(e => e.k === r.s) || {}).n || r.s;
+        const tn = (d.entities.find(e => e.k === r.t) || {}).n || r.t;
+        parts.push(`- ${sn} --[${r.p}]--> ${tn}`);
+      }
+    }
+    return parts.join("\n");
+  }
+
+  function updateChatContextInfo() {
+    const ctx = buildChatContext(chatState.scope);
+    const el = document.getElementById("chatContextInfo");
+    el.textContent = `~${Math.round(ctx.length / 4).toLocaleString()} tokens of context (${ctx.length.toLocaleString()} chars)`;
+  }
+
+  function buildChatSystemPrompt(scope) {
+    const d = DATA[state.arm];
+    return `You are answering questions about arm ${state.arm} (${d.label}) of an ` +
+      `evidence-linked knowledge graph. Answer only from the data below; if the data ` +
+      `doesn't cover something, say so rather than guessing.\n\n${buildChatContext(scope)}`;
+  }
+
+  function renderChatMessages() {
+    const box = document.getElementById("chatMessages");
+    if (!chatState.messages.length) {
+      box.innerHTML = `<div class="chat-empty">Ask about the ontology classes, the entities and relations currently visible in the graph, or both.</div>`;
+      return;
+    }
+    box.innerHTML = chatState.messages.map(m =>
+      `<div class="chat-msg ${m.role}">${escapeHtml(m.text)}</div>`).join("");
+    box.scrollTop = box.scrollHeight;
+  }
+
+  async function sendChatMessage() {
+    const input = document.getElementById("chatInput");
+    const text = input.value.trim();
+    if (!text || chatState.busy) return;
+    input.value = ""; input.style.height = "40px";
+    chatState.messages.push({ role: "user", text });
+    chatState.busy = true;
+    document.getElementById("chatSendBtn").disabled = true;
+    renderChatMessages();
+    const box = document.getElementById("chatMessages");
+    const pending = document.createElement("div");
+    pending.className = "chat-msg pending";
+    pending.textContent = "thinking…";
+    box.appendChild(pending);
+    box.scrollTop = box.scrollHeight;
+
+    const system = buildChatSystemPrompt(chatState.scope);
+    try {
+      const response = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-5", max_tokens: 1000, system,
+          messages: chatState.messages.filter(m => m.role === "user" || m.role === "assistant")
+            .map(m => ({ role: m.role, content: m.text })),
+        }),
+      });
+      const data = await response.json();
+      if (data.error) throw new Error(data.error.message || "API error");
+      const reply = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("\n").trim() || "(no response)";
+      chatState.messages.push({ role: "assistant", text: reply });
+    } catch (err) {
+      chatState.messages.push({
+        role: "notice",
+        text: "This is expected here, not a bug: a published Claude Artifact page " +
+          "cannot reach api.anthropic.com — its sandbox blocks all outbound requests " +
+          "to external hosts, and there is no runtime capability that grants a live " +
+          "model-call channel. This panel is the intended shape of the UI; to get a " +
+          "working reply, open this same page in a builder that grants a real live-call " +
+          "channel (e.g. a \"chat with your data\" page), using this file as the baseline.",
+      });
+    } finally {
+      chatState.busy = false;
+      document.getElementById("chatSendBtn").disabled = false;
+      renderChatMessages();
+    }
+  }
+
+  function openChat() {
+    chatState.open = true;
+    document.getElementById("chatDrawer").classList.add("open");
+    updateChatContextInfo();
+  }
+  function closeChat() {
+    chatState.open = false;
+    document.getElementById("chatDrawer").classList.remove("open");
+  }
+
+  document.getElementById("chatToggleBtn").addEventListener("click", () => {
+    if (chatState.open) closeChat(); else openChat();
+  });
+  document.getElementById("chatCloseBtn").addEventListener("click", closeChat);
+  document.getElementById("chatSendBtn").addEventListener("click", sendChatMessage);
+  document.getElementById("chatInput").addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter" && !ev.shiftKey) { ev.preventDefault(); sendChatMessage(); }
+  });
+  document.getElementById("chatInput").addEventListener("input", (ev) => {
+    ev.target.style.height = "40px";
+    ev.target.style.height = Math.min(120, ev.target.scrollHeight) + "px";
+  });
+  document.getElementById("chatClearBtn").addEventListener("click", (ev) => {
+    ev.preventDefault();
+    chatState.messages = [];
+    renderChatMessages();
+  });
+  document.getElementById("chatModelLabel").textContent = "claude-sonnet-5";
+  renderScopeTabs();
+
+  // ---------------- Init ----------------
+  resizeCanvas();
+  loadArm("A");
+})();
+</script>
