@@ -31,7 +31,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # persist-credentials: false -- otherwise checkout's auth header for
+      # this repo breaks the plain `git clone` of nanonto below (git fails
+      # with "could not read Username for 'https://github.com'").
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-python@v5
         with:
