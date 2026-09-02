@@ -45,6 +45,19 @@ python3 kg_pipeline/entity_resolution.py \
     --signals trigram neighbor translate --translate-via-batch \
     --model claude-haiku-4-5 --translate-model claude-haiku-4-5 \
     --max-candidates 400 --apply                            # pass 3
+
+python3 kg_pipeline/entity_resolution.py \
+    --dir heb_full_out --language he \
+    --signals trigram neighbor translate --translate-via-batch \
+    --model claude-haiku-4-5 --translate-model claude-haiku-4-5 \
+    --max-candidates 1200 --apply                           # pass 4
+
+python3 kg_pipeline/entity_resolution.py \
+    --dir heb_full_out --language he \
+    --signals trigram neighbor translate --translate-via-batch \
+    --model claude-haiku-4-5 --translate-model claude-haiku-4-5 \
+    --max-candidates 2000 --apply                           # pass 5, after the
+                                                              # containment-ranking fix
 ```
 
 `--language he` disables the `embedding` dedup signal (the local
@@ -97,7 +110,47 @@ the actual dedup work here.
   `צה"ל`/`צבא הגנה לישראל` (acronym vs. full name), `בצלם`/`BTSELEM`/`بتسيلم`
   (Hebrew/English/Arabic spellings unified), and the "settlers" cluster
   merging in `settlers` itself alongside its Hebrew spelling variants.
-- **Total across all three: 335 merges, 8,855 → 8,520 entities.**
+- Pass 4 (`--max-candidates 1200`, same signals): a background job died
+  mid-run when this session's sandbox reset (killed a plain `nohup`
+  process — not a pipeline bug); re-ran clean. 201 merges applied →
+  8,520 → 8,319 entities, 9,053 relationships.
+- Pass 5 (`--max-candidates 2000`, after the containment-ranking fix
+  below): 137 merges applied → 8,319 → **8,182 entities, 8,967
+  relationships**.
+- **Total across all five: 673 merges, 8,855 → 8,182 entities.**
+- **A third real bug, found via the GitHub Pages explorer**: a visitor
+  spotted `הגדה המערבית` ("the West Bank") and `גדה המערבית` ("West
+  Bank", same phrase minus the definite article) sitting as two separate
+  large nodes after pass 3 — an obvious duplicate. Investigation
+  (`nanonto` commit `58f42b8`) found the pair *was* a candidate at every
+  `--trigram-expand` value tested (15 through 400) but scored only 0.688
+  raw trigram-Jaccard — Jaccard punishes the length asymmetry from a
+  dropped one-word prefix — so it lost every `--max-candidates` cut
+  tried (400, 1200), buried under thousands of other same-corpus
+  candidates that happened to score higher. Raising `--max-candidates`
+  alone (pass 4, tried 1200) could not have fixed this; the bottleneck
+  was ranking, not candidate-pool coverage or size. Fixed by scoring
+  genuine substring-containment pairs at a floor score and exempting
+  them from `--max-candidates` entirely, gated by a length-ratio check
+  (`min_containment_ratio=0.6`) so it fires only for real prefix/suffix
+  variants and not a short name incidentally buried in an unrelated long
+  one (this corpus has 6,355 raw containment pairs, mostly legal-order
+  titles that happen to mention a place name — the ratio gate cuts that
+  to ~1,000, keeping the guaranteed-included set cheap). Verified fixed
+  in pass 5: `הגדה המערבית`/`גדה המערבית` merged (support 639).
+- **Known, deliberately unfixed**: `מדינת ישראל`/`המדינה` and
+  `ממשלת ישראל`/`הממשלה` remain separate nodes. Unlike the West Bank
+  pair, these aren't string-similar (Hebrew construct-state grammar
+  changes the word form: `מדינה` → `מדינת`) and their neighbor-overlap
+  Jaccard is ~0.005–0.1 (predicate+target tuples are too literal to
+  match across differently-phrased sentences) — no signal here proposes
+  them as candidates at any threshold tested. Catching them would need
+  either a Hebrew-specific construct-state normalization rule (against
+  this pipeline's own "language-agnostic signals" design) or a
+  `--max-candidates` in the tens of thousands to brute-force in every
+  low-scoring pair (~$10–20+ for one pass on this corpus alone) — not a
+  good trade for a rehearsal corpus. Left as a documented limitation
+  rather than chased.
 - The dedup pass first failed silently for about an hour (before pass 2):
   the API key in use was scoped to multiple workspaces, so every call was
   rejected with "anthropic-workspace-id is required..." and retried 5 times
