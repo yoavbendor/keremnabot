@@ -115,9 +115,21 @@ the actual dedup work here.
   process — not a pipeline bug); re-ran clean. 201 merges applied →
   8,520 → 8,319 entities, 9,053 relationships.
 - Pass 5 (`--max-candidates 2000`, after the containment-ranking fix
-  below): 137 merges applied → 8,319 → **8,182 entities, 8,967
-  relationships**.
-- **Total across all five: 673 merges, 8,855 → 8,182 entities.**
+  below): 137 merges applied → 8,319 → 8,182 entities, 8,967
+  relationships.
+- Pass 6 (`--max-candidates 6000`, same signals, deliberately deeper —
+  found by a zero-cost local sweep of every unaudited trigram/neighbor/
+  translate candidate that surfaced real remaining duplicates: `חוות`/
+  `חות` spelling variants, `קהילות הרועים הפלסטיניות`/`קהילות הרועים`,
+  etc. — see "Finding more hidden duplicates" below): 131 merges applied
+  → 8,182 → **8,051 entities, 8,928 relationships**. Cost: $3.89
+  verification + a small batch-translation fee. First attempt at this
+  pass died at candidate 325/6000 — the API key's credit balance ran
+  out mid-run, same $0-cost-failed-retries shape as the earlier
+  workspace-id bug, just a different cause; re-ran clean after a top-up,
+  and the audit file's already-checked-pairs exclusion meant nothing
+  from the failed attempt needed redoing.
+- **Total across all six: 804 merges, 8,855 → 8,051 entities.**
 - **A third real bug, found via the GitHub Pages explorer**: a visitor
   spotted `הגדה המערבית` ("the West Bank") and `גדה המערבית` ("West
   Bank", same phrase minus the definite article) sitting as two separate
